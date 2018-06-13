@@ -1,8 +1,0 @@
-.idea
-.sass-cache
-.DS_Store
-node_modules
-public
-wp/assets
-wp/static
-guide
