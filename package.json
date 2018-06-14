@@ -2,7 +2,9 @@
   "name": "wordpressp-frontplate",
   "version": "0.1.0",
   "description": "WordPress Site Template for frontplate-cli",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "babel-plugin-transform-runtime": "^6.23.0",

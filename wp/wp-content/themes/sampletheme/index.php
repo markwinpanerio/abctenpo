@@ -11,27 +11,95 @@
 
 get_header(); ?>
 
-<?php if ( have_posts() ) : ?>
-  <?php while ( have_posts() ) : the_post(); ?>
-
-    <?php echo get_permalink(); ?>
-
-    <?php if ( has_post_thumbnail() ) : ?>
-
-      <?php the_post_thumbnail( "" ); ?>
-
-    <?php else: ?>
-
-      <?php //NoIMAGE ?>
-
-    <?php endif; ?>
-
-    <?php echo get_the_date( 'Y/m/d' ); ?>
-    <?php the_title(); ?>
-    <?php the_content(); ?>
-
-  <?php endwhile; ?>
-<?php endif; ?>
+<main class="l-main">
+  <div class="l-container l-container-main u-clear">
+    <div class="l-container-content">
+      <div class="map">
+        <div class="map-button">
+          <ul class="map-button-list">
+            <li class="map-button-item">
+              <a href="#js-map-part-1" class="map-button-link js-map-part-link">
+                <span>横浜エリア</span>
+              </a>
+            </li>
+            <li class="map-button-item">
+              <a href="#js-map-part-2" class="map-button-link js-map-part-link">
+                <span>川崎エリア</span>
+              </a>
+            </li>
+            <li class="map-button-item">
+              <a href="#js-map-part-3" class="map-button-link js-map-part-link">
+                <span>湘南・鎌倉エリア</span>
+              </a>
+            </li>
+            <li class="map-button-item">
+              <a href="#js-map-part-4" class="map-button-link js-map-part-link">
+                <span>横須賀エリア</span>
+              </a>
+            </li>
+            <li class="map-button-item">
+              <a href="#js-map-part-5" class="map-button-link js-map-part-link">
+                <span>相模原エリア</span>
+              </a>
+            </li>
+            <li class="map-button-item">
+              <a href="#js-map-part-6" class="map-button-link js-map-part-link">
+                <span>厚木・大和エリア</span>
+              </a>
+            </li>
+            <li class="map-button-item">
+              <a href="#js-map-part-7" class="map-button-link js-map-part-link">
+                <span>伊勢原・平塚エリア</span>
+              </a>
+            </li>
+            <li class="map-button-item">
+              <a href="#js-map-part-8" class="map-button-link js-map-part-link">
+                <span>湯河原・西湘エリア</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="map-box">
+          <div class="map-box-image">
+            <img class="map-box-base" src="<?php echo ITEM_URL; ?>assets/images/map.png" alt="">
+            <img class="map-box-base map-box-base-back" src="<?php echo ITEM_URL; ?>assets/images/map-base.png" alt="">
+            <img class="map-box-base map-box-base-lower" src="<?php echo ITEM_URL; ?>assets/images/map-lower.png" alt="">
+          </div>
+          <div class="map-parts">
+            <div class="map-parts-img js-map-parts" id="js-map-part-1">
+              <?php importTemplate('./svg/map-parts/1'); ?>
+            </div>
+            <div class="map-parts-img js-map-parts" id="js-map-part-2">
+              <?php importTemplate('./svg/map-parts/2'); ?>
+            </div>
+            <div class="map-parts-img js-map-parts" id="js-map-part-3">
+              <?php importTemplate('./svg/map-parts/3'); ?>
+            </div>
+            <div class="map-parts-img js-map-parts" id="js-map-part-4">
+              <?php importTemplate('./svg/map-parts/4'); ?>
+            </div>
+            <div class="map-parts-img js-map-parts" id="js-map-part-5">
+              <?php importTemplate('./svg/map-parts/5'); ?>
+            </div>
+            <div class="map-parts-img js-map-parts" id="js-map-part-6">
+              <?php importTemplate('./svg/map-parts/6'); ?>
+            </div>
+            <div class="map-parts-img js-map-parts" id="js-map-part-7">
+              <?php importTemplate('./svg/map-parts/7'); ?>
+            </div>
+            <div class="map-parts-img js-map-parts" id="js-map-part-8">
+              <?php importTemplate('./svg/map-parts/8'); ?>
+            </div>
+            <div class="map-parts-img js-map-parts" id="js-map-part-9">
+              <?php importTemplate('./svg/map-parts/9'); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="l-container-sidebar"></div>
+  </div>
+</main>
 
 <?php
 get_sidebar();

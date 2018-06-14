@@ -1,0 +1,9 @@
+.map {
+  padding: 25px;
+  background: radial-gradient(#d1cccf 15%, transparent 15%) 0 0,
+              radial-gradient(#d1cccf 15%, transparent 15%) 3px 3px,
+              radial-gradient(#d1cccf 15%, transparent 20%) 0 1px,
+              radial-gradient(#d1cccf 15%, transparent 20%) 3px 4px;
+  background-size: 6px 6px;
+  background-color: white;
+}

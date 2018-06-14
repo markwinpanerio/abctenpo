@@ -1,6 +1,21 @@
-//.l-container {
-//
-//  @include max-screen($breakpoint-mobile) {
-//
-//  }
-//}
+.l-container {
+  width: $site-size;
+  padding: 0 30px;
+  margin: 0 auto;
+  height: 100vh;
+  border-width: 0 1px;
+  border-color: red;
+}
+
+.l-container-main .l-container-content {
+  float: left;
+  width: 862px;
+  height: 100%;
+}
+
+.l-container-main .l-container-sidebar {
+  float: right;
+  width: 276px;
+  height: 100%;
+  background:blue;
+}
