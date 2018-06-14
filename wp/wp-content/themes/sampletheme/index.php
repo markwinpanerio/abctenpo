@@ -97,7 +97,9 @@ get_header(); ?>
         </div>
       </div>
     </div>
-    <div class="l-container-sidebar"></div>
+    <div class="l-container-sidebar">
+      <?php importPart('sidebar'); ?>
+    </div>
   </div>
 </main>
 
