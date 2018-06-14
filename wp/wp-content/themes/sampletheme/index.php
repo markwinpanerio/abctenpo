@@ -96,6 +96,109 @@ get_header(); ?>
           </div>
         </div>
       </div>
+      <section class="listing">
+        <ul class="listing-list">
+          <li class="listing-item">
+            <a href="" class="listing-link">
+              <article>
+                <span class="listing-name">横浜</span>
+                <span class="listing-favorite">お気に入り</span>
+                <img src="https://image.ibb.co/dg9tFJ/listing_img.jpg" alt="" class="listing-image">
+                <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
+                <p class="listing-details">
+                  JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施
+                </p>
+              </article>
+            </a>
+          </li>
+          <li class="listing-item">
+            <a href="" class="listing-link">
+              <article>
+                <span class="listing-name">横浜</span>
+                <span class="listing-favorite">お気に入り</span>
+                <img src="https://image.ibb.co/dg9tFJ/listing_img.jpg" alt="" class="listing-image">
+                <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
+                <p class="listing-details">
+                  JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施
+                </p>
+              </article>
+            </a>
+          </li>
+          <li class="listing-item">
+            <a href="" class="listing-link">
+              <article>
+                <span class="listing-name">横浜</span>
+                <span class="listing-favorite">お気に入り</span>
+                <img src="https://image.ibb.co/dg9tFJ/listing_img.jpg" alt="" class="listing-image">
+                <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
+                <p class="listing-details">
+                  JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施
+                </p>
+              </article>
+            </a>
+          </li>
+        </ul>
+        <a href="" class="listing-button">もっと見る</a>
+      </section>
+      <div class="virtual">
+        <h2 class="virtual-title">3Dバーチャル内覧可能物件</h2>
+      
+        <div class="virtual-top">
+          <div class="virtual-left virtual-top-item">
+            <div class="virtual-left-inner">
+              <img src="https://preview.ibb.co/ejFYFJ/virtual_left_img.jpg" alt="">
+            </div>
+          </div>
+          <div class="virtual-right virtual-top-item">
+            <h3 class="virtual-right-heading">3Dバーチャル内覧とは？</h3>
+            <p class="virtual-right-copy">店舗の中を360°見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえるように床やキッチンの質感<br>まで忠実に再現。<br>まるでその物件に居るような体験ができます。 </p>
+          </div>
+        </div>
+      </div>
+      <section class="listing">
+        <ul class="listing-list">
+          <li class="listing-item">
+            <a href="" class="listing-link">
+              <article>
+                <span class="listing-name">横浜</span>
+                <span class="listing-favorite">お気に入り</span>
+                <img src="https://image.ibb.co/dg9tFJ/listing_img.jpg" alt="" class="listing-image">
+                <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
+                <p class="listing-details">
+                  JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施
+                </p>
+              </article>
+            </a>
+          </li>
+          <li class="listing-item">
+            <a href="" class="listing-link">
+              <article>
+                <span class="listing-name">横浜</span>
+                <span class="listing-favorite">お気に入り</span>
+                <img src="https://image.ibb.co/dg9tFJ/listing_img.jpg" alt="" class="listing-image">
+                <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
+                <p class="listing-details">
+                  JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施
+                </p>
+              </article>
+            </a>
+          </li>
+          <li class="listing-item">
+            <a href="" class="listing-link">
+              <article>
+                <span class="listing-name">横浜</span>
+                <span class="listing-favorite">お気に入り</span>
+                <img src="https://image.ibb.co/dg9tFJ/listing_img.jpg" alt="" class="listing-image">
+                <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
+                <p class="listing-details">
+                  JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施
+                </p>
+              </article>
+            </a>
+          </li>
+        </ul>
+        <a href="" class="listing-button">もっと見る</a>
+      </section>
     </div>
     <div class="l-container-sidebar">
       <?php importPart('sidebar'); ?>
