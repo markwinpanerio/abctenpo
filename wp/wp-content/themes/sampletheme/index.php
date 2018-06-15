@@ -205,7 +205,7 @@ get_header(); ?>
     </div>
   </div>
 </main>
-
+<?php importPart('footer'); ?>
 <?php
 get_sidebar();
 get_footer();

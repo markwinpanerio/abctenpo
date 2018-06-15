@@ -14,6 +14,8 @@
 
 // @import "components/header";
 @import "components/single/body";
+@import "components/footer-places";
+@import "components/footer";
 @import "components/listing";
 @import "components/map-button";
 @import "components/map-box";
@@ -24,5 +26,6 @@
 
 @import 'layout/grid';
 @import 'layout/layout';
+@import 'layout/l-footer-places';
 
 @import 'utils/utility';
