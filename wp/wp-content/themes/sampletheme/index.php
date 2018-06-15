@@ -99,7 +99,7 @@ get_header(); ?>
       <section class="listing">
         <ul class="listing-list">
           <li class="listing-item">
-            <a href="" class="listing-link">
+            <a href="#" class="listing-link">
               <article>
                 <span class="listing-name">横浜</span>
                 <span class="listing-favorite">お気に入り</span>
@@ -112,7 +112,7 @@ get_header(); ?>
             </a>
           </li>
           <li class="listing-item">
-            <a href="" class="listing-link">
+            <a href="#" class="listing-link">
               <article>
                 <span class="listing-name">横浜</span>
                 <span class="listing-favorite">お気に入り</span>
@@ -125,7 +125,7 @@ get_header(); ?>
             </a>
           </li>
           <li class="listing-item">
-            <a href="" class="listing-link">
+            <a href="#" class="listing-link">
               <article>
                 <span class="listing-name">横浜</span>
                 <span class="listing-favorite">お気に入り</span>
@@ -138,7 +138,7 @@ get_header(); ?>
             </a>
           </li>
         </ul>
-        <a href="" class="listing-button">もっと見る</a>
+        <a href="#" class="listing-button">もっと見る</a>
       </section>
       <div class="virtual">
         <h2 class="virtual-title">3Dバーチャル内覧可能物件</h2>
@@ -158,7 +158,7 @@ get_header(); ?>
       <section class="listing">
         <ul class="listing-list">
           <li class="listing-item">
-            <a href="" class="listing-link">
+            <a href="#" class="listing-link">
               <article>
                 <span class="listing-name">横浜</span>
                 <span class="listing-favorite">お気に入り</span>
@@ -171,7 +171,7 @@ get_header(); ?>
             </a>
           </li>
           <li class="listing-item">
-            <a href="" class="listing-link">
+            <a href="#" class="listing-link">
               <article>
                 <span class="listing-name">横浜</span>
                 <span class="listing-favorite">お気に入り</span>
@@ -184,7 +184,7 @@ get_header(); ?>
             </a>
           </li>
           <li class="listing-item">
-            <a href="" class="listing-link">
+            <a href="#" class="listing-link">
               <article>
                 <span class="listing-name">横浜</span>
                 <span class="listing-favorite">お気に入り</span>
@@ -197,7 +197,7 @@ get_header(); ?>
             </a>
           </li>
         </ul>
-        <a href="" class="listing-button">もっと見る</a>
+        <a href="#" class="listing-button">もっと見る</a>
       </section>
     </div>
     <div class="l-container-sidebar">
