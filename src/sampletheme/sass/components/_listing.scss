@@ -1,5 +1,5 @@
 .listing {
-  clear: both;  
+  clear: both;
 }
 
 .listing-list {
@@ -40,18 +40,21 @@
   top: 8px;
   right: 8px;
   z-index: $zindex1;
-  
+
   &:before {
-    content: url(https://image.ibb.co/gGi95J/listing_fav_icon.png);
-    position: absolute; 
+    content: url(#{$path-image}/svg/star-noactive.svg);
+    width: 15px;
+    position: absolute;
     left: 8px;
     top: 7px;
+    left: 10px;
+    top: 8px;
   }
 }
 
 .listing-image {
   display: block;
-  width: 100%;  
+  width: 100%;
 }
 
 .listing-link {
@@ -94,7 +97,7 @@
   color: $base-font-color;
   text-decoration: none;
   position: relative;
-  
+
   &:hover {
     text-decoration: underline;
   }
@@ -118,5 +121,4 @@
     border-bottom: 6px solid transparent;
     z-index: $zindex1;
   }
-  
 }
