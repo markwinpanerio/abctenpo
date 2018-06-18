@@ -13,7 +13,24 @@ get_header(); ?>
 
 <main class="l-main">
   <div class="l-container">
-    
+    <div class="archive">
+      <div class="archive-inner">
+        <ul class="archive-list row">
+          <li class="archive-item col-lg-3">
+            <div class="archive-article"></div>
+          </li>
+          <li class="archive-item col-lg-3">
+            <div class="archive-article"></div>
+          </li>
+          <li class="archive-item col-lg-3">
+            <div class="archive-article"></div>
+          </li>
+          <li class="archive-item col-lg-3">
+            <div class="archive-article"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </main>
 <?php importPart('footer'); ?>
