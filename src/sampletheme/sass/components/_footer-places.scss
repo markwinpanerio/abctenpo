@@ -24,33 +24,3 @@
   width: calc(100% - 162px);
   margin-left: -4px;
 }
-
-// place-link
-.place-link-wrapper {
-  margin: 0 -15px;
-}
-.place-link-item {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 15px;
-  width: 135px;
-  margin-left: -4px;
-  &:first-child {
-    margin-left: 0px;
-  }
-}
-.place-link-inner {
-  list-style-type: none;
-}
-
-.place-link-inner-item {
-  line-height: 1.429;
-  margin-bottom: 5px;
-  &:last-child {
-    margin-bottom: 0px;
-  }
-  a {
-    text-decoration: underline;
-    color: $color-tundora;
-  }
-}

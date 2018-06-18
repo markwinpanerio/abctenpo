@@ -98,6 +98,7 @@
   &:hover {
     text-decoration: underline;
   }
+
   &:before {
     content: "";
     position: absolute;
@@ -106,6 +107,7 @@
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
   }
+
   &:after {
     content: "";
     position: absolute;
@@ -116,4 +118,5 @@
     border-bottom: 6px solid transparent;
     z-index: $zindex1;
   }
+  
 }
