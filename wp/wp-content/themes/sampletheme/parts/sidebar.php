@@ -33,7 +33,7 @@
         'sidebarList6' => array(
           'title' => '内覧会から探す',
           'link' => '#',
-          'modifier' => '',
+          'modifier' => '',   
         ),
       )
     )
