@@ -62,16 +62,16 @@
         </form>
       </div>
 
-      <div class="search-property-buttons">
-        <ul class="row search-property-buttons-inner">
-          <li class="col-lg-4 search-property-btn-item">
-            <a class="btn search-property-btn-link" href="">お問い合わせ <span class="btn-arrow"></span></a>
+      <div class="link-list">
+        <ul class="row link-list-inner">
+          <li class="col-lg-4 link-list-item">
+            <a class="btn link-list-button" href="">お問い合わせ <span class="btn-arrow"></span></a>
           </li>
-          <li class="col-lg-4 search-property-btn-item">
-            <a class="btn search-property-btn-link" href="">個別で内覧依頼する <span class="btn-arrow"></span></a>
+          <li class="col-lg-4 link-list-item">
+            <a class="btn link-list-button" href="">個別で内覧依頼する <span class="btn-arrow"></span></a>
           </li>
-          <li class="col-lg-4 search-property-btn-item">
-            <a class="btn search-property-btn-link" href="">お気に入りに追加する <span class="btn-arrow"></span></a>
+          <li class="col-lg-4 link-list-item">
+            <a class="btn link-list-button" href="">お気に入りに追加する <span class="btn-arrow"></span></a>
           </li>
         </ul>
       </div>
