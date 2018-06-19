@@ -14,7 +14,11 @@
   padding: 0 20px;
 }
 
-.archive-article {
-  background: red;
-  height: 300px;
+.archive-article {}
+
+.archive-image {
+  height: 163px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
