@@ -57,7 +57,7 @@
             </div>
           </div>
           <div class="form-wrap form-submit">
-            <button class="btn form-btn" type="submit">この条件で検索する</button>
+            <button class="btn form-btn" type="button" >この条件で検索する</button>
           </div>
         </form>
       </div>
