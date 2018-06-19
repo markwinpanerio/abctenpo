@@ -7,7 +7,12 @@ function get_current_uri() {
 }
 
 function resolve_asset_uri( $subpath = '' ) {
-  return esc_url( rtrim( get_template_directory_uri(), '/' ) . '/static/assets/' . ltrim( $subpath, '/' ) );
+  return esc_url( rtrim( get_template_directory_uri(), '/' ) . '/assets/' . ltrim( $subpath, '/' ) );
+}
+
+
+function resolve_image_uri( $subpath = '' ) {
+    return resolve_asset_uri( 'images/' . $subpath );
 }
 
 function resolve_url( $path = '' ) {

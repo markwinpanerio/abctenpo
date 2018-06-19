@@ -9,7 +9,7 @@
 }
 
 .virtual-top {
-  border: 1px solid $virtual-border; 
+  border: 1px solid $virtual-border;
   margin-top: 31px;
   padding: 11px;
   display: flex;
@@ -29,9 +29,9 @@
 
 .virtual-left-inner {
   position: relative;
-  
+
   &:before {
-    content: url(https://image.ibb.co/jPwked/listing_icon.png);
+    content: url(#{$path-image}/virtual-icon.png);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -40,7 +40,7 @@
   }
   &:after {
     content: '';
-    background: url(https://image.ibb.co/caNDFJ/listing_icon_2.png) no-repeat center top;
+    background: url(#{$path-image}/virtual-icon-2.png) no-repeat center top;
     background-size: 100%;
     width: 100%;
     max-width: 313px;
@@ -66,6 +66,6 @@
 }
 
 .virtual-right-copy {
-  font-size: 14px; 
+  font-size: 14px;
   line-height: 1.4;
 }

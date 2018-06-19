@@ -1,21 +1,27 @@
 <?php
 /**
- * The template for displaying all pages
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * The main template file
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */
 
 get_header(); ?>
 
+  <div class="l-container">
+    <?php importTemplate('modules/property'); ?>
+    <?php importTemplate('modules/slider'); ?>
+    <?php importTemplate('modules/view3d'); ?>
+  </div>
+
   <main>
     <?php importTemplate('modules/search-properties'); ?>
   </main>
 
-<?php importPart('footer'); ?>
+  <?php importPart('footer'); ?>
+
 <?php
-get_sidebar();
 get_footer();

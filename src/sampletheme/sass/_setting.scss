@@ -11,6 +11,8 @@ $base-background-color: #fff;
 $color-primary: #eb6100;
 $color-white: $base-background-color;
 
+// path-image
+$path-image: '../images';
 
 //$color-primary
 //$color-accent
@@ -26,6 +28,14 @@ $sidebar-item-border-color: #e0dddb;
 $sidebar-link-hover-color: #fafafa;
 $sidebar-icon-arrow: #7b7b7b;
 
+//property detail
+$property-subheading-bg: #c40202;
+$property-white-text: #fff;
+$property-black-text: #000;
+$property-legend-bg: #000;
+$property-item-bg: #f5f5f5;
+$property-label-border: #fff;
+$property-link-border: #535353;
 
 //virtual
 $base-font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
