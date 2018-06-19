@@ -1,0 +1,27 @@
+
+.menu {
+ background-color: $menu-background;
+ padding: 32.5px 0;
+ text-align: center;
+ color: $menu-color-white;
+}
+
+.menu-list {
+ display: inline-block;
+}
+
+.menu-item {
+ display: inline-block;
+ vertical-align: top;
+ margin-right: 30px;
+}
+
+.menu-link {
+ text-decoration: none;
+ color: $menu-color-white;
+}
+
+.menu-access {
+ display: inline-block;
+ margin-left: 60px;
+}

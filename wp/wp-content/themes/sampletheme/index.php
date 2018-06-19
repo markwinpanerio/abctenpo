@@ -205,6 +205,10 @@ get_header(); ?>
     </div>
   </div>
 </main>
+
+<?php importTemplate('modules/menu'); ?>
+<?php importTemplate('modules/hero'); ?>
+
 <?php importPart('footer'); ?>
 <?php
 get_sidebar();
