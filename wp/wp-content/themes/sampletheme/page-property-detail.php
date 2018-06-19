@@ -11,12 +11,17 @@
 
 get_header(); ?>
 
-<div class="l-container">
-<?php importTemplate('modules/property'); ?>
-<?php importTemplate('modules/slider'); ?>
-<?php importTemplate('modules/view3d'); ?>
+  <div class="l-container">
+    <?php importTemplate('modules/property'); ?>
+    <?php importTemplate('modules/slider'); ?>
+    <?php importTemplate('modules/view3d'); ?>
+  </div>
 
-</div>
+  <main>
+    <?php importTemplate('modules/search-properties'); ?>
+  </main>
+
+  <?php importPart('footer'); ?>
 
 <?php
 get_footer();

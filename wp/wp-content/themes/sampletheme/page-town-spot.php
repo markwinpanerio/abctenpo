@@ -17,16 +17,24 @@ get_header(); ?>
       <div class="archive-inner">
         <ul class="archive-list row">
           <li class="archive-item col-lg-3">
-            <div class="archive-article"></div>
+            <div class="archive-article">
+              <div class="archive-image" style="background-image: url(<?php echo ITEM_URL; ?>assets/images/town/town-spot-1.jpg)"></div>
+            </div>
           </li>
           <li class="archive-item col-lg-3">
-            <div class="archive-article"></div>
+            <div class="archive-article">
+            <div class="archive-image" style="background-image: url(<?php echo ITEM_URL; ?>assets/images/town/town-spot-2.jpg)"></div>
+            </div>
           </li>
           <li class="archive-item col-lg-3">
-            <div class="archive-article"></div>
+            <div class="archive-article">
+            <div class="archive-image" style="background-image: url(<?php echo ITEM_URL; ?>assets/images/town/town-spot-3.jpg)"></div>
+            </div>
           </li>
           <li class="archive-item col-lg-3">
-            <div class="archive-article"></div>
+            <div class="archive-article">
+            <div class="archive-image" style="background-image: url(<?php echo ITEM_URL; ?>assets/images/town/town-spot-4.jpg)"></div>
+            </div>
           </li>
         </ul>
       </div>
