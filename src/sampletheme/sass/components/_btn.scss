@@ -10,3 +10,25 @@
   padding: 0 15px;
   cursor: pointer;
 }
+.btn-arrow {
+  overflow: hidden;
+  width: 9px;
+  height: 16px;
+  right: 18px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  position: absolute;
+  &:before {
+    content: "";
+    height: 16px;
+    width: 16px;
+    border: 2px solid $color-white;
+    display: block;
+    transform: rotate(45deg);
+    right: 3px;
+    position: absolute;
+    top: 0;
+  }
+}

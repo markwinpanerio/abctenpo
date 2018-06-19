@@ -7,7 +7,7 @@
           <div class="form-wrap form-left">
             <h3 class="form-group-title">賃料検索</h3>
             <div class="form-group form-select-wrap">
-              <select class="form-input form-select" name="search-rent-from">
+              <select class="form-input form-select js-form-select" name="search-rent-from">
                 <option>0000万円</option>
                 <option>10000万円</option>
                 <option>50000万円</option>
@@ -20,7 +20,7 @@
               <span>~</span>
             </div>
             <div class="form-group form-select-wrap">
-              <select class="form-input form-select" name="search-rent-to">
+              <select class="form-input form-select js-form-select" name="search-rent-to">
                 <option>0000万円</option>
                 <option>10000万円</option>
                 <option>50000万円</option>
@@ -33,7 +33,7 @@
           <div class="form-wrap form-right">
             <h3 class="form-group-title">総額検索</h3>
             <div class="form-group form-select-wrap">
-              <select class="form-input form-select" name="total-price-from">
+              <select class="form-input form-select js-form-select" name="total-price-from">
                 <option>0000万円</option>
                 <option>10000万円</option>
                 <option>50000万円</option>
@@ -46,7 +46,7 @@
               <span>~</span>
             </div>
             <div class="form-group form-select-wrap">
-              <select class="form-input form-select" name="total-price-to">
+              <select class="form-input form-select js-form-select" name="total-price-to">
                 <option>0000万円</option>
                 <option>10000万円</option>
                 <option>50000万円</option>
@@ -63,10 +63,16 @@
       </div>
 
       <div class="search-property-buttons">
-        <ul class="row">
-          <li class="col-lg-4"><a class="btn" href="">お問い合わせ</a></li>
-          <li class="col-lg-4"><a class="btn" href="">個別で内覧依頼する</a></li>
-          <li class="col-lg-4"><a class="btn" href="">お気に入りに追加する</a></li>
+        <ul class="row search-property-buttons-inner">
+          <li class="col-lg-4 search-property-btn-item">
+            <a class="btn search-property-btn-link" href="">お問い合わせ <span class="btn-arrow"></span></a>
+          </li>
+          <li class="col-lg-4 search-property-btn-item">
+            <a class="btn search-property-btn-link" href="">個別で内覧依頼する <span class="btn-arrow"></span></a>
+          </li>
+          <li class="col-lg-4 search-property-btn-item">
+            <a class="btn search-property-btn-link" href="">お気に入りに追加する <span class="btn-arrow"></span></a>
+          </li>
         </ul>
       </div>
     </div>
