@@ -12,7 +12,7 @@
 get_header(); ?>
 
   <main>
-    <?php importPart('../modules/search-properties'); ?>
+    <?php importTemplate('modules/search-properties'); ?>
   </main>
 
 <?php importPart('footer'); ?>

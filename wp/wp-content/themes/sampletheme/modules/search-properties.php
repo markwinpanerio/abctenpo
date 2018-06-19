@@ -62,19 +62,28 @@
         </form>
       </div>
 
-      <div class="link-list">
-        <ul class="row link-list-inner">
-          <li class="col-lg-4 link-list-item">
-            <a class="btn link-list-button" href="">お問い合わせ <span class="btn-arrow"></span></a>
-          </li>
-          <li class="col-lg-4 link-list-item">
-            <a class="btn link-list-button" href="">個別で内覧依頼する <span class="btn-arrow"></span></a>
-          </li>
-          <li class="col-lg-4 link-list-item">
-            <a class="btn link-list-button" href="">お気に入りに追加する <span class="btn-arrow"></span></a>
-          </li>
-        </ul>
-      </div>
+      <!-- Link List Module Start -->
+      <?php
+        $links = array(
+          'link_list' => array(
+            'list_item_1' => array(
+              'title' => 'お問い合わせ',
+              'link' => '/'
+            ),
+            'list_item_2' => array(
+              'title' => '個別で内覧依頼する',
+              'link' => '/'
+            ),
+            'list_item_3' => array(
+              'title' => 'お気に入りに追加する',
+              'link' => '/'
+            ),
+          )
+        );
+      ?>
+      <?php importTemplate('modules/link-list', $links); ?>
+      <!-- Link List Module End -->
+
     </div>
   </div>
 </section>
