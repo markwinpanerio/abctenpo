@@ -1,0 +1,21 @@
+//.reservation {}
+.exhibition-wrapper {
+  background-color: $color-wild-sand;
+  padding: 25px 82px 25px 78px;
+  overflow: hidden;
+}
+.exhibition-reserve {
+  width: 647px;
+  float: left;
+  padding-right: 53px;
+}
+.exhibition-image {
+  width: 372px;
+  float: left;
+}
+.exhibition-title {
+  font-size: 20px;
+  color: $color-black;
+  border-bottom: 2px solid $color-alto-d1;
+  margin-bottom: 18px;
+}

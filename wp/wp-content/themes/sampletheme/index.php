@@ -205,6 +205,8 @@ get_header(); ?>
     </div>
   </div>
 </main>
+<?php importTemplate('modules/exhibition'); ?>
+
 <?php importPart('footer'); ?>
 <?php
 get_sidebar();
