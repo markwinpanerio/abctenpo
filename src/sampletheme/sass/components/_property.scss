@@ -1,0 +1,113 @@
+.property {
+  margin-bottom: 26px;
+}
+
+.property-container {
+
+}
+
+
+.property-heading {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.property-subheading {
+  background-color: $property-subheading-bg;
+  color: $property-white-text;
+  display: inline-block;
+  float: left;
+  font-size: 13px;
+  padding: 3px 10px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.property-value {
+
+}
+
+.property-list {
+  list-style-type: none;
+}
+
+.property-item {
+  background-color: $property-item-bg;
+  display: inline-block;
+  vertical-align: top;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:nth-child(3) {
+    margin-right:27px;
+  }
+
+  &:last-child {
+    background-color: transparent;
+  }
+
+}
+
+.property-cost {
+  font-size: 36px;
+  padding: 0 33px;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.08em;
+  font-weight: bold;
+}
+
+.property-currency {
+  font-size: 18px;
+}
+
+.property-legend {
+  background-color: $property-legend-bg;
+  color: $property-white-text;
+  display: inline-block;
+  font-size: 16px;
+  writing-mode: vertical-lr;
+  padding: 24px 3px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.property-label {
+  display: block;
+  font-size: 13px;
+  padding-right: 116px;
+
+  &:not(:last-child) {
+    border-bottom: 2px solid $property-label-border;
+  }
+
+  .property-legend {
+    writing-mode: initial;
+    padding: 1px 12px;
+    margin-right: 19px;
+  }
+}
+
+.property-link {
+  display: block;
+  padding: 29px 110px;
+  border: 1px solid $property-link-border;
+  position: relative;
+  font-size: 18px;
+  color: $property-black-text;
+
+  &:before {
+    content: '';
+    height: 11px;
+    width: 11px;
+    border: 2px solid $property-link-border;
+    border-top-width: 0;
+    border-left-width: 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 36px;
+    right: 45px;
+  }
+}
