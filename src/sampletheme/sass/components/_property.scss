@@ -1,5 +1,5 @@
 .property {
-
+  margin-bottom: 26px;
 }
 
 .property-container {
@@ -40,8 +40,12 @@
     margin-right: 10px;
   }
 
+  &:nth-child(3) {
+    margin-right:27px;
+  }
+
   &:last-child {
-    background-color: none;
+    background-color: transparent;
   }
 
 }
@@ -88,5 +92,22 @@
 
 .property-link {
   display: block;
+  padding: 29px 110px;
+  border: 1px solid $property-link-border;
+  position: relative;
+  font-size: 18px;
+  color: $property-black-text;
 
+  &:before {
+    content: '';
+    height: 11px;
+    width: 11px;
+    border: 2px solid $property-link-border;
+    border-top-width: 0;
+    border-left-width: 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 36px;
+    right: 45px;
+  }
 }
