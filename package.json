@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "WordPress Site Template for frontplate-cli",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "scrollmagic": "^2.0.5"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
