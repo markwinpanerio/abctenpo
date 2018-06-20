@@ -23,12 +23,9 @@
       </div>
       <div class="exhibition-image">
         <h2 class="exhibition-title">初めて内覧会に行く方へ</h2>
-        <div class="exhibition-image-wrapper row">
-          <div class="col-lg-6 exhibition-image-item">
+        <div class="exhibition-image-wrapper">
+          <div class="exhibition-image-item">
             <img src="<?php echo get_template_directory_uri();?>/assets/images/banner-exhibition.jpg" alt="" />
-          </div>
-          <div class="col-lg-6 exhibition-image-item">
-            <img src="<?php echo get_template_directory_uri();?>/assets/images/banner-exhibition-1.jpg" alt="" />
           </div>
         </div>
       </div>

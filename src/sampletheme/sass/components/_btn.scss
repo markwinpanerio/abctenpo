@@ -1,7 +1,7 @@
 .btn {
   background-color: $base-font-color;
   width: 201px;
-  height: 48px;
+  min-height: 48px;
   color: $color-white;
   font-weight: bold;
   font-size: 14px;
@@ -40,7 +40,7 @@
   color: $color-black;
   position: relative;
   padding: 17px 0;
-  height: 58.5px;
+  min-height: 58.5px;
   font-size: 18px;
   font-weight: 500;
   .btn-arrow {
@@ -50,7 +50,7 @@
   }
 }
 .btn-pdf {
-  padding: 11px 0;
+  padding: 11px 0 7px;
 }
 .btn-pdf:before {
   content: "";
