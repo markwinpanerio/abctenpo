@@ -208,6 +208,7 @@ get_header(); ?>
 
 <?php importTemplate('modules/menu'); ?>
 <?php importTemplate('modules/hero'); ?>
+<?php importTemplate('modules/eyecatch-image'); ?>
 
 <?php importPart('footer'); ?>
 <?php
