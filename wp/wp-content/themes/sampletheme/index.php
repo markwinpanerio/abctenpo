@@ -205,10 +205,14 @@ get_header(); ?>
     </div>
   </div>
 </main>
+<<<<<<< HEAD
 
 <?php importTemplate('modules/menu'); ?>
 <?php importTemplate('modules/hero'); ?>
 <?php importTemplate('modules/eyecatch-image'); ?>
+=======
+<?php importTemplate('modules/exhibition'); ?>
+>>>>>>> feature/module17
 
 <?php importPart('footer'); ?>
 <?php
