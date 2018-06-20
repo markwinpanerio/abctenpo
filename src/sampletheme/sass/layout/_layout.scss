@@ -2,12 +2,22 @@
   width: $site-size;
   padding: 0 30px;
   margin: 0 auto;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+    float: none;
+  }
 }
 
 .l-container-main .l-container-content {
   float: left;
   width: 862px;
   height: 100%;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+    float: none;
+  }
 }
 
 .l-container-main .l-container-sidebar {
