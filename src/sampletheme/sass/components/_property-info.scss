@@ -1,0 +1,33 @@
+// .property-info {}
+.property-info-title {
+  color: $color-black;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px
+}
+.property-info-table {
+  width: 100%;
+  table-layout: fixed;
+}
+.property-info-table-column {
+  border: 1px solid $color-silver-cb;
+  padding: 6px 11px 5px;
+  font-size: 18px;
+  font-weight: bold;
+  a {
+    text-decoration: underline;
+    color: $color-matisse;
+  }
+  span {
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+  }
+}
+.property-info-table-column-title {
+  width: 163px;
+  background-color: $color-porcelain;
+}
+.property-info-table-column-content {
+  width: 427px;
+}

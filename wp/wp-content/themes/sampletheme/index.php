@@ -210,6 +210,7 @@ get_header(); ?>
 <?php importTemplate('modules/hero'); ?>
 <?php importTemplate('modules/eyecatch-image'); ?>
 <?php importTemplate('modules/exhibition'); ?>
+<?php importTemplate('modules/property-info'); ?>
 
 <?php importPart('footer'); ?>
 <?php
