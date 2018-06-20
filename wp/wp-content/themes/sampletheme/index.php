@@ -191,7 +191,7 @@ get_header(); ?>
                 <img src="<?php echo resolve_asset_uri('images/listing-img.jpg'); ?>" alt="" class="listing-image">
                 <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
                 <p class="listing-details">
-                  JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施
+
                 </p>
               </article>
             </a>
@@ -199,11 +199,53 @@ get_header(); ?>
         </ul>
         <a href="#" class="listing-button">もっと見る</a>
       </section>
+
+
+
+
+
+      <!-- listing section -->
+      <section class="listing">
+        <?php importTemplate('modules/listing-list', array(
+          'listingItems' => array(
+            'listingItem1' => array(
+              'link' => 'javascript:;',
+              'name' => '横浜',
+              'favorite' => 'お気に入り',
+              'image'   => '',
+              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'   => '282,400円',
+              'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
+            ),
+            'listingItem2' => array(
+              'link' => 'javascript:;',
+              'name' => '横浜',
+              'favorite' => 'お気に入り',
+              'image'   => 'listing-img.jpg',
+              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'   => '282,400円',
+              'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
+            ),
+            'listingItem3' => array(
+              'link' => 'javascript:;',
+              'name' => '横浜',
+              'favorite' => 'お気に入り',
+              'image'   => 'listing-img.jpg',
+              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'   => '282,400円',
+              'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
+            )
+          )
+        )); ?>
+      </section>
+      <!-- end of listing section -->
+
     </div>
     <div class="l-container-sidebar">
       <?php importPart('sidebar'); ?>
     </div>
   </div>
+
 </main>
 
 <?php importTemplate('modules/menu'); ?>
