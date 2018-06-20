@@ -12,7 +12,8 @@
             echo resolve_asset_uri('images/"'.$listingItem['image']);
           } ?>" alt="" class="listing-image">
 
-          <p class="listing-copy"><?php echo $listingItem['copy']; ?> <span class="listing-price"><?php echo $listingItem['price']; ?></span></p>
+          <div class="listing-inline"><p class="listing-copy"><?php echo $listingItem['copy']; ?></p></div>
+          <span class="listing-price"><?php echo $listingItem['price']; ?></span>
           <p class="listing-details">
             <?php echo $listingItem['details']; ?>
           </p>
