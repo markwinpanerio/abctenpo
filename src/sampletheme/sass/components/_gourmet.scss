@@ -1,11 +1,18 @@
 .gourmet {
 
+  @include max-screen($breakpoint-mobile) {
+    padding: 0 15px;
+  }
 }
 
 .gourmet-heading {
   font-size: 24px;
   color: $gourmet-text-color;
   margin-bottom: 25px;
+
+  @include max-screen($breakpoint-mobile) {
+  font-size: 18px;
+  }
 }
 
 .gourmet-container {
@@ -15,7 +22,7 @@
   margin: 0 -19px;
 
   @include max-screen($breakpoint-mobile) {
-    margin: 0 -10px;
+    margin: 0;
   }
 }
 
@@ -25,8 +32,8 @@
   margin: 0 19px;
 
   @include max-screen($breakpoint-mobile) {
-    width: calc((100%/2) - 20px);
-    margin: 0 10px
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -34,21 +41,23 @@
   margin-bottom: 19px;
   position: relative;
 
-  &:before {
-    content: '';
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    background: url('#{$path-image}/svg/icon-restaurant.svg') no-repeat center top;
-    background-size: contain;
-    height: 50px;
-    width: 50px;
-  }
-
   img {
     width: 100%;
   }
 
+}
+
+.gourmet-image-icon {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+
+  @include max-screen($breakpoint-mobile) {
+    height: 37px;
+    width: 37px;
+  }
 }
 
 .gourmet-transition {
@@ -69,6 +78,10 @@
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 7px;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 14px;
+  }
 }
 
 .gourmet-subtitle {
@@ -76,6 +89,9 @@
   color: $gourmet-text-color;
   margin-bottom: 21px;
   display: block;
+  @include max-screen($breakpoint-mobile) {
+    font-size: 13px;
+  }
 }
 
 .gourmet-copy {
@@ -86,4 +102,5 @@
 
 .gourmet-button {
   color: $gourmet-button;
+  font-size: 12px;
 }

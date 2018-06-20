@@ -219,7 +219,9 @@ get_header(); ?>
    $gourmetList = array(
      'gourmetItem' => array(
        'gourmetItem1' => array(
-         'url' => resolve_asset_uri('images/gourmet-img1.jpg'),
+         'imgUrl' => resolve_asset_uri('images/gourmet-img1.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
          'linkTransition' => '#',
          'title' => 'Estadio（エスタディオ）～spanish dining～',
          'subtitle' => 'ワインと和ビストロ',
@@ -229,7 +231,9 @@ get_header(); ?>
          'modifier' => '',
        ),
        'gourmetItem2' => array(
-         'url' => resolve_asset_uri('images/gourmet-img2.jpg'),
+         'imgUrl' => resolve_asset_uri('images/gourmet-img2.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
          'linkTransition' => '#',
          'title' => 'Estadio（エスタディオ）～spanish dining～',
          'subtitle' => 'ワインと和ビストロ',
@@ -239,7 +243,9 @@ get_header(); ?>
          'modifier' => '',
        ),
        'gourmetItem3' => array(
-         'url' => resolve_asset_uri('images/gourmet-img3.jpg'),
+         'imgUrl' => resolve_asset_uri('images/gourmet-img3.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
          'linkTransition' => '#',
          'title' => 'Estadio（エスタディオ）～spanish dining～',
          'subtitle' => 'ワインと和ビストロ',
@@ -249,7 +255,9 @@ get_header(); ?>
          'modifier' => '',
        ),
        'gourmetItem4' => array(
-         'url' => resolve_asset_uri('images/gourmet-img4.jpg'),
+         'imgUrl' => resolve_asset_uri('images/gourmet-img4.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
          'linkTransition' => '#',
          'title' => 'Estadio（エスタディオ）～spanish dining～',
          'subtitle' => 'ワインと和ビストロ',
@@ -267,6 +275,73 @@ get_header(); ?>
 </div>
 
 <!-- end gourmet -->
+
+<!-- start street spot -->
+
+<div class="gourmet l-container">
+ <h2 class="gourmet-heading">横浜エリア街スポット</h2>
+ <div class="gourmet-container">
+
+   <?php
+   $streetSpot = array(
+     'gourmetItem' => array(
+       'gourmetItem1' => array(
+         'imgUrl' => resolve_asset_uri('images/street-spot1.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'linkTransition' => '#',
+         'title' => '横浜ワールドポーターズ',
+         'subtitle' => '',
+         'copy' => '',
+         'linkText' => '',
+         'link' => '',
+         'modifier' => '',
+       ),
+       'gourmetItem2' => array(
+         'imgUrl' => resolve_asset_uri('images/street-spot2.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'linkTransition' => '#',
+         'title' => '横浜中華街',
+         'subtitle' => '',
+         'copy' => '',
+         'linkText' => '',
+         'link' => '',
+         'modifier' => '',
+       ),
+       'gourmetItem3' => array(
+         'imgUrl' => resolve_asset_uri('images/street-spot3.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'linkTransition' => '#',
+         'title' => 'パシフィコ横浜 (横浜国際平和会議場)',
+         'subtitle' => '',
+         'copy' => '',
+         'linkText' => '',
+         'link' => '',
+         'modifier' => '',
+       ),
+       'gourmetItem4' => array(
+         'imgUrl' => resolve_asset_uri('images/street-spot4.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'linkTransition' => '#',
+         'title' => '横浜赤レンガ倉庫',
+         'subtitle' => '',
+         'copy' => '',
+         'linkText' => '',
+         'link' => '',
+         'modifier' => '',
+       ),
+     )
+   )
+    ?>
+
+  <?php importTemplate('modules/gourmet',$streetSpot);?>
+ </div>
+</div>
+
+<!-- end street spot -->
 
 <?php importTemplate('modules/eyecatch-image'); ?>
 <?php importTemplate('modules/exhibition'); ?>
