@@ -271,6 +271,7 @@ get_header(); ?>
     ?>
 
   <?php importTemplate('modules/gourmet',$gourmetList);?>
+  <a class="button button-gray button-caret" href="#">もっと見る</a>
  </div>
 </div>
 
@@ -338,6 +339,7 @@ get_header(); ?>
     ?>
 
   <?php importTemplate('modules/gourmet',$streetSpot);?>
+  <a class="button button-gray button-caret" href="#">もっと見る</a>
  </div>
 </div>
 
