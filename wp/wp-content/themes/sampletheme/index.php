@@ -209,6 +209,22 @@ get_header(); ?>
 <?php importTemplate('modules/menu'); ?>
 <?php importTemplate('modules/hero'); ?>
 <?php importTemplate('modules/eyecatch-image'); ?>
+<div class="l-container">
+  <?php importTemplate('modules/eyecatch-image', array(
+    'images' => array(
+      'item_1' => array(
+        'img'   => 'hwllow'
+      ),
+      'item_2' => array(
+        'img'   => 'hwllo'
+      ),
+      'item_3' => array(
+        'img'   => 'hello'
+      )
+    )
+  )); ?>
+</div>
+<div class="l-container">
 <?php importTemplate('modules/exhibition'); ?>
 
 <?php importPart('footer'); ?>
