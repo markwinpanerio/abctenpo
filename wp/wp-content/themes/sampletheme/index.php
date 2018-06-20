@@ -204,7 +204,7 @@ get_header(); ?>
 
 
 
-      <!-- listing section -->
+      <!-- start of listing section -->
       <section class="listing">
         <?php importTemplate('modules/listing-list', array(
           'listingItems' => array(
@@ -247,6 +247,20 @@ get_header(); ?>
   </div>
 
 </main>
+
+<!-- start of message section -->
+<?php importTemplate('modules/message', array(
+  'messageItems' => array(
+    'messageItem' => array(
+      'copy' => '会員登録ですべての3D内覧が<br>ご覧いただけます。',
+      'small-link-text' => 'ログインはこちら',
+      'small-link' => 'javascript:;',
+      'big-link-text' => '会員登録(無料・１分)をお願いします',
+      'big-link' => 'javascript:;'
+      )
+    )
+  )); ?>
+<!-- end of message section -->
 
 <?php importTemplate('modules/menu'); ?>
 <?php importTemplate('modules/hero'); ?>
