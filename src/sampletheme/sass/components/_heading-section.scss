@@ -2,4 +2,8 @@
   font-size: 24px;
   color: $heading-section;
   margin-bottom: 25px;
+
+  @include max-screen($breakpoint-mobile) {
+  font-size: 18px;
+  }
 }
