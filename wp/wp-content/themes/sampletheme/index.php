@@ -204,6 +204,24 @@ get_header(); ?>
       <?php importPart('sidebar'); ?>
     </div>
   </div>
+
+  <section class="listing">
+    <ul class="listing-list">
+      <?php importTemplate('modules/listing', array(
+        'items' => array(
+        'item' => array(
+          'listing-name' => '求める人物像',
+          'listing-favorite' => '求める人物像',
+          'listing-image'   => 'test'
+        ),
+        'item1' => array(
+          'listing-name' => 'test',
+          'listing-favorite' => '求める人物像',
+          'listing-image'   => 'test'
+        ))
+      )); ?>
+    </ul>
+  </section>
 </main>
 <?php importPart('footer'); ?>
 <?php
