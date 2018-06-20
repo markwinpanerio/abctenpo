@@ -10,9 +10,13 @@
             <time class="exhibition-date-time">12:00-13:00</time>
           </div>
           <div class="exhibition-links">
-            <ul>
-              <li><a class="btn" href="#">募集図面を見る <span class="btn-arrow"></span></a></li>
-              <li><a class="btn" href="#">内覧会に参加する <span class="btn-arrow"></span></a></li>
+            <ul class="exhibition-links-inner">
+              <li class="exhibition-link-item">
+                <a class="btn btn-pdf btn-white" href="#">募集図面を見る <span class="btn-arrow"></span></a>
+              </li>
+              <li class="exhibition-link-item">
+                <a class="btn btn-white" href="#">内覧会に参加する <span class="btn-arrow"></span></a>
+              </li>
             </ul>
           </div>
         </div>

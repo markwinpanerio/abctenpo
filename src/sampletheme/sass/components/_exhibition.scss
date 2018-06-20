@@ -4,18 +4,72 @@
   padding: 25px 82px 25px 78px;
   overflow: hidden;
 }
-.exhibition-reserve {
-  width: 647px;
-  float: left;
-  padding-right: 53px;
-}
-.exhibition-image {
-  width: 372px;
-  float: left;
-}
 .exhibition-title {
   font-size: 20px;
   color: $color-black;
   border-bottom: 2px solid $color-alto-d1;
   margin-bottom: 18px;
+}
+.exhibition-reserve {
+  width: 647px;
+  float: left;
+  padding-right: 53px;
+}
+.exhibition-date-wrapper {
+  overflow: hidden;
+}
+.exhibition-date {
+  float: left;
+  width: 222px;
+  background-color: $color-white;
+  padding-bottom: 12px;
+}
+.exhibition-date-title {
+  border-top: 1px solid $color-silver-cb;
+  border-bottom: 1px solid $color-dove-gray;
+  background-color: $color-mine-shaft;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2px;
+}
+.exhibition-date-main {
+  font-size: 40px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  span {
+    font-size: 20px;
+  }
+}
+.exhibition-date-time {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+}
+.exhibition-links {
+  padding-left: 18px;
+  float: left;
+  width: calc(100% - 222px);
+}
+.exhibition-links-inner {
+  list-style: none;
+}
+.exhibition-link-item {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.exhibition-image {
+  width: 372px;
+  float: left;
+}
+.exhibition-image-item {
+  border: 1px solid $color-tundora;
+  img {
+    width: 100%;
+  }
 }

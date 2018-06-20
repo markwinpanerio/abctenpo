@@ -2,7 +2,7 @@
   background-color: $base-font-color;
   width: 201px;
   height: 48px;
-  color: #fff;
+  color: $color-white;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.2;
@@ -31,4 +31,36 @@
     position: absolute;
     top: 0;
   }
+}
+.btn-white {
+  width: 100%;
+  display: block;
+  background-color: $color-white;
+  border: 1px solid $color-silver-chalice;
+  color: $color-black;
+  position: relative;
+  padding: 17px 0;
+  height: 58.5px;
+  font-size: 18px;
+  font-weight: 500;
+  .btn-arrow {
+    &:before {
+      border-color: $base-font-color;
+    }
+  }
+}
+.btn-pdf {
+  padding: 11px 0;
+}
+.btn-pdf:before {
+  content: "";
+  background: url('../images/svg/pdf.svg') no-repeat center / cover;
+  width: 27px;
+  height: 34px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  margin-top: 4px;
+  top: -4px;
+  position: relative;
 }
