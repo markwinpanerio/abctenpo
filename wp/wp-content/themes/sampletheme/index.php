@@ -209,7 +209,65 @@ get_header(); ?>
 <?php importTemplate('modules/menu'); ?>
 <?php importTemplate('modules/hero'); ?>
 
-<?php importTemplate('modules/gourmet'); ?>
+<!-- start gourmet -->
+
+<div class="gourmet l-container">
+ <h2 class="gourmet-heading">横浜エリアのグルメ・レストラン情報</h2>
+ <div class="gourmet-container">
+
+   <?php
+   $gourmetList = array(
+     'gourmetItem' => array(
+       'gourmetItem1' => array(
+         'url' => resolve_asset_uri('images/gourmet-img1.jpg'),
+         'linkTransition' => '#',
+         'title' => 'Estadio（エスタディオ）～spanish dining～',
+         'subtitle' => 'ワインと和ビストロ',
+         'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
+         'linkText' => 'MAPを見る',
+         'link' => '#',
+         'modifier' => '',
+       ),
+       'gourmetItem2' => array(
+         'url' => resolve_asset_uri('images/gourmet-img2.jpg'),
+         'linkTransition' => '#',
+         'title' => 'Estadio（エスタディオ）～spanish dining～',
+         'subtitle' => 'ワインと和ビストロ',
+         'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
+         'linkText' => 'MAPを見る',
+         'link' => '#',
+         'modifier' => '',
+       ),
+       'gourmetItem3' => array(
+         'url' => resolve_asset_uri('images/gourmet-img3.jpg'),
+         'linkTransition' => '#',
+         'title' => 'Estadio（エスタディオ）～spanish dining～',
+         'subtitle' => 'ワインと和ビストロ',
+         'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
+         'linkText' => 'MAPを見る',
+         'link' => '#',
+         'modifier' => '',
+       ),
+       'gourmetItem4' => array(
+         'url' => resolve_asset_uri('images/gourmet-img4.jpg'),
+         'linkTransition' => '#',
+         'title' => 'Estadio（エスタディオ）～spanish dining～',
+         'subtitle' => 'ワインと和ビストロ',
+         'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
+         'linkText' => 'MAPを見る',
+         'link' => '#',
+         'modifier' => '',
+       ),
+     )
+   )
+    ?>
+
+  <?php importTemplate('modules/gourmet',$gourmetList);?>
+ </div>
+</div>
+
+<!-- end gourmet -->
+
 <?php importTemplate('modules/eyecatch-image'); ?>
 <?php importTemplate('modules/exhibition'); ?>
 
