@@ -2,6 +2,10 @@
   width: $site-size;
   padding: 0 30px;
   margin: 0 auto;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+  }
 }
 
 .l-container-main .l-container-content {

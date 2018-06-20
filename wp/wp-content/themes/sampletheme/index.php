@@ -208,6 +208,7 @@ get_header(); ?>
 
 <?php importTemplate('modules/menu'); ?>
 <?php importTemplate('modules/hero'); ?>
+<?php importTemplate('modules/gourmet'); ?>
 
 <?php importPart('footer'); ?>
 <?php
