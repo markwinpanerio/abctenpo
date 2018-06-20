@@ -1,0 +1,106 @@
+.gourmet {
+
+  @include max-screen($breakpoint-mobile) {
+    padding: 0 15px;
+  }
+}
+
+.gourmet-heading {
+  font-size: 24px;
+  color: $gourmet-text-color;
+  margin-bottom: 25px;
+
+  @include max-screen($breakpoint-mobile) {
+  font-size: 18px;
+  }
+}
+
+.gourmet-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 -19px;
+
+  @include max-screen($breakpoint-mobile) {
+    margin: 0;
+  }
+}
+
+.gourmet-item {
+  flex-grow: 1;
+  width: calc((100%/4) - 38px);
+  margin: 0 19px;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.gourmet-image {
+  margin-bottom: 19px;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+}
+
+.gourmet-image-icon {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+
+  @include max-screen($breakpoint-mobile) {
+    height: 37px;
+    width: 37px;
+  }
+}
+
+.gourmet-transition {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 9px;
+  right: 8px;
+
+  svg {
+    fill: #fff;
+  }
+}
+
+.gourmet-title {
+  font-size: 16px;
+  color: $gourmet-text-color;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 7px;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 14px;
+  }
+}
+
+.gourmet-subtitle {
+  font-size: 14px;
+  color: $gourmet-text-color;
+  margin-bottom: 21px;
+  display: block;
+  @include max-screen($breakpoint-mobile) {
+    font-size: 13px;
+  }
+}
+
+.gourmet-copy {
+  font-size: 12px;
+  color: $gourmet-copy-color;
+  margin-bottom: 7px;
+}
+
+.gourmet-button {
+  color: $gourmet-button;
+  font-size: 12px;
+}
