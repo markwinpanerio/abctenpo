@@ -1,47 +1,54 @@
-const $sliderCatch = $('.js-school-slider');
-const $sliderNav = $('.js-school-slider-nav');
+import $ from 'jquery';
+import slick from 'slick-carousel';
 
-$sliderCatch.slick({
-    slidesToScroll: 1,
-    arrows: false,
-    infinite: false,
-    asNavFor: '.js-school-slider-nav'
-});
+export default function eyecatchSlider() {
+    const $sliderCatch = $('#js-slider-main');
+    const $sliderNav = $('#js-slider-nav');
+    const $slideNavItem = $sliderNav.find('.eyecatch-image-item');
+    const slideItemPerRow = 3;
+    const rowItem = 3;
+    const totalItemsInsideSliderBox = slideItemPerRow * rowItem;
 
-$sliderNav.slick({
-    slidesToShow: 5,
-    infinite: false,
-    asNavFor: '.js-school-slider',
-    slidesToScroll: 1,
-    focusOnSelect: true,
-    responsive: [
-        {
-            breakpoint: 424,
-            settings: {
-                slidesToScroll: 1,
-                slidesToShow: 2.9
-            }
-        },
-        {
-            breakpoint: 639,
-            settings: {
-                slidesToScroll: 1,
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 640,
-            settings: {
-                slidesToScroll: 1,
-                slidesToShow: 4,
-            }
-        },
-        {
-            breakpoint: 960,
-            settings: {
-                slidesToScroll: 1,
-                slidesToShow: 5
-            }
+    $sliderCatch.slick({
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: false
+    });
+
+    for ( let i = 0; i < $slideNavItem.length; i++ ) {
+        $slideNavItem.eq(i).attr('data-index', i);
+    }
+
+    $slideNavItem.on('click', function() {
+        const $this = $(this);
+        const index = $this.data('index');
+
+        $sliderCatch.slick('goTo', index);
+        $this.toggleClass('is-active');
+
+        if ($this.hasClass('is-active')) {
+            $slideNavItem.removeClass('is-active');
+            $this.addClass('is-active');
         }
-    ]
-});
+    })
+
+    $sliderCatch.on("afterChange", function() {
+        const currentIndex = $(this).find('.slick-active').attr('data-slick-index');
+        const currentIndexNumber = parseInt(currentIndex);
+        const currentIndexAddedByOne = currentIndexNumber + 1;
+
+        $slideNavItem.removeClass('is-active');
+        $slideNavItem.eq(currentIndexNumber).addClass('is-active');
+
+        let currentSlideForNav = Math.ceil(currentIndexAddedByOne / totalItemsInsideSliderBox) - 1;
+
+        $sliderNav.slick('goTo', currentSlideForNav);
+    });
+
+    $sliderNav.slick({
+        slidesPerRow: slideItemPerRow,
+        rows: rowItem,
+        infinite: false,
+        slidesToScroll: 1
+    });
+}

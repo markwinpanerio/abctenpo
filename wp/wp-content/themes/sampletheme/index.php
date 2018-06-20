@@ -224,9 +224,7 @@ get_header(); ?>
     )
   )); ?>
 </div>
-<div class="l-container">
 <?php importTemplate('modules/exhibition'); ?>
-
 <?php importPart('footer'); ?>
 <?php
 get_sidebar();

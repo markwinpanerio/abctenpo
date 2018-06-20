@@ -29,7 +29,23 @@
 
 .eyecatch-image-main {
   width: 64.5%;
-  background-size: cover;
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: center;
+}
+
+.eyecatch-image-main-list {
+  list-style-type: none;
+}
+
+.eyecatch-image-main-item {
+  
+}
+
+.eyecatch-image-main-image {
+  height: 430px;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -49,19 +65,50 @@
   padding: 40px 28px;
   height: 100%;
   list-style-type: none;
+
+  //OVERWRITING SLICK DEFAULT STYLE
+  .slick-list {
+    padding-top: 20px;
+  }
 }
 
 .eyecatch-image-item {
   height: 90px;
   padding: 0 5px;
+  vertical-align: middle;
+  margin: 0 0 20px;
+  position: relative;
+
+  &:before {
+    content: "";
+    opacity: 0;
+    display: block;
+    width: 100%;
+    height: 110%;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  &.is-active {
+    &:before {
+      opacity: 1;
+    }
+  }
 }
 
 .eyecatch-image-nav-image {
   height: 100%;
   border: 1px solid #ddd;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  position: relative;
 
   img {
     max-height: 100%;
