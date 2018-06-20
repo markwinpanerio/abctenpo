@@ -212,7 +212,7 @@ get_header(); ?>
 <!-- start gourmet -->
 
 <div class="gourmet l-container">
- <h2 class="gourmet-heading">横浜エリアのグルメ・レストラン情報</h2>
+ <h2 class="heading-section">横浜エリアのグルメ・レストラン情報</h2>
  <div class="gourmet-container">
 
    <?php
@@ -280,7 +280,7 @@ get_header(); ?>
 <!-- start street spot -->
 
 <div class="gourmet l-container">
- <h2 class="gourmet-heading">横浜エリア街スポット</h2>
+ <h2 class="heading-section">横浜エリア街スポット</h2>
  <div class="gourmet-container">
 
    <?php
