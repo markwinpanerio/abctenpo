@@ -1,0 +1,21 @@
+.eyecatch-image {
+  padding: 60px;
+  background-color: #f5f5f5;
+
+  @include max-screen($breakpoint-mobile) {
+    padding: 16px 16px 31px 16px;
+  }
+}
+
+.eyecatch-image-no-image {
+  width: 522px;
+  margin: 0 auto;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
