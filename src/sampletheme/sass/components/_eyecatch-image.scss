@@ -89,6 +89,7 @@
 }
 
 .eyecatch-image-main-item {
+  height: 430px;
   overflow: hidden;
 
   img {
@@ -121,11 +122,38 @@
   padding: 40px 28px;
   height: 100%;
   list-style-type: none;
+  position: relative;
 
   //OVERWRITING SLICK DEFAULT STYLE
   .slick-list {
     padding-top: 20px;
   }
+
+  .slick-dots {
+    bottom: 9px;
+    left: 0;
+    right: 0;
+  }
+
+  .slick-dots li {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slick-active {
+    .eyecatch-image-pagination {
+      background-color: #363636;
+    }
+  }
+}
+
+.eyecatch-image-pagination {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #e2e2e2;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .eyecatch-image-item {

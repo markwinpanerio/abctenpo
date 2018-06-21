@@ -54,6 +54,11 @@ export default function eyecatchSlider() {
         slidesPerRow: slideItemPerRow,
         rows: rowItem,
         infinite: false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true,
+        customPaging : function(slider, i) {
+            const thumb = $(slider.$slides[i]).data('thumb');
+            return '<span class="eyecatch-image-pagination"></span>';
+        }
     });
 }
