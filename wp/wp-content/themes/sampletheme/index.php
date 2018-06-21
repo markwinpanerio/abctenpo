@@ -191,7 +191,7 @@ get_header(); ?>
                 <img src="<?php echo resolve_asset_uri('images/listing-img.jpg'); ?>" alt="" class="listing-image">
                 <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
                 <p class="listing-details">
-                  JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施
+
                 </p>
               </article>
             </a>
@@ -199,15 +199,208 @@ get_header(); ?>
         </ul>
         <a href="#" class="listing-button">もっと見る</a>
       </section>
+
+
+
+
+
+      <!-- start of listing section -->
+      <section class="listing">
+        <?php importTemplate('modules/listing-list', array(
+          'listingItems' => array(
+            'listingItem1' => array(
+              'link' => 'javascript:;',
+              'name' => '横浜',
+              'favorite' => 'お気に入り',
+              'image'   => '',
+              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'   => '282,400円',
+              'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
+            ),
+            'listingItem2' => array(
+              'link' => 'javascript:;',
+              'name' => '横浜',
+              'favorite' => 'お気に入り',
+              'image'   => 'listing-img.jpg',
+              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'   => '282,400円',
+              'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
+            ),
+            'listingItem3' => array(
+              'link' => 'javascript:;',
+              'name' => '横浜',
+              'favorite' => 'お気に入り',
+              'image'   => 'listing-img.jpg',
+              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'   => '282,400円',
+              'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
+            )
+          )
+        )); ?>
+      </section>
+      <!-- end of listing section -->
+
     </div>
     <div class="l-container-sidebar">
       <?php importPart('sidebar'); ?>
     </div>
   </div>
+
 </main>
+
+<!-- start of message section -->
+<?php importTemplate('modules/message', array(
+  'messageItems' => array(
+    'messageItem' => array(
+      'copy' => '会員登録ですべての3D内覧が<br>ご覧いただけます。',
+      'small-link-text' => 'ログインはこちら',
+      'small-link' => 'javascript:;',
+      'big-link-text' => '会員登録(無料・１分)をお願いします',
+      'big-link' => 'javascript:;',
+      )
+    )
+  )); ?>
+<!-- end of message section -->
 
 <?php importTemplate('modules/menu'); ?>
 <?php importTemplate('modules/hero'); ?>
+
+<!-- start gourmet -->
+
+<div class="gourmet l-container">
+ <h2 class="heading-section">横浜エリアのグルメ・レストラン情報</h2>
+ <div class="gourmet-container">
+
+   <?php
+   $gourmetList = array(
+     'gourmetItem' => array(
+       'gourmetItem1' => array(
+         'imgUrl' => resolve_asset_uri('images/gourmet-img1.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
+         'iconModifier' => 'icon-white',
+         'linkTransition' => '#',
+         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
+         'subtitle' => 'ワインと和ビストロ',
+         'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
+         'linkText' => 'MAPを見る',
+         'link' => '#',
+         'modifier' => '',
+       ),
+       'gourmetItem2' => array(
+         'imgUrl' => resolve_asset_uri('images/gourmet-img2.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
+         'iconModifier' => 'icon-white',
+         'linkTransition' => '#',
+         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
+         'subtitle' => 'ワインと和ビストロ',
+         'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
+         'linkText' => 'MAPを見る',
+         'link' => '#',
+         'modifier' => '',
+       ),
+       'gourmetItem3' => array(
+         'imgUrl' => resolve_asset_uri('images/gourmet-img3.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
+         'iconModifier' => 'icon-white',
+         'linkTransition' => '#',
+         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
+         'subtitle' => 'ワインと和ビストロ',
+         'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
+         'linkText' => 'MAPを見る',
+         'link' => '#',
+         'modifier' => '',
+       ),
+       'gourmetItem4' => array(
+         'imgUrl' => resolve_asset_uri('images/gourmet-img4.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
+         'iconModifier' => 'icon-white',
+         'linkTransition' => '#',
+         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
+         'subtitle' => 'ワインと和ビストロ',
+         'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
+         'linkText' => 'MAPを見る',
+         'link' => '#',
+         'modifier' => '',
+       ),
+     )
+   )
+    ?>
+
+  <?php importTemplate('modules/gourmet',$gourmetList);?>
+  <a class="button button-gray button-caret" href="#">もっと見る</a>
+ </div>
+</div>
+
+<!-- end gourmet -->
+
+<!-- start street spot -->
+
+<div class="gourmet l-container">
+ <h2 class="heading-section">横浜エリア街スポット</h2>
+ <div class="gourmet-container">
+
+   <?php
+   $streetSpot = array(
+     'gourmetItem' => array(
+       'gourmetItem1' => array(
+         'imgUrl' => resolve_asset_uri('images/street-spot1.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
+         'iconModifier' => 'icon-white',
+         'linkTransition' => '#',
+         'title' => '横浜ワールドポーターズ',
+         'subtitle' => '',
+         'copy' => '',
+         'linkText' => '',
+         'link' => '',
+         'modifier' => '',
+       ),
+       'gourmetItem2' => array(
+         'imgUrl' => resolve_asset_uri('images/street-spot2.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
+         'iconModifier' => 'icon-white',
+         'linkTransition' => '#',
+         'title' => '横浜中華街',
+         'subtitle' => '',
+         'copy' => '',
+         'linkText' => '',
+         'link' => '',
+         'modifier' => '',
+       ),
+       'gourmetItem3' => array(
+         'imgUrl' => resolve_asset_uri('images/street-spot3.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
+         'iconModifier' => 'icon-white',
+         'linkTransition' => '#',
+         'title' => 'パシフィコ横浜 (横浜国際平和会議場)',
+         'subtitle' => '',
+         'copy' => '',
+         'linkText' => '',
+         'link' => '',
+         'modifier' => '',
+       ),
+       'gourmetItem4' => array(
+         'imgUrl' => resolve_asset_uri('images/street-spot4.jpg'),
+         'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
+         'iconModifier' => 'icon-white',
+         'linkTransition' => '#',
+         'title' => '横浜赤レンガ倉庫',
+         'subtitle' => '',
+         'copy' => '',
+         'linkText' => '',
+         'link' => '',
+         'modifier' => '',
+       ),
+     )
+   )
+    ?>
+
+  <?php importTemplate('modules/gourmet',$streetSpot);?>
+  <a class="button button-gray button-caret" href="#">もっと見る</a>
+ </div>
+</div>
+
+<!-- end street spot -->
+
 <?php importTemplate('modules/eyecatch-image'); ?>
 <div class="l-container">
   <?php importTemplate('modules/eyecatch-image', array(
@@ -252,6 +445,12 @@ get_header(); ?>
   )); ?>
 </div>
 <?php importTemplate('modules/exhibition'); ?>
+<<<<<<< HEAD
+=======
+<?php importTemplate('modules/property-info'); ?>
+
+
+>>>>>>> 7d153ad4e339014855250b7562e28009817c1636
 <?php importPart('footer'); ?>
 <?php
 get_sidebar();
