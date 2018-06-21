@@ -248,6 +248,24 @@ get_header(); ?>
 
 </main>
 
+<!-- start of breadcrumbs section -->
+<?php importTemplate('modules/breadcrumbs', array(
+  'breadModifier' => '',
+  'breadItems' => array(
+    'breadItem1' => array(
+      'link' => 'javascript:;',
+      'link-modifier' => '',
+      'text' => '居抜き物件・居抜き店舗の居抜きABC店舗'
+    ),
+    'breadItem2' => array(
+      'link' => '',
+      'link-modifier' => 'is-active',
+      'text' => '検索条件に合致する物件一覧'
+      )
+    )
+  )); ?>
+<!-- end of breadcrumbs section -->
+
 <!-- start of message section -->
 <?php importTemplate('modules/message', array(
   'messageItems' => array(
@@ -256,7 +274,7 @@ get_header(); ?>
       'small-link-text' => 'ログインはこちら',
       'small-link' => 'javascript:;',
       'big-link-text' => '会員登録(無料・１分)をお願いします',
-      'big-link' => 'javascript:;',
+      'big-link' => 'javascript:;'
       )
     )
   )); ?>
@@ -277,46 +295,50 @@ get_header(); ?>
        'gourmetItem1' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img1.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconModifier' => 'icon-white',
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
          'linkTransition' => '#',
-         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
+         'title' => 'Estadio（エスタディオ）～spanish dining～',
          'subtitle' => 'ワインと和ビストロ',
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
          'link' => '#',
+         'modifier' => '',
        ),
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img2.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconModifier' => 'icon-white',
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
          'linkTransition' => '#',
-         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
+         'title' => 'Estadio（エスタディオ）～spanish dining～',
          'subtitle' => 'ワインと和ビストロ',
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
          'link' => '#',
+         'modifier' => '',
        ),
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img3.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconModifier' => 'icon-white',
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
          'linkTransition' => '#',
-         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
+         'title' => 'Estadio（エスタディオ）～spanish dining～',
          'subtitle' => 'ワインと和ビストロ',
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
          'link' => '#',
+         'modifier' => '',
        ),
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img4.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconModifier' => 'icon-white',
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
          'linkTransition' => '#',
-         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
+         'title' => 'Estadio（エスタディオ）～spanish dining～',
          'subtitle' => 'ワインと和ビストロ',
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
          'link' => '#',
+         'modifier' => '',
        ),
      )
    )
@@ -341,30 +363,50 @@ get_header(); ?>
        'gourmetItem1' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot1.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconModifier' => 'icon-white',
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
          'linkTransition' => '#',
          'title' => '横浜ワールドポーターズ',
+         'subtitle' => '',
+         'copy' => '',
+         'linkText' => '',
+         'link' => '',
+         'modifier' => '',
        ),
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot2.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconModifier' => 'icon-white',
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
          'linkTransition' => '#',
          'title' => '横浜中華街',
+         'subtitle' => '',
+         'copy' => '',
+         'linkText' => '',
+         'link' => '',
+         'modifier' => '',
        ),
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot3.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconModifier' => 'icon-white',
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
          'linkTransition' => '#',
          'title' => 'パシフィコ横浜 (横浜国際平和会議場)',
+         'subtitle' => '',
+         'copy' => '',
+         'linkText' => '',
+         'link' => '',
+         'modifier' => '',
        ),
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot4.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconModifier' => 'icon-white',
+         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
          'linkTransition' => '#',
          'title' => '横浜赤レンガ倉庫',
+         'subtitle' => '',
+         'copy' => '',
+         'linkText' => '',
+         'link' => '',
+         'modifier' => '',
        ),
      )
    )
@@ -424,6 +466,9 @@ get_header(); ?>
 </div>
 <?php importTemplate('modules/exhibition'); ?>
 <?php importTemplate('modules/property-info'); ?>
+
+<?php importTemplate('modules/pagination'); ?>
+
 
 <?php importPart('footer'); ?>
 <?php
