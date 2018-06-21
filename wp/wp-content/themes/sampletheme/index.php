@@ -248,6 +248,24 @@ get_header(); ?>
 
 </main>
 
+<!-- start of become member section -->
+<?php importTemplate('modules/become-member', array(
+    'becomeMemberImage' => 'bnr-member-btn.jpg',
+    'becomeMemberButtonLink' => 'javascript:;',
+    'becomeMemberImageAlt' => '会員登録 MEMBER REGISTRATION',
+    'becomeMembers' => array(
+      'becomeMember' => array(
+        'image' => 'bnr-member-1.jpg',
+        'alt' => '会員になると絶対に得する５つの理由,未公開物件を会員限定メルマガで配信,条件に合った物件入荷時は直接ご連絡,会員限定の先行内覧会を毎日開催中,店舗オープンを無料でマスコミに配信,開業後も様々な無料経営サポート,簡単30秒で登録完了'
+      ),
+      'becomeMember2' => array(
+        'image' => 'bnr-member-2.jpg',
+        'alt' => 'ご覧いただいている物件の情報は一部です,会員登録(無料)するだけで、すべての情報をご覧いただけます。会員限定のメールマガジンでは新着物件や内覧会情報を配信中です。'
+      )
+    )
+  )); ?>
+<!-- end of become member section -->
+
 <!-- start of breadcrumbs section -->
 <?php importTemplate('modules/breadcrumbs', array(
   'breadModifier' => '',
