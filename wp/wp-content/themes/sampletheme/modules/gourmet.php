@@ -2,7 +2,7 @@
   <section class="gourmet-item">
     <div class="gourmet-image">
       <a class="gourmet-link" href="#">
-        <span class="gourmet-image-icon"><img src="<?php echo $gourmet['badgeUrl']?>" alt=""></span>
+        <?php echo ($gourmet['badgeUrl'])? '<span class="gourmet-image-icon"><img src="'. $gourmet['badgeUrl'].'" alt=""></span>' : ''; ?>
         <?php echo ($gourmet['imgUrl'])? '<img src="'. $gourmet['imgUrl'] .'" alt="">' : '<img src="'. resolve_asset_uri('images/listing-noimage.jpg').'" alt="">'; ?>
         <span class="gourmet-transition '. <?php echo $gourmet['iconModifier'] ?> .'"> <?php importTemplate('./svg/icon-blank'); ?> </span>
       </a>
