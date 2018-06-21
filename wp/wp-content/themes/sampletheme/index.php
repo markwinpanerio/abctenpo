@@ -277,7 +277,7 @@ get_header(); ?>
        'gourmetItem1' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img1.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => 'Estadio（エスタディオ）～spanish dining～',
          'subtitle' => 'ワインと和ビストロ',
@@ -289,7 +289,7 @@ get_header(); ?>
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img2.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => 'Estadio（エスタディオ）～spanish dining～',
          'subtitle' => 'ワインと和ビストロ',
@@ -301,7 +301,7 @@ get_header(); ?>
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img3.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => 'Estadio（エスタディオ）～spanish dining～',
          'subtitle' => 'ワインと和ビストロ',
@@ -313,7 +313,7 @@ get_header(); ?>
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img4.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => 'Estadio（エスタディオ）～spanish dining～',
          'subtitle' => 'ワインと和ビストロ',
@@ -345,7 +345,7 @@ get_header(); ?>
        'gourmetItem1' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot1.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => '横浜ワールドポーターズ',
          'subtitle' => '',
@@ -357,7 +357,7 @@ get_header(); ?>
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot2.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => '横浜中華街',
          'subtitle' => '',
@@ -369,7 +369,7 @@ get_header(); ?>
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot3.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => 'パシフィコ横浜 (横浜国際平和会議場)',
          'subtitle' => '',
@@ -381,7 +381,7 @@ get_header(); ?>
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot4.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => '横浜赤レンガ倉庫',
          'subtitle' => '',
