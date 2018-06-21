@@ -2,16 +2,37 @@
   <section class="gourmet-item">
     <div class="gourmet-image">
       <a class="gourmet-link" href="#">
-        <span class="gourmet-image-icon"><img src="<?php echo $gourmet['badgeUrl']?>" alt=""></span>
-        <?php echo ($gourmet['imgUrl'])? '<img src="'. $gourmet['imgUrl'] .'" alt="">' : '<img src="'. resolve_asset_uri('images/listing-noimage.jpg').'" alt="">'; ?>
-        <span class="gourmet-transition '. <?php echo $gourmet['iconModifier'] ?> .'"> <?php importTemplate('./svg/icon-blank'); ?> </span>
+
+        <?php if (isset($gourmet['badgeUrl'])):?>
+          <span class="gourmet-image-icon"><img src="<?php echo $gourmet['badgeUrl']?>" alt=""></span>
+        <?php endif; ?>
+
+        <?php if (isset($gourmet['imgUrl'])):?>
+          <img src="<?php echo $gourmet['imgUrl'] ?>" alt="">
+        <?php else: ?>
+          <img src="<?php echo resolve_asset_uri('images/listing-noimage.jpg') ?>" alt="">
+        <?php endif; ?>
+
+        <?php if (isset($gourmet['iconModifier'])):?>
+          <span class="gourmet-transition <?php echo $gourmet['iconModifier'] ?>"> <?php importTemplate('./svg/icon-blank'); ?></span>
+        <?php endif; ?>
+
       </a>
     </div>
     <h3 class="gourmet-title"><?php echo $gourmet['title']?></h3>
 
-    <?php echo ($gourmet['subtitle'])? '<span class="gourmet-subtitle">'. $gourmet['subtitle'].'</span>' : ''; ?>
-    <?php echo ($gourmet['copy'])? '<p class="gourmet-copy">' . $gourmet['copy'].'</p>' : ''; ?>
-    <?php echo ($gourmet['link'])? '<a class="gourmet-button" href="' . $gourmet['link'] .'">'. $gourmet['linkText'].'</a>' : ''; ?>
+    <?php if (isset($gourmet['subtitle'])):?>
+      <span class="gourmet-subtitle"> <?php echo $gourmet['subtitle']; ?></span>
+    <?php endif; ?>
+
+    <?php if (isset($gourmet['copy'])):?>
+      <p class="gourmet-copy"><?php echo $gourmet['copy']; ?></p>
+    <?php endif; ?>
+
+    <?php if (isset($gourmet['link']) && isset($gourmet['linkText'])):?>
+      <a class="gourmet-button" href="<?php echo $gourmet['link'] ?>"><?php echo $gourmet['linkText'] ?></a>
+    <?php endif; ?>
+
 
   </section>
 <?php endforeach; ?>

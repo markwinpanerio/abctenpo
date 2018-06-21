@@ -284,7 +284,6 @@ get_header(); ?>
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
          'link' => '#',
-         'modifier' => '',
        ),
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img2.jpg'),
@@ -296,7 +295,6 @@ get_header(); ?>
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
          'link' => '#',
-         'modifier' => '',
        ),
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img3.jpg'),
@@ -308,7 +306,6 @@ get_header(); ?>
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
          'link' => '#',
-         'modifier' => '',
        ),
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img4.jpg'),
@@ -320,7 +317,6 @@ get_header(); ?>
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
          'link' => '#',
-         'modifier' => '',
        ),
      )
    )
@@ -348,11 +344,6 @@ get_header(); ?>
          'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => '横浜ワールドポーターズ',
-         'subtitle' => '',
-         'copy' => '',
-         'linkText' => '',
-         'link' => '',
-         'modifier' => '',
        ),
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot2.jpg'),
@@ -360,11 +351,6 @@ get_header(); ?>
          'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => '横浜中華街',
-         'subtitle' => '',
-         'copy' => '',
-         'linkText' => '',
-         'link' => '',
-         'modifier' => '',
        ),
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot3.jpg'),
@@ -372,11 +358,6 @@ get_header(); ?>
          'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => 'パシフィコ横浜 (横浜国際平和会議場)',
-         'subtitle' => '',
-         'copy' => '',
-         'linkText' => '',
-         'link' => '',
-         'modifier' => '',
        ),
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot4.jpg'),
@@ -384,11 +365,6 @@ get_header(); ?>
          'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => '横浜赤レンガ倉庫',
-         'subtitle' => '',
-         'copy' => '',
-         'linkText' => '',
-         'link' => '',
-         'modifier' => '',
        ),
      )
    )
