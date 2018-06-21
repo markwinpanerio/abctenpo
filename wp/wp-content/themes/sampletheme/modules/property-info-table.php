@@ -15,25 +15,25 @@
       <tr class="property-info-table-row">
 
         <?php if($column1Title):?>
-          <td class="property-info-table-column property-info-table-column-title" <?php echo $column1TitleOption;?>>
+          <td class="property-info-table-column property-info-table-column-title" <?php echo $column1TitleOption;?>
             <?php echo $column1Title;?>
           </td>
         <?php endif;?>
 
         <?php if($column1Description):?>
-          <td class="property-info-table-column property-info-table-column-content" <?php echo $column1DescriptionOption;?>>
+          <td class="property-info-table-column property-info-table-column-content" <?php echo $column1DescriptionOption;?>
             <?php echo $column1Description;?>
           </td>
         <?php endif;?>
 
         <?php if($column2Title):?>
-          <td class="property-info-table-column property-info-table-column-title" <?php echo $column2TitleOption;?>>
+          <td class="property-info-table-column property-info-table-column-title" <?php echo $column2TitleOption;?>
             <?php echo $column2Title;?>
           </td>
         <?php endif; ?>
 
         <?php if($column2Description):?>
-          <td class="property-info-table-column property-info-table-column-content" <?php echo $column2DescriptionOption;?>>
+          <td class="property-info-table-column property-info-table-column-content" <?php echo $column2DescriptionOption;?>
             <?php echo $column2Description;?>
           </td>
         <?php endif;?>
