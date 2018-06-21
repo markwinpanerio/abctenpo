@@ -274,7 +274,7 @@ get_header(); ?>
       'small-link-text' => 'ログインはこちら',
       'small-link' => 'javascript:;',
       'big-link-text' => '会員登録(無料・１分)をお願いします',
-      'big-link' => 'javascript:;'
+      'big-link' => 'javascript:;',
       )
     )
   )); ?>
@@ -295,50 +295,46 @@ get_header(); ?>
        'gourmetItem1' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img1.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
-         'title' => 'Estadio（エスタディオ）～spanish dining～',
+         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
          'subtitle' => 'ワインと和ビストロ',
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
          'link' => '#',
-         'modifier' => '',
        ),
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img2.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
-         'title' => 'Estadio（エスタディオ）～spanish dining～',
+         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
          'subtitle' => 'ワインと和ビストロ',
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
          'link' => '#',
-         'modifier' => '',
        ),
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img3.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
-         'title' => 'Estadio（エスタディオ）～spanish dining～',
+         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
          'subtitle' => 'ワインと和ビストロ',
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
          'link' => '#',
-         'modifier' => '',
        ),
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img4.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
-         'title' => 'Estadio（エスタディオ）～spanish dining～',
+         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
          'subtitle' => 'ワインと和ビストロ',
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
          'link' => '#',
-         'modifier' => '',
        ),
      )
    )
@@ -363,50 +359,30 @@ get_header(); ?>
        'gourmetItem1' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot1.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => '横浜ワールドポーターズ',
-         'subtitle' => '',
-         'copy' => '',
-         'linkText' => '',
-         'link' => '',
-         'modifier' => '',
        ),
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot2.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => '横浜中華街',
-         'subtitle' => '',
-         'copy' => '',
-         'linkText' => '',
-         'link' => '',
-         'modifier' => '',
        ),
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot3.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => 'パシフィコ横浜 (横浜国際平和会議場)',
-         'subtitle' => '',
-         'copy' => '',
-         'linkText' => '',
-         'link' => '',
-         'modifier' => '',
        ),
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot4.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
+         'iconModifier' => 'icon-white',
          'linkTransition' => '#',
          'title' => '横浜赤レンガ倉庫',
-         'subtitle' => '',
-         'copy' => '',
-         'linkText' => '',
-         'link' => '',
-         'modifier' => '',
        ),
      )
    )
@@ -420,10 +396,50 @@ get_header(); ?>
 <!-- end street spot -->
 
 <?php importTemplate('modules/eyecatch-image'); ?>
+<div class="l-container">
+  <?php importTemplate('modules/eyecatch-image', array(
+    'images' => array(
+      'item_1' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-1.jpg')
+      ),
+      'item_2' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-2.jpg')
+      ),
+      'item_3' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-3.jpg')
+      ),
+      'item_4' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-4.jpg')
+      ),
+      'item_5' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-5.jpg')
+      ),
+      'item_6' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-6.jpg')
+      ),
+      'item_7' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-1.jpg')
+      ),
+      'item_8' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-2.jpg')
+      ),
+      'item_9' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-3.jpg')
+      ),
+      'item_10' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-4.jpg')
+      ),
+      'item_11' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-5.jpg')
+      ),
+      'item_12' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-6.jpg')
+      )
+    )
+  )); ?>
+</div>
 <?php importTemplate('modules/exhibition'); ?>
 <?php importTemplate('modules/property-info'); ?>
-
-
 <?php importPart('footer'); ?>
 <?php
 get_sidebar();

@@ -1,5 +1,5 @@
 .eyecatch-image {
-  padding: 60px;
+  padding: 47px 39px 47px 47px;
   background-color: #f5f5f5;
 
   @include max-screen($breakpoint-mobile) {
@@ -17,5 +17,244 @@
 
   img {
     width: 100%;
+  }
+}
+
+.eyecatch-image-container {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  height: 430px;
+
+  @include max-screen($breakpoint-mobile) {
+    height: auto;
+  }
+}
+
+.eyecatch-image-main {
+  width: 64.5%;
+  position: relative;
+  overflow: hidden;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+    overflow: initial;
+  }
+}
+
+.eyecatch-image-button {
+  width: 62px;
+  height: 62px;
+  background-color: transparentize(#000, 0.3);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-34%);
+
+  @include max-screen($breakpoint-mobile) {
+    width: 35px;
+    height: 35px;
+    transform: translateY(-58%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 19px;
+    border-width: 3px 3px 0 0;
+    border-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%) rotate(45deg);
+
+    @include max-screen($breakpoint-mobile) {
+      width: 9px;
+      height: 9px;
+    }
+  }
+
+  //MODIFIER
+  &-prev {
+    left: 0;
+    
+    @include max-screen($breakpoint-mobile) {
+      left: -19px;
+    }
+
+    &:before {
+      border-width: 0 0 3px 3px;
+      left: 9px;
+
+      @include max-screen($breakpoint-mobile) {
+        border-width: 0 0 2px 2px;
+        left: 0;
+      }
+    }
+  }
+
+  &-next {
+    right: 0;
+
+    @include max-screen($breakpoint-mobile) {
+      right: -19px;
+    }
+    
+    &:before {
+      border-width: 3px 3px 0 0;
+      right: 9px;
+
+      @include max-screen($breakpoint-mobile) {
+        border-width: 2px 2px 0 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.eyecatch-image-main-list {
+  list-style-type: none;
+}
+
+.eyecatch-image-main-item {
+  height: 430px;
+  overflow: hidden;
+
+  @include max-screen($breakpoint-mobile) {
+    height: auto;
+    position: relative;
+    padding-top: 66.65%;
+    overflow: auto;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+
+    @include max-screen($breakpoint-mobile) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    //STATE
+    &.is-vertical {
+      max-width: 100%;
+    }
+
+    &.is-horizontal {
+      max-height: 100%;
+    }
+  }
+}
+
+.eyecatch-image-main-image {
+  height: 100%;
+  background-size: contain 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.eyecatch-image-nav {
+  width: calc(35.5% - 28px);
+  border: 1px solid #ccc;
+  background: $color-white;
+  height: 100%;
+
+  @include max-screen($breakpoint-mobile) {
+    display: none;
+  }
+}
+
+.eyecatch-image-inner {
+  height: 100%;
+  margin: 0 -5px;
+}
+
+.eyecatch-image-list {
+  padding: 40px 28px;
+  height: 100%;
+  list-style-type: none;
+  position: relative;
+
+  //OVERWRITING SLICK DEFAULT STYLE
+  .slick-list {
+    padding-top: 20px;
+  }
+
+  .slick-dots {
+    bottom: 9px;
+    left: 0;
+    right: 0;
+  }
+
+  .slick-dots li {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slick-active {
+    .eyecatch-image-pagination {
+      background-color: #363636;
+    }
+  }
+}
+
+.eyecatch-image-pagination {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #e2e2e2;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.eyecatch-image-item {
+  height: 90px;
+  padding: 0 5px;
+  vertical-align: middle;
+  margin: 0 0 20px;
+  position: relative;
+
+  &:before {
+    content: "";
+    opacity: 0;
+    display: block;
+    width: 100%;
+    height: 110%;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  &.is-active {
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+.eyecatch-image-nav-image {
+  height: 100%;
+  border: 1px solid #ddd;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
   }
 }
