@@ -1,15 +1,15 @@
 import $ from 'jquery';
 import slick from 'slick-carousel';
 
-export default function eyecatchSlider() {
-    const $sliderCatch = $('#js-slider-main');
-    const $sliderCatchItem = $sliderCatch.find('.eyecatch-image-main-item');
-    const $sliderNav = $('#js-slider-nav');
-    const $slideNavItem = $sliderNav.find('.eyecatch-image-item');
-    const $prevButton = $('#js-slider-prev')[0];
-    const $nextButton = $('#js-slider-next')[0];
-    const slideItemPerRow = 3;
-    const rowItem = 3;
+export default function eyecatchSlider(params) {
+    const $sliderCatch = $(params.sliderMain);
+    const $sliderCatchItem = $sliderCatch.find('li');
+    const $sliderNav = $(params.sliderNav);
+    const $slideNavItem = $sliderNav.find('li');
+    const $prevButton = params.prevButton;
+    const $nextButton = params.nextButton;
+    const slideItemPerRow = params.sliderNavRow;
+    const rowItem = params.sliderNavRowItem;
     const totalItemsInsideSliderBox = slideItemPerRow * rowItem;
     let img;
 

@@ -4,4 +4,11 @@ import eyecatchSlider from './components/eyecatch-slider';
 
 mapHover();
 customSelect();
-eyecatchSlider();
+eyecatchSlider({
+  'sliderMain' : '#js-slider-main',
+  'sliderNav' : '#js-slider-nav',
+  'sliderNavRow' : 3,
+  'sliderNavRowItem' : 3,
+  'prevButton' : '#js-slider-prev',
+  'nextButton' : '#js-slider-next'
+});
