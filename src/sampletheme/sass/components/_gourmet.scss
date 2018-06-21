@@ -19,7 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  margin: 0 -19px;
+  margin: 0 -18px;
 
   @include max-screen($breakpoint-mobile) {
     margin: 0;
@@ -28,12 +28,12 @@
 
 .gourmet-item {
   flex-grow: 1;
-  width: calc((100%/4) - 38px);
-  margin: 0 19px;
+  width: calc((100%/4) - 36px);
+  margin: 0 18px;
 
   @include max-screen($breakpoint-mobile) {
     width: 100%;
-    margin: 0;
+    margin: 0 0 35px;
   }
 }
 
@@ -43,6 +43,10 @@
 
   img {
     width: 100%;
+  }
+
+  @include max-screen($breakpoint-mobile) {
+    margin-bottom: 16px;
   }
 
 }
@@ -87,6 +91,7 @@
 
   @include max-screen($breakpoint-mobile) {
     font-size: 14px;
+    margin-bottom: 4px;
   }
 }
 
@@ -97,6 +102,7 @@
   display: block;
   @include max-screen($breakpoint-mobile) {
     font-size: 13px;
+    margin-bottom: 15px;
   }
 }
 
@@ -104,6 +110,10 @@
   font-size: 12px;
   color: $gourmet-copy-color;
   margin-bottom: 7px;
+
+  @include max-screen($breakpoint-mobile) {
+    margin-bottom: 2px;
+  }
 }
 
 .gourmet-button {
