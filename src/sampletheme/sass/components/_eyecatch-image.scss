@@ -25,15 +25,21 @@
   align-items: top;
   justify-content: space-between;
   height: 430px;
+
+  @include max-screen($breakpoint-mobile) {
+    height: auto;
+  }
 }
 
 .eyecatch-image-main {
   width: 64.5%;
   position: relative;
   overflow: hidden;
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-position: center;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+    overflow: initial;
+  }
 }
 
 .eyecatch-image-button {
@@ -43,6 +49,12 @@
   position: absolute;
   top: 50%;
   transform: translateY(-34%);
+
+  @include max-screen($breakpoint-mobile) {
+    width: 35px;
+    height: 35px;
+    transform: translateY(-58%);
+  }
 
   &:focus {
     outline: none;
@@ -61,25 +73,47 @@
     right: 0;
     margin: 0 auto;
     transform: translateY(-50%) rotate(45deg);
+
+    @include max-screen($breakpoint-mobile) {
+      width: 9px;
+      height: 9px;
+    }
   }
 
   //MODIFIER
   &-prev {
     left: 0;
-    transform: translateY(-50%);
     
+    @include max-screen($breakpoint-mobile) {
+      left: -19px;
+    }
+
     &:before {
       border-width: 0 0 3px 3px;
       left: 9px;
+
+      @include max-screen($breakpoint-mobile) {
+        border-width: 0 0 2px 2px;
+        left: 0;
+      }
     }
   }
 
   &-next {
     right: 0;
+
+    @include max-screen($breakpoint-mobile) {
+      right: -19px;
+    }
     
     &:before {
       border-width: 3px 3px 0 0;
       right: 9px;
+
+      @include max-screen($breakpoint-mobile) {
+        border-width: 2px 2px 0 0;
+        right: 0;
+      }
     }
   }
 }
@@ -92,9 +126,22 @@
   height: 430px;
   overflow: hidden;
 
+  @include max-screen($breakpoint-mobile) {
+    height: auto;
+    position: relative;
+    padding-top: 66.65%;
+    overflow: auto;
+  }
+
   img {
     display: block;
     margin: 0 auto;
+
+    @include max-screen($breakpoint-mobile) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
     
     //STATE
     &.is-vertical {
@@ -119,6 +166,10 @@
   border: 1px solid #ccc;
   background: $color-white;
   height: 100%;
+
+  @include max-screen($breakpoint-mobile) {
+    display: none;
+  }
 }
 
 .eyecatch-image-inner {
