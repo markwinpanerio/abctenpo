@@ -375,6 +375,8 @@ get_header(); ?>
  </div>
 </div>
 
+<?php importTemplate('modules/modal'); ?>
+
 <!-- end street spot -->
 
 <?php importTemplate('modules/eyecatch-image'); ?>
@@ -422,6 +424,7 @@ get_header(); ?>
 </div>
 <?php importTemplate('modules/exhibition'); ?>
 <?php importTemplate('modules/property-info'); ?>
+
 <?php importPart('footer'); ?>
 <?php
 get_sidebar();

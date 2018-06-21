@@ -1,0 +1,85 @@
+//modal component classes
+
+.modal {
+  position: relative;
+  z-index: 10;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 100;
+
+  //state
+  &.is-active {
+    opacity: 1;
+    pointer-events: auto;
+
+    .modal-content {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .modal-content-wrapper{
+      overflow: auto;
+    }
+  }
+
+  //state
+  &.is-top-aligned {
+    .modal-content-wrapper{
+      align-items: flex-start;
+    }
+  }
+}
+
+.modal-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000, 0.5);
+  position:relative;
+}
+
+.modal-content-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; //vertical positioning
+  justify-content: center; //horizontal positioning
+  padding: 20px;
+}
+
+.modal-content {
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.open-button {
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.close-button{
+  border:1px solid red;
+  cursor:pointer;
+}
