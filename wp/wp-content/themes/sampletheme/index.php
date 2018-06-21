@@ -256,7 +256,7 @@ get_header(); ?>
       'small-link-text' => 'ログインはこちら',
       'small-link' => 'javascript:;',
       'big-link-text' => '会員登録(無料・１分)をお願いします',
-      'big-link' => 'javascript:;'
+      'big-link' => 'javascript:;',
       )
     )
   )); ?>
