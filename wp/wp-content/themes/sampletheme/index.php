@@ -155,53 +155,6 @@ get_header(); ?>
           </div>
         </div>
       </div>
-      <section class="listing">
-        <ul class="listing-list">
-          <li class="listing-item">
-            <a href="#" class="listing-link">
-              <article>
-                <span class="listing-name">横浜</span>
-                <span class="listing-favorite">お気に入り</span>
-                <img src="<?php echo resolve_asset_uri('images/listing-img.jpg'); ?>" alt="" class="listing-image">
-                <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
-                <p class="listing-details">
-                  JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施
-                </p>
-              </article>
-            </a>
-          </li>
-          <li class="listing-item">
-            <a href="#" class="listing-link">
-              <article>
-                <span class="listing-name">横浜</span>
-                <span class="listing-favorite">お気に入り</span>
-                <img src="<?php echo resolve_asset_uri('images/listing-img.jpg'); ?>" alt="" class="listing-image">
-                <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
-                <p class="listing-details">
-                  JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施
-                </p>
-              </article>
-            </a>
-          </li>
-          <li class="listing-item">
-            <a href="#" class="listing-link">
-              <article>
-                <span class="listing-name">横浜</span>
-                <span class="listing-favorite">お気に入り</span>
-                <img src="<?php echo resolve_asset_uri('images/listing-img.jpg'); ?>" alt="" class="listing-image">
-                <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
-                <p class="listing-details">
-
-                </p>
-              </article>
-            </a>
-          </li>
-        </ul>
-        <a href="#" class="listing-button">もっと見る</a>
-      </section>
-
-
-
 
 
       <!-- start of listing section -->
