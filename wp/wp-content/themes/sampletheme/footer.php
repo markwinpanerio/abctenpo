@@ -10,5 +10,6 @@
 
 <?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/app.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHJh4jsOVR_Sp0foWRTwYA7HVmfuMlKfc&callback=initMap"></script>
 </body>
 </html>
