@@ -445,12 +445,7 @@ get_header(); ?>
   )); ?>
 </div>
 <?php importTemplate('modules/exhibition'); ?>
-<<<<<<< HEAD
-=======
 <?php importTemplate('modules/property-info'); ?>
-
-
->>>>>>> 7d153ad4e339014855250b7562e28009817c1636
 <?php importPart('footer'); ?>
 <?php
 get_sidebar();
