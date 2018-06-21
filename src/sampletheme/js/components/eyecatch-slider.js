@@ -26,18 +26,25 @@ export default function eyecatchSlider(params) {
         $slideNavItem.eq(i).attr('data-index', i);
     }
 
-    //check if img is portrait or landscape
-    for ( let i = 0; i < $sliderCatchItem.length; i++ ) {
-        img = $sliderCatchItem.eq(i).find('img');
-        let imgWidth = img.width();
-        let imgHeight = img.height();
-
-        if (imgWidth > imgHeight) {
-            img.addClass('is-vertical');
+    $(window).on('load resize', function() {
+        if ($(window).width() < 768) {
+            $sliderCatchItem.find('img').removeClass('is-vertical');
+            $sliderCatchItem.find('img').removeClass('is-horizontal');
         } else {
-            img.addClass('is-horizontal');
+            //check if img is portrait or landscape
+            for ( let i = 0; i < $sliderCatchItem.length; i++ ) {
+                img = $sliderCatchItem.eq(i).find('img');
+                let imgWidth = img.width();
+                let imgHeight = img.height();
+
+                if (imgWidth > imgHeight) {
+                    img.addClass('is-vertical');
+                } else {
+                    img.addClass('is-horizontal');
+                }
+            }
         }
-    }
+    })
 
     //click event to navigate slider catch using the images inside the gallery
     $slideNavItem.on('click', function() {
