@@ -1,0 +1,72 @@
+.message {
+  position: relative;
+  height: 500px;
+}
+
+.message-inner {
+  width: 100%;
+  height: 100%;
+  background: rgba($color-black, 0.8);
+  color: $color-white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.message-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+    padding: 0 14px;
+  }
+}
+
+.message-copy {
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 14px;
+    letter-spacing: 0.08em;
+  }
+}
+
+.message-big-link {
+  $big-link-bg: #269ca3;
+  display: block;
+  max-width: 100%;
+  width: 422px;
+  margin: 20px auto 18px;
+  background-color: $big-link-bg;
+  border-radius: 8px;
+  color: $color-white;
+  font-weight: bold;
+  padding: 18px 0;
+  letter-spacing: 0.03em;
+
+  @include max-screen($breakpoint-mobile) {
+    margin: 9px auto;
+    padding: 8px 0;
+    border-radius: 4px;
+  }
+}
+
+.message-small-link {
+  font-weight: bold;
+  color: $color-white;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid $color-white;
+  padding-bottom: 2px;
+
+  &:hover {
+    border-bottom: 1px solid transparent;
+  }
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 13px;
+  }
+}
