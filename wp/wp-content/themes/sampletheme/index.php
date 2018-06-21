@@ -248,6 +248,24 @@ get_header(); ?>
 
 </main>
 
+<!-- start of breadcrumbs section -->
+<?php importTemplate('modules/breadcrumbs', array(
+  'breadModifier' => '',
+  'breadItems' => array(
+    'breadItem1' => array(
+      'link' => 'javascript:;',
+      'link-modifier' => '',
+      'text' => '居抜き物件・居抜き店舗の居抜きABC店舗'
+    ),
+    'breadItem2' => array(
+      'link' => '',
+      'link-modifier' => 'is-active',
+      'text' => '検索条件に合致する物件一覧'
+      )
+    )
+  )); ?>
+<!-- end of breadcrumbs section -->
+
 <!-- start of message section -->
 <?php importTemplate('modules/message', array(
   'messageItems' => array(

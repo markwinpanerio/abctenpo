@@ -12,6 +12,10 @@
 
 // @import 'sprites/icon';
 
+@import 'layout/grid';
+@import 'layout/layout';
+@import 'layout/l-footer-places';
+
 // @import "components/header";
 @import "components/single/body";
 @import "components/archive";
@@ -42,9 +46,6 @@
 @import "components/exhibition";
 @import "components/property-info";
 @import "components/message";
-
-@import 'layout/grid';
-@import 'layout/layout';
-@import 'layout/l-footer-places';
+@import "components/breadcrumbs";
 
 @import 'utils/utility';
