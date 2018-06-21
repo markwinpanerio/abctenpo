@@ -1,9 +1,28 @@
 <!-- start property -->
 
 <div class="property l-container">
-  <h1 class="property-heading"><span class="property-subheading">ABC店舗 <br> 限定物件</span> 駅出てすぐお店が見える！ 西荻南仲道街の路面店 カウンター接客ができ るオープンキッチン</h1>
+  <span class="property-subheading">ABC店舗<br class="u-sp-hidden">限定物件</span>
+  <h1 class="property-heading"> 駅出てすぐお店が見える！ 西荻<br class="u-pc-hidden">南仲道街の路面店 カウンター接<br class="u-pc-hidden">客ができ るオープンキッチン</h1>
 
   <div class="property-value">
+
+    <div class="property-value-left">
+      <ul class="property-list">
+        <li class="property-item">
+          <span class="property-legend">賃 料</span>
+          <span class="property-cost">57.8<span class="property-currency">万円</span></span>
+        </li>
+        <li class="property-item">
+          <span class="property-legend">総 額</span>
+          <span class="property-cost"> 811.3<span class="property-currency">万円</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="property-value-left">
+
+    </div>
+
     <ul class="property-list">
       <li class="property-item">
         <span class="property-legend">賃 料</span>
