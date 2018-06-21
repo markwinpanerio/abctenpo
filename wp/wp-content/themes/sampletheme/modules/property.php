@@ -1,4 +1,6 @@
-<div class="property">
+<!-- start property -->
+
+<div class="property l-container">
   <h1 class="property-heading"><span class="property-subheading">ABC店舗 <br> 限定物件</span> 駅出てすぐお店が見える！ 西荻南仲道街の路面店 カウンター接客ができ るオープンキッチン</h1>
 
   <div class="property-value">
@@ -22,3 +24,5 @@
     </ul>
   </div>
 </div>
+
+<!-- end property -->
