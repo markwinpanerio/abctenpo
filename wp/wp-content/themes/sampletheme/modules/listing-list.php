@@ -7,11 +7,7 @@
             <span class="listing-name">'.$listingItem['name'].'</span>
             <span class="listing-favorite">'.$listingItem['favorite'].'</span>
 
-            <img src="'.if ($listingItem['image'] === '') {
-                resolve_asset_uri('images/listing-noimage.jpg');
-            } else {
-                resolve_asset_uri('images/"'.$listingItem['image']);
-            }.'" alt="" class="listing-image">
+            <img src="'.$listingItem['image'] === '') ? resolve_asset_uri('images/listing-noimage.jpg') : resolve_asset_uri('images/"'.$listingItem['image']).'" alt="" class="listing-image">
 
             <div class="listing-inline"><p class="listing-copy">'.$listingItem['copy'].'</p></div>
             <span class="listing-price">'.$listingItem['price'].'</span>
