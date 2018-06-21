@@ -2,83 +2,111 @@
   <div class="l-container">
     <div class="property-info-wrapper">
       <h2 class="property-info-title">物件情報</h2>
-      <table class="property-info-table">
-        <tbody class="property-info-table-body">
-          <tr class="property-info-table-row">
-            <td class="property-info-table-column property-info-table-column-title">物件番号</td>
-            <td class="property-info-table-column property-info-table-column-content">57140</td>
-            <td class="property-info-table-column property-info-table-column-title">業態</td>
-            <td class="property-info-table-column property-info-table-column-content">
-              <a href="#">和食,居酒屋</a>
-            </td>
-          </tr>
-          <tr class="property-info-table-row">
-            <td class="property-info-table-column property-info-table-column-title">路線・駅名</td>
-            <td class="property-info-table-column property-info-table-column-content">東京メトロ丸の内線 <a href="#">四谷三丁目</a></td>
-            <td class="property-info-table-column property-info-table-column-title">面積</td>
-            <td class="property-info-table-column property-info-table-column-content">20.16坪 / 66.65㎡</td>
-          </tr>
-          <tr class="property-info-table-row">
-            <td class="property-info-table-column property-info-table-column-title">所在地</td>
-            <td class="property-info-table-column property-info-table-column-content">東京都新宿区四谷坂町 6-20</td>
-            <td class="property-info-table-column property-info-table-column-title">坪単価</td>
-            <td class="property-info-table-column property-info-table-column-content">16,765円</td>
-          </tr>
-          <tr class="property-info-table-row">
-            <td class="property-info-table-column property-info-table-column-title">徒歩</td>
-            <td class="property-info-table-column property-info-table-column-content">8分</td>
-            <td class="property-info-table-column property-info-table-column-title">賃料</td>
-            <td class="property-info-table-column property-info-table-column-content">338,000円</td>
-          </tr>
-          <tr class="property-info-table-row">
-            <td class="property-info-table-column property-info-table-column-title">保証金</td>
-            <td class="property-info-table-column property-info-table-column-content">2,800,000円</td>
-            <td class="property-info-table-column property-info-table-column-title" rowspan="2">総額</td>
-            <td class="property-info-table-column property-info-table-column-content" rowspan="2">
-              4,790,000円
-              <span>※別途、保証会社保証料、火災保険料、印紙代を頂戴します。</span>
-            </td>
-          </tr>
-          <tr class="property-info-table-row">
-            <td class="property-info-table-column property-info-table-column-title">礼金</td>
-            <td class="property-info-table-column property-info-table-column-content">676,000円</td>
-          </tr>
-          <tr class="property-info-table-row">
-            <td class="property-info-table-column property-info-table-column-title">契約期間</td>
-            <td class="property-info-table-column property-info-table-column-content">2年</td>
-            <td class="property-info-table-column property-info-table-column-title">共益費・管理費</td>
-            <td class="property-info-table-column property-info-table-column-content">なし</td>
-          </tr>
-          <tr class="property-info-table-row">
-            <td class="property-info-table-column property-info-table-column-title">造作譲渡</td>
-            <td class="property-info-table-column property-info-table-column-content">300,000円(税抜)</td>
-            <td class="property-info-table-column property-info-table-column-title">更新料</td>
-            <td class="property-info-table-column property-info-table-column-content">507,000円</td>
-          </tr>
-          <tr class="property-info-table-row">
-            <td class="property-info-table-column property-info-table-column-title">飲食条件</td>
-            <td class="property-info-table-column property-info-table-column-content">飲食可</td>
-            <td class="property-info-table-column property-info-table-column-title">構造</td>
-            <td class="property-info-table-column property-info-table-column-content">鉄筋コンクリート造陸屋根</td>
-          </tr>
-          <tr class="property-info-table-row">
-            <td class="property-info-table-column property-info-table-column-title">席数</td>
-            <td class="property-info-table-column property-info-table-column-content">-</td>
-            <td class="property-info-table-column property-info-table-column-title">階建</td>
-            <td class="property-info-table-column property-info-table-column-content">7階建</td>
-          </tr>
-          <tr class="property-info-table-row">
-            <td class="property-info-table-column property-info-table-column-title">業種制限</td>
-            <td class="property-info-table-column property-info-table-column-content">-</td>
-            <td class="property-info-table-column property-info-table-column-title"></td>
-            <td class="property-info-table-column property-info-table-column-content"></td>
-          </tr>
-          <tr class="property-info-table-row">
-            <td class="property-info-table-column property-info-table-column-title">備考</td>
-            <td class="property-info-table-column property-info-table-column-content" colspan="3">担当：冨張（080-4321-1372）/時間制限：深夜営業不可</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- Property Information Table -->
+      <?php
+        $tableDatas = array(
+          'propertyInfoDatas' => array (
+            array(
+              'column1Title' => array('物件番号'),
+              'column1Description' => array('57140'),
+              'column2Title' => array('業態'),
+              'column2Description' => array('<a href="#">和食,居酒屋</a>'),
+            ),
+            array(
+              'column1Title' => array('路線・駅名'),
+              'column1Description' => array('東京メトロ丸の内線 <a href="#">四谷三丁目</a>'),
+              'column2Title' => array('面積'),
+              'column2Description' => array('20.16坪 / 66.65㎡'),
+            ),
+            array(
+              'column1Title' => array('所在地'),
+              'column1Description' => array('東京都新宿区四谷坂町 6-20'),
+              'column2Title' => array('坪単価'),
+              'column2Description' => array('16,765円'),
+            ),
+            array(
+              'column1Title' => array('徒歩'),
+              'column1Description' => array('8分'),
+              'column2Title' => array('賃料'),
+              'column2Description' => array('338,000円'),
+            ),
+            array(
+              'column1Title' => array('保証金'),
+              'column1Description' => array('2,800,000円'),
+              'column2Title' => array(
+                  '総額',
+                  array('option' => 'rowspan="2"')
+              ),
+              'column2Description' => array(
+                '4,790,000円 <span>※別途、保証会社保証料、火災保険料、印紙代を頂戴します。</span>',
+                array('option' => 'rowspan="2"')
+              ),
+            ),
+            array(
+              'column1Title' => array('礼金'),
+              'column1Description' => array('676,000円'),
+            ),
+            array(
+              'column1Title' => array('契約期間'),
+              'column1Description' => array('2年'),
+              'column2Title' => array('共益費・管理費'),
+              'column2Description' => array('なし'),
+            ),
+            array(
+              'column1Title' => array('造作譲渡'),
+              'column1Description' => array('300,000円(税抜)'),
+              'column2Title' => array('更新料'),
+              'column2Description' => array('507,000円'),
+            ),
+            array(
+              'column1Title' => array('飲食条件'),
+              'column1Description' => array('飲食可'),
+              'column2Title' => array('構造'),
+              'column2Description' => array('鉄筋コンクリート造陸屋根'),
+            ),
+            array(
+              'column1Title' => array('席数'),
+              'column1Description' => array('-'),
+              'column2Title' => array('階建'),
+              'column2Description' => array('7階建'),
+            ),
+            array(
+              'column1Title' => array('業種制限'),
+              'column1Description' => array('-'),
+              'column2Title' => array(' '),
+              'column2Description' => array(' '),
+            ),
+            array(
+              'column1Title' => array('備考'),
+              'column1Description' => array(
+                '担当：冨張（080-4321-1372）/時間制限：深夜営業不可',
+                array('option' => 'colspan="3"')
+              ),
+            ),
+          )
+        )
+      ?>
+      <?php importTemplate('modules/property-info-table', $tableDatas); ?>
+      <!-- Property Information Table End -->
+
+      <!-- start of message section -->
+      <?php
+        $notMemberMessage = array(
+        'messageItems' => array(
+          'messageItem' => array(
+            'copy' => '会員登録ですべての物件情報がご覧いただけます。',
+            'big-link-text' => '会員登録(無料・１分)をお願いします',
+            'big-link' => 'javascript:;',
+            'small-link-text' => 'ログインはこちら',
+            'small-link' => 'javascript:;',
+            'modifier' => 'property-info'
+            )
+          )
+        );
+      ?>
+      <?php importTemplate('modules/message', $notMemberMessage); ?>
+      <!-- end of message section -->
+
     </div>
   </div>
 </section>
