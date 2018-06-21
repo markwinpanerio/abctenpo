@@ -11,54 +11,44 @@
       <div class="eyecatch-image-main">
         <ul class="eyecatch-image-main-list" id="js-slider-main">
           <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-1.jpg)"></div>
+            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-1.jpg" alt="">
           </li>
           <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-2.jpg)"></div>
+            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-2.jpg" alt="">
           </li>
           <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-3.jpg)"></div>
+            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-3.jpg" alt="">
           </li>
           <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-4.jpg)"></div>
+            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-4.jpg" alt="">
           </li>
           <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-5.jpg)"></div>
+            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-5.jpg" alt="">
           </li>
           <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-6.jpg)"></div>
+            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-6.jpg" alt="">
           </li>
           <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-7.jpg)"></div>
+            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-1.jpg" alt="">
           </li>
           <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-8.jpg)"></div>
+            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-2.jpg" alt="">
           </li>
           <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-1.jpg)"></div>
+            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-3.jpg" alt="">
           </li>
           <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-2.jpg)"></div>
+            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-4.jpg" alt="">
           </li>
           <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-3.jpg)"></div>
+            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-5.jpg" alt="">
           </li>
           <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-4.jpg)"></div>
-          </li>
-          <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-5.jpg)"></div>
-          </li>
-          <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-6.jpg)"></div>
-          </li>
-          <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-7.jpg)"></div>
-          </li>
-          <li class="eyecatch-image-main-item">
-            <div class="eyecatch-image-main-image" style="background-image: url(<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-8.jpg)"></div>
+            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-6.jpg" alt="">
           </li>
         </ul>
+        <button class="eyecatch-image-button eyecatch-image-button-prev" id="js-slider-prev"></button>
+        <button class="eyecatch-image-button eyecatch-image-button-next" id="js-slider-next"></button>
       </div>
       <div class="eyecatch-image-nav">
         <div class="eyecatch-image-inner">

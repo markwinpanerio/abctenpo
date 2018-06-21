@@ -5,14 +5,17 @@ export default function eyecatchSlider() {
     const $sliderCatch = $('#js-slider-main');
     const $sliderNav = $('#js-slider-nav');
     const $slideNavItem = $sliderNav.find('.eyecatch-image-item');
+    const $prevButton = $('#js-slider-prev')[0];
+    const $nextButton = $('#js-slider-next')[0];
     const slideItemPerRow = 3;
     const rowItem = 3;
     const totalItemsInsideSliderBox = slideItemPerRow * rowItem;
 
     $sliderCatch.slick({
         slidesToScroll: 1,
-        arrows: false,
-        infinite: false
+        infinite: false,
+        prevArrow: $prevButton,
+        nextArrow: $nextButton
     });
 
     for ( let i = 0; i < $slideNavItem.length; i++ ) {
@@ -32,7 +35,9 @@ export default function eyecatchSlider() {
         }
     })
 
+    //check if slider catch is change
     $sliderCatch.on("afterChange", function() {
+        //get the slick index of the current main slide
         const currentIndex = $(this).find('.slick-active').attr('data-slick-index');
         const currentIndexNumber = parseInt(currentIndex);
         const currentIndexAddedByOne = currentIndexNumber + 1;

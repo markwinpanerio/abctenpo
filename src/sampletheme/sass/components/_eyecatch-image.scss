@@ -29,9 +29,59 @@
 
 .eyecatch-image-main {
   width: 64.5%;
+  position: relative;
+  overflow: hidden;
   // background-size: contain;
   // background-repeat: no-repeat;
   // background-position: center;
+}
+
+.eyecatch-image-button {
+  width: 62px;
+  height: 62px;
+  background-color: transparentize(#000, 0.3);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-34%);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 19px;
+    border-width: 3px 3px 0 0;
+    border-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  //MODIFIER
+  &-prev {
+    left: 0;
+    transform: translateY(-50%);
+    
+    &:before {
+      border-width: 0 0 3px 3px;
+      left: 9px;
+    }
+  }
+
+  &-next {
+    right: 0;
+    
+    &:before {
+      border-width: 3px 3px 0 0;
+      right: 9px;
+    }
+  }
 }
 
 .eyecatch-image-main-list {
@@ -39,12 +89,18 @@
 }
 
 .eyecatch-image-main-item {
-  
+  overflow: hidden;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 .eyecatch-image-main-image {
-  height: 430px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
