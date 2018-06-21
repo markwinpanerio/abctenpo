@@ -10,42 +10,11 @@
     <div class="eyecatch-image-container">
       <div class="eyecatch-image-main">
         <ul class="eyecatch-image-main-list" id="js-slider-main">
-          <li class="eyecatch-image-main-item">
-            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-1.jpg" alt="">
-          </li>
-          <li class="eyecatch-image-main-item">
-            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-2.jpg" alt="">
-          </li>
-          <li class="eyecatch-image-main-item">
-            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-3.jpg" alt="">
-          </li>
-          <li class="eyecatch-image-main-item">
-            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-4.jpg" alt="">
-          </li>
-          <li class="eyecatch-image-main-item">
-            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-5.jpg" alt="">
-          </li>
-          <li class="eyecatch-image-main-item">
-            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-6.jpg" alt="">
-          </li>
-          <li class="eyecatch-image-main-item">
-            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-1.jpg" alt="">
-          </li>
-          <li class="eyecatch-image-main-item">
-            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-2.jpg" alt="">
-          </li>
-          <li class="eyecatch-image-main-item">
-            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-3.jpg" alt="">
-          </li>
-          <li class="eyecatch-image-main-item">
-            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-4.jpg" alt="">
-          </li>
-          <li class="eyecatch-image-main-item">
-            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-5.jpg" alt="">
-          </li>
-          <li class="eyecatch-image-main-item">
-            <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-6.jpg" alt="">
-          </li>
+          <?php foreach ($images as $image): ?>
+            <li class="eyecatch-image-main-item">
+              <img src="<?php echo $image['img'] ?>" alt="">
+            </li>
+          <?php endforeach; ?>
         </ul>
         <button class="eyecatch-image-button eyecatch-image-button-prev" id="js-slider-prev"></button>
         <button class="eyecatch-image-button eyecatch-image-button-next" id="js-slider-next"></button>
@@ -53,86 +22,22 @@
       <div class="eyecatch-image-nav">
         <div class="eyecatch-image-inner">
           <ul class="eyecatch-image-list" id="js-slider-nav">
-            <li class="eyecatch-image-item is-active">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-1.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-2.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-3.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-4.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-5.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-6.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-7.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-8.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-1.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-2.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-3.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-4.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-5.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-6.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-7.jpg" alt="">
-              </div>
-            </li>
-            <li class="eyecatch-image-item">
-              <div class="eyecatch-image-nav-image">
-                <img src="<?php echo ITEM_URL?>assets/images/slide-image/dummy-image-8.jpg" alt="">
-              </div>
-            </li>
+            <?php 
+              $index = 0;
+              foreach ($images as $image): 
+
+                if ($index == 0) {
+                  $state = 'is-active';
+                } else {
+                  $state = '';
+                }
+            ?>
+              <li class="eyecatch-image-item <?php echo $state; ?>">
+                <div class="eyecatch-image-nav-image">
+                  <img src="<?php echo $image['img']; ?>" alt="">
+                </div>
+              </li>
+            <?php $index++; endforeach; ?>
           </ul>
         </div>
       </div>

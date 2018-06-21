@@ -95,13 +95,21 @@
   img {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    max-height: 100%;
+    
+    //STATE
+    &.is-vertical {
+      max-width: 100%;
+    }
+
+    &.is-horizontal {
+      max-height: 100%;
+    }
   }
 }
 
 .eyecatch-image-main-image {
-  background-size: cover;
+  height: 100%;
+  background-size: contain 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
