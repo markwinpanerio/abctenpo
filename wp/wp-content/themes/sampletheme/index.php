@@ -404,6 +404,7 @@ get_header(); ?>
 <?php importTemplate('modules/eyecatch-image'); ?>
 <?php importTemplate('modules/exhibition'); ?>
 <?php importTemplate('modules/property-info'); ?>
+<?php importTemplate('modules/pagination'); ?>
 
 
 <?php importPart('footer'); ?>
