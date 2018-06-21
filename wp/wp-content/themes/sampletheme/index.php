@@ -420,9 +420,51 @@ get_header(); ?>
 <!-- end street spot -->
 
 <?php importTemplate('modules/eyecatch-image'); ?>
+<div class="l-container">
+  <?php importTemplate('modules/eyecatch-image', array(
+    'images' => array(
+      'item_1' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-1.jpg')
+      ),
+      'item_2' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-2.jpg')
+      ),
+      'item_3' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-3.jpg')
+      ),
+      'item_4' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-4.jpg')
+      ),
+      'item_5' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-5.jpg')
+      ),
+      'item_6' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-6.jpg')
+      ),
+      'item_7' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-1.jpg')
+      ),
+      'item_8' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-2.jpg')
+      ),
+      'item_9' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-3.jpg')
+      ),
+      'item_10' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-4.jpg')
+      ),
+      'item_11' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-5.jpg')
+      ),
+      'item_12' => array(
+        'img'   => resolve_image_uri('slide-image/dummy-image-6.jpg')
+      )
+    )
+  )); ?>
+</div>
 <?php importTemplate('modules/exhibition'); ?>
 <?php importTemplate('modules/property-info'); ?>
-
+<?php importTemplate('modules/pagination'); ?>
 
 <?php importPart('footer'); ?>
 <?php
