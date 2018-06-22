@@ -35,11 +35,17 @@
               'column1Description' => array('2,800,000円'),
               'column2Title' => array(
                   '総額',
-                  array('option' => 'rowspan="2"')
+                  array(
+                    'option' => 'rowspan="2"',
+                    'spClass' => 'property-info-table-title-rowspan'
+                  ),
               ),
               'column2Description' => array(
-                '4,790,000円 <span>※別途、保証会社保証料、火災保険料、印紙代を頂戴します。</span>',
-                array('option' => 'rowspan="2"')
+                '<span>4,790,000円</span> <small>※別途、保証会社保証料、火災保険料、印紙代を頂戴します。</small>',
+                array(
+                  'option' => 'rowspan="2"',
+                  'spClass' => 'property-info-table-content-rowspan'
+                ),
               ),
             ),
             array(
@@ -73,14 +79,27 @@
             array(
               'column1Title' => array('業種制限'),
               'column1Description' => array('-'),
-              'column2Title' => array(' '),
-              'column2Description' => array(' '),
+              'column2Title' => array(
+                ' ',
+                array(
+                  'spClass' => 'property-info-table-column-blank'
+                ),
+              ),
+              'column2Description' => array(
+                ' ',
+                array(
+                  'spClass' => 'property-info-table-column-blank'
+                ),
+              ),
             ),
             array(
               'column1Title' => array('備考'),
               'column1Description' => array(
                 '担当：冨張（080-4321-1372）/時間制限：深夜営業不可',
-                array('option' => 'colspan="3"')
+                array(
+                  'option' => 'colspan="3"',
+                  'spClass' => 'property-info-table-content-rowspan'
+                ),
               ),
             ),
           )
@@ -94,7 +113,7 @@
         $notMemberMessage = array(
         'messageItems' => array(
           'messageItem' => array(
-            'copy' => '会員登録ですべての物件情報がご覧いただけます。',
+            'copy' => '会員登録ですべての物件情報が <br>ご覧いただけます。',
             'big-link-text' => '会員登録(無料・１分)をお願いします',
             'big-link' => 'javascript:;',
             'small-link-text' => 'ログインはこちら',
