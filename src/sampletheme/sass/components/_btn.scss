@@ -20,6 +20,10 @@
   margin: auto;
   display: block;
   position: absolute;
+  @include max-screen($breakpoint-mobile){
+    width: 5px;
+    right: 9px;
+  }
   &:before {
     content: "";
     height: 16px;
@@ -30,6 +34,9 @@
     right: 3px;
     position: absolute;
     top: 0;
+    @include max-screen($breakpoint-mobile){
+      border-width: 1px;
+    }
   }
 }
 .btn-white {
