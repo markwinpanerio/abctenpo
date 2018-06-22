@@ -140,22 +140,18 @@ get_header(); ?>
         </ul>
         <a href="#" class="listing-button">もっと見る</a>
       </section>
-      <div class="virtual">
-        <h2 class="virtual-title">3Dバーチャル内覧可能物件</h2>
 
-        <div class="virtual-top">
-          <div class="virtual-left virtual-top-item">
-            <div class="virtual-left-inner">
-              <img src="<?php echo resolve_asset_uri('images/virtual-left-img.jpg' ); ?>" alt="">
-            </div>
-          </div>
-          <div class="virtual-right virtual-top-item">
-            <h3 class="virtual-right-heading">3Dバーチャル内覧とは？</h3>
-            <p class="virtual-right-copy">店舗の中を360°見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえるように床やキッチンの質感<br>まで忠実に再現。<br>まるでその物件に居るような体験ができます。 </p>
-          </div>
-        </div>
-      </div>
 
+      <!-- start of virtual section -->
+      <?php importTemplate('modules/virtual', array(
+        'virtualModifier' => '',
+        'innerModifier' => '',
+        'iframeModifier' => 'virtual-iframe',
+        'iframeUrl' => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
+        'heading' => '3Dバーチャル内覧とは？',
+        'copy' => '店舗の中を360°見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえるように床やキッチンの質感<br class="u-sp-hidden">まで忠実に再現。<br class="u-sp-hidden">まるでその物件に居るような体験ができます。'
+      )); ?>
+      <!-- end of virtual section -->
 
       <!-- start of listing section -->
       <section class="listing">
