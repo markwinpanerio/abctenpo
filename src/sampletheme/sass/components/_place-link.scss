@@ -3,24 +3,24 @@
 
 .place-link-wrapper {
   margin: 0 -15px;
-}
-.place-link-item {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 15px;
-  width: 135px;
-  margin-left: -4px;
-  &:first-child {
-    margin-left: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  @include max-screen($breakpoint-mobile) {
+    margin: 0;
   }
 }
-.place-link-inner {
-  list-style-type: none;
-}
-
-.place-link-inner-item {
-  line-height: 1.429;
-  margin-bottom: 5px;
+.place-link-item {
+  float: left;
+  padding: 0 15px;
+  width: 136px;
+  line-height: 1.8;
+  margin-bottom: 2px;
+  @include max-screen($breakpoint-mobile) {
+    width: 33.3333%;
+    padding: 0 10px 0 0;
+    margin-bottom: 5.3px;
+    font-size: 13px;
+  }
   &:last-child {
     margin-bottom: 0px;
   }
@@ -28,4 +28,7 @@
     text-decoration: underline;
     color: $color-tundora;
   }
+}
+.place-link-inner {
+  list-style-type: none;
 }

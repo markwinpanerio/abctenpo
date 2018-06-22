@@ -27,7 +27,7 @@
         </a>
       </li>
       <li class="pagination-item-list">
-        <a class="pagination-item flex flex-align-center" href="javascript:;">
+        <a class="pagination-item flex flex-align-center is-current" href="javascript:;">
           <span>5</span>
         </a>
       </li>
