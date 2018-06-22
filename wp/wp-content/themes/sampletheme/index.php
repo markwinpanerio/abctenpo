@@ -305,7 +305,11 @@ get_header(); ?>
          'modifier' => '',
          'data-lat'=> '35.667100513545336',
          'data-lng'=> '139.81617718935013',
+         'data-img-main' => resolve_asset_uri('images/gourmet-img2.jpg'),
+         'data-title' => 'Estadio（エスタディオ）～spanish dining～',
          'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'data-map-icon' => resolve_asset_uri('images/map-pin/pin_restaurant.svg'),
+         'data-map-icon-active-state' => resolve_asset_uri('images/map-pin/pin_restaurant-big.svg'),
          'js-hook' => 'js-map-item'
        ),
        'gourmetItem2' => array(
@@ -321,7 +325,11 @@ get_header(); ?>
          'modifier' => '',
          'data-lat'=> '35.6659377',
          'data-lng'=> '139.81599329999995',
+         'data-img-main' => resolve_asset_uri('images/gourmet-img1.jpg'),
+         'data-title' => 'Estadio（エスタディオ）～spanish dining～',
          'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'data-map-icon' => resolve_asset_uri('images/map-pin/pin_restaurant.svg'),
+         'data-map-icon-active-state' => resolve_asset_uri('images/map-pin/pin_restaurant-big.svg'),
          'js-hook' => 'js-map-item'
        ),
        'gourmetItem3' => array(
@@ -337,7 +345,11 @@ get_header(); ?>
          'modifier' => '',
          'data-lat'=> '35.6808776',
          'data-lng'=> '139.81124920000002',
-         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'data-img-main' => resolve_asset_uri('images/gourmet-img4.jpg'),
+         'data-title' => 'Estadio（エスタディオ',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、',
+         'data-map-icon' => resolve_asset_uri('images/map-pin/pin_restaurant.svg'),
+         'data-map-icon-active-state' => resolve_asset_uri('images/map-pin/pin_restaurant-big.svg'),
          'js-hook' => 'js-map-item'
        ),
        'gourmetItem4' => array(
@@ -353,7 +365,11 @@ get_header(); ?>
          'modifier' => '',
          'data-lat'=> '35.7106248',
          'data-lng'=> '139.7084831',
-         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'data-img-main' => resolve_asset_uri('images/gourmet-img1.jpg'),
+         'data-title' => 'Estadio（エスタディオ）～spanish dining～ Estadio（エスタディオ）～spanish dining～',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'data-map-icon' => resolve_asset_uri('images/map-pin/pin_restaurant.svg'),
+         'data-map-icon-active-state' => resolve_asset_uri('images/map-pin/pin_restaurant-big.svg'),
          'js-hook' => 'js-map-item'
        ),
      )

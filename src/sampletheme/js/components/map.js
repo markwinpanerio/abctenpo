@@ -38,16 +38,19 @@ if (document.querySelector('#js-map-hook')) {
   
       // THIS SCRIPT IS FOR MUTIPLE PINS//
       // START OF MULTIPLE PINS/MARKERS SCRIPT //
-      let $mapCanvas = $('#js-map-hook');
+      const $mapCanvas = $('#js-map-hook');
+      const $mapInfo = $('#js-map-info') ;
   
   
       const $mapListItem = document.querySelectorAll('.js-map-item');
       const markers = Array.prototype.map.call($mapListItem, (el) => {
         return {
-          // title: el.getAttribute('data-title'),
-          // address: el.getAttribute('data-address'),
+          title: el.getAttribute('data-title'),
           desc: el.getAttribute('data-desc'),
           img: el.getAttribute('data-img'),
+          imgMain: el.getAttribute('data-img-main'),
+          mapIcon: el.getAttribute('data-map-icon'),
+          mapIconActiveState: el.getAttribute('data-map-icon-active-state'),
           lat: el.getAttribute('data-lat'),
           lng: el.getAttribute('data-lng')
         }
@@ -93,11 +96,15 @@ if (document.querySelector('#js-map-hook')) {
         markers.forEach((marker) => {
           //(LAT, LNG)
           let mapLatLng = new google.maps.LatLng(+marker.lat, +marker.lng);
+          const mapIcon = marker.mapIcon;
+          const mapIconActiveState = marker.mapIconActiveState;
   
           //PIN MARKER
           let myMarker = new google.maps.Marker({
             position: mapLatLng,
-            map: map
+            map: map,
+            icon: mapIcon,
+            myActiveIcon: mapIconActiveState
           });
   
           // marker.pin = myMarker;
@@ -111,8 +118,19 @@ if (document.querySelector('#js-map-hook')) {
             infowindow.open(map, this);
             $('.gm-style-iw').parent().addClass('info-window');
             map.panTo(new google.maps.LatLng(marker.lat,marker.lng));
+
+            
+            $mapInfo.find('.main-map-img').css({
+              'background-image': `url(${marker.imgMain})`
+            })
+            $mapInfo.find('.main-map-title').html(marker.title);
+            $mapInfo.find('.main-map-desc').html(marker.desc);
           });
         });
+
+        $('.gmnoprint').on('click', function() {
+          console.log($(this))
+        })
       }
   
       intialize();
