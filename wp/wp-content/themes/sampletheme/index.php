@@ -172,31 +172,31 @@ get_header(); ?>
       <section class="listing">
         <?php importTemplate('modules/listing-list', array(
           'listingItems' => array(
-            'listingItem1' => array(
-              'link' => 'javascript:;',
-              'name' => '横浜',
-              'favorite' => 'お気に入り',
-              'image'   => '',
-              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
-              'price'   => '282,400円',
+            array(
+              'link'      => 'javascript:;',
+              'name'      => '横浜',
+              'favorite'  => 'お気に入り',
+              'image'     => '',
+              'copy'      => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'     => '282,400円',
               'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
             ),
-            'listingItem2' => array(
-              'link' => 'javascript:;',
-              'name' => '横浜',
-              'favorite' => 'お気に入り',
-              'image'   => 'listing-img.jpg',
-              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
-              'price'   => '282,400円',
+            array(
+              'link'      => 'javascript:;',
+              'name'      => '横浜',
+              'favorite'  => 'お気に入り',
+              'image'     => 'listing-img.jpg',
+              'copy'      => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'     => '282,400円',
               'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
             ),
-            'listingItem3' => array(
-              'link' => 'javascript:;',
-              'name' => '横浜',
-              'favorite' => 'お気に入り',
-              'image'   => 'listing-img.jpg',
-              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
-              'price'   => '282,400円',
+            array(
+              'link'      => 'javascript:;',
+              'name'      => '横浜',
+              'favorite'  => 'お気に入り',
+              'image'     => 'listing-img.jpg',
+              'copy'      => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'     => '282,400円',
               'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
             )
           )
