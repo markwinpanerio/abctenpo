@@ -303,6 +303,10 @@ get_header(); ?>
          'linkText' => 'MAPを見る',
          'link' => '#',
          'modifier' => '',
+         'data-lat'=> '35.667100513545336',
+         'data-lng'=> '139.81617718935013',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'js-hook' => 'js-map-item'
        ),
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img2.jpg'),
@@ -315,6 +319,10 @@ get_header(); ?>
          'linkText' => 'MAPを見る',
          'link' => '#',
          'modifier' => '',
+         'data-lat'=> '35.6659377',
+         'data-lng'=> '139.81599329999995',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'js-hook' => 'js-map-item'
        ),
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img3.jpg'),
@@ -327,6 +335,10 @@ get_header(); ?>
          'linkText' => 'MAPを見る',
          'link' => '#',
          'modifier' => '',
+         'data-lat'=> '35.6808776',
+         'data-lng'=> '139.81124920000002',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'js-hook' => 'js-map-item'
        ),
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img4.jpg'),
@@ -339,6 +351,10 @@ get_header(); ?>
          'linkText' => 'MAPを見る',
          'link' => '#',
          'modifier' => '',
+         'data-lat'=> '35.7106248',
+         'data-lng'=> '139.7084831',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'js-hook' => 'js-map-item'
        ),
      )
    )
@@ -350,6 +366,8 @@ get_header(); ?>
 </div>
 
 <!-- end gourmet -->
+
+<?php importTemplate('modules/main-map'); ?>
 
 <!-- start street spot -->
 
