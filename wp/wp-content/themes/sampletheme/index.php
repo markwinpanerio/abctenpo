@@ -322,7 +322,18 @@ get_header(); ?>
     ?>
 
   <?php importTemplate('modules/gourmet',$gourmetList);?>
-  <a class="button button-gray button-caret" href="#">もっと見る</a>
+
+<!-- start button module -->
+  <?php importTemplate('modules/button', array(
+    'buttons' => array(
+      '1' => array(
+        'copyText' => 'もっと見る',
+        'copyLink' => 'javascript:;'
+        )
+      )
+    )); ?>
+  <!-- end button module -->
+
  </div>
 </div>
 
@@ -398,7 +409,16 @@ get_header(); ?>
     ?>
 
   <?php importTemplate('modules/gourmet',$streetSpot);?>
-  <a class="button button-gray button-caret" href="#">もっと見る</a>
+  <!-- start button module -->
+    <?php importTemplate('modules/button', array(
+      'buttons' => array(
+        'buttonItem' => array(
+          'buttonText' => 'もっと見る',
+          'buttonLink' => 'javascript:;'
+          )
+        )
+      )); ?>
+    <!-- end button module -->
  </div>
 </div>
 
