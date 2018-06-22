@@ -325,12 +325,9 @@ get_header(); ?>
 
 <!-- start button module -->
   <?php importTemplate('modules/button', array(
-    'buttons' => array(
-      '1' => array(
-        'copyText' => 'もっと見る',
-        'copyLink' => 'javascript:;'
-        )
-      )
+        'buttonModifier' => 'button-gray button-caret',
+        'buttonText' => 'もっと見る',
+        'buttonLink' => 'javascript:;'
     )); ?>
   <!-- end button module -->
 
@@ -408,15 +405,13 @@ get_header(); ?>
    )
     ?>
 
+
   <?php importTemplate('modules/gourmet',$streetSpot);?>
   <!-- start button module -->
     <?php importTemplate('modules/button', array(
-      'buttons' => array(
-        'buttonItem' => array(
+          'buttonModifier' => 'button-gray button-caret',
           'buttonText' => 'もっと見る',
           'buttonLink' => 'javascript:;'
-          )
-        )
       )); ?>
     <!-- end button module -->
  </div>
