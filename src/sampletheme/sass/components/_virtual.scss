@@ -5,15 +5,37 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @include max-screen($breakpoint-mobile) {
+    display: block;
+    padding: 8px 8px 26px;
+  }
 }
 
 .virtual-iframe {
   width: 100%;
+  height: 284px;
   border: 0;
+
+  @include max-screen($breakpoint-small) {
+    height: 174px;
+  }
 }
 
 .virtual-top-item {
+  margin: 11px;
 
+  @include max-screen($breakpoint-mobile) {
+    margin: 0;
+  }
+}
+
+.virtual-left {
+  width: 53.5%;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+  }
 }
 
 .virtual-left img {
@@ -25,26 +47,39 @@
   position: relative;
 
   &:before {
-    content: url(#{$path-image}/virtual-icon.png);
+    content: '';
+    background: url(#{$path-image}/virtual-icon.png) no-repeat center top;
+    background-size: 100%;
+    width: 73px;
+    height: 73px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: $zindex1;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 23vw;
+      height: 23vw;
+    }
   }
   &:after {
     content: '';
     background: url(#{$path-image}/virtual-icon-2.png) no-repeat center top;
     background-size: 100%;
-    width: 100%;
-    max-width: 313px;
+    width: 70%;
+    max-width: 100%;
     padding: 10% 0;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 10px;
+    bottom: 2px;
     margin: 0 auto;
     z-index: $zindex1;
+
+    @include max-screen($breakpoint-mobile) {
+      bottom: 1vw;
+    }
   }
 }
 
@@ -57,9 +92,19 @@
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0.035em;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 14px;
+    margin: 14px 0 8px;
+    letter-spacing: 0.05em;
+  }
 }
 
 .virtual-right-copy {
   font-size: 14px;
   line-height: 1.4;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 13px;
+  }
 }
