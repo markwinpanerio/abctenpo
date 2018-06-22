@@ -192,7 +192,7 @@ get_header(); ?>
             ),
             array(
               'link'      => 'javascript:;',
-              'name'      => '横浜',
+              'name' => '横浜',
               'favorite'  => 'お気に入り',
               'image'     => 'listing-img.jpg',
               'copy'      => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
