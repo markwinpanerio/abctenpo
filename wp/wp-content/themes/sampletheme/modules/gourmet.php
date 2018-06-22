@@ -1,6 +1,7 @@
 <?php foreach ($gourmetItem as $gourmet): ?>
   <section class="gourmet-item">
     <div class="gourmet-image">
+<<<<<<< HEAD
       <a class="js-open-button" data-target="#js-modal" href="javascript:;">
 
         <?php if (isset($gourmet['badgeUrl'])):?>
