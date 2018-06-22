@@ -1,8 +1,5 @@
-<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 481.6 538" style="enable-background:new 0 0 481.6 538;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#4B4B4B;}
-</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 481.6 538">
+	<title>icon_user</title>
 <g>
 	<path class="st0" d="M481.6,538H0l5.9-76.3L6,461c5-27.5,23.1-50.9,48.4-62.5l0.5-0.2l90.2-36.9c9.7-4.6,16-14.4,16-25.2v-13.3
 		c0-4.1-0.6-8.1-1.8-12.1c-5.3-7.3-17.3-25.4-28.5-47.2c-19.8-38.8-29.8-74.1-29.8-105.2c0-43.9,13.8-83.9,39-112.8
