@@ -1,15 +1,23 @@
 .property {
-  margin-bottom: 26px;
+  @include max-screen($breakpoint-mobile) {
+    padding: 0 15px;
+  }
 }
-
-.property-container {
-
-}
-
 
 .property-heading {
   font-size: 32px;
   font-weight: 300;
+  padding-left: 102px;
+  line-height: 1.3;
+  margin-bottom: 26px;
+
+  @include max-screen($breakpoint-mobile) {
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 36px;
+  }
 }
 
 .property-subheading {
@@ -18,85 +26,169 @@
   display: inline-block;
   float: left;
   font-size: 13px;
-  padding: 3px 10px;
+  padding: 0 9px 0 13px;
   font-weight: 400;
   margin-right: 20px;
+
+  @include max-screen($breakpoint-mobile) {
+    float: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 9px 4px 13px;
+    margin: 0 0 16px;
+  }
 }
 
 .property-value {
-
-}
-
-.property-list {
-  list-style-type: none;
-}
-
-.property-item {
-  background-color: $property-item-bg;
   display: inline-block;
   vertical-align: top;
 
-  &:not(:last-child) {
-    margin-right: 10px;
+  @include max-screen($breakpoint-mobile) {
+    display: block;
   }
+}
 
-  &:nth-child(3) {
-    margin-right:27px;
+.property-left {
+
+}
+
+.property-left-list {
+  list-style-type: none;
+
+  @include max-screen($breakpoint-mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
   }
+}
 
-  &:last-child {
-    background-color: transparent;
+.property-left-item {
+  display: inline-block;
+  position: relative;
+  background-color: $property-item-bg;
+  margin-right: 11px;
+
+  @include max-screen($breakpoint-mobile) {
+    flex-grow: 1;
+    width: calc((100% / 2) - 30px);
+    margin: 0 0 3px 0;
+
+  }
+}
+
+.property-legend {
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $property-legend-bg;
+  color: $property-white-text;
+  height: 100%;
+
+}
+
+.property-vertical-text {
+  writing-mode: vertical-lr;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.property-cost {
+  color: $property-black-text;
+  font-size: 36px;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.009em;
+  padding: 15px 53px 16px 65px;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 6px 0 6px 52px;
+    display: block;
   }
 
 }
 
-.property-cost {
-  font-size: 36px;
-  padding: 0 33px;
-  display: inline-block;
-  vertical-align: middle;
-  letter-spacing: 0.08em;
-  font-weight: bold;
+.property-cost-big {
+  padding-right: 62px;
+
+  @include max-screen($breakpoint-mobile) {
+    padding-right: 0;
+  }
 }
 
 .property-currency {
   font-size: 18px;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 12px;
+  }
 }
 
-.property-legend {
-  background-color: $property-legend-bg;
-  color: $property-white-text;
+// property-right
+
+.property-right {
+
+}
+
+.property-right-list {
+  list-style-type: none;
+}
+
+.property-right-item {
+  background-color: $property-item-bg;
   display: inline-block;
-  font-size: 16px;
-  writing-mode: vertical-lr;
-  padding: 24px 3px;
-  vertical-align: middle;
-  font-weight: bold;
+  vertical-align: top;
+  position: relative;
+
+  &:last-child {
+    right: -25px;
+
+    @include max-screen($breakpoint-mobile) {
+      right: auto;
+    }
+  }
+
+  @include max-screen($breakpoint-mobile) {
+    display: block;
+    margin-bottom: 24px;
+  }
 }
 
 .property-label {
+  position: relative;
   display: block;
   font-size: 13px;
-  padding-right: 116px;
+  padding: 4px 123px 3px 75px;
+
+  @include max-screen($breakpoint-mobile) {
+    padding: 5px 0 1px 59px;
+  }
 
   &:not(:last-child) {
     border-bottom: 2px solid $property-label-border;
   }
+}
 
-  .property-legend {
-    writing-mode: initial;
-    padding: 1px 12px;
-    margin-right: 19px;
+.property-legend-right {
+  padding: 4px 16px 0 15px;
+
+  @include max-screen($breakpoint-mobile) {
+    padding: 4px 10px 0;
   }
 }
 
 .property-link {
   display: block;
-  padding: 29px 110px;
+  padding: 28px 110.5px;
   border: 1px solid $property-link-border;
   position: relative;
   font-size: 18px;
   color: $property-black-text;
+  background-color: $property-white-bg;
+  text-align: center;
 
   &:before {
     content: '';
@@ -107,7 +199,19 @@
     border-left-width: 0;
     transform: rotate(45deg);
     position: absolute;
-    top: 36px;
-    right: 45px;
+    top: 34px;
+    right: 41px;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 10px;
+      height: 10px;
+      top: 17px;
+      right: 8px;
+    }
+  }
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+    padding: 10px 0;
   }
 }

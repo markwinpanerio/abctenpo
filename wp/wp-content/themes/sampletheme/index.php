@@ -251,6 +251,8 @@ get_header(); ?>
   )); ?>
 <!-- end of message section -->
 
+<?php importTemplate('modules/property'); ?>
+
 <?php importTemplate('modules/menu'); ?>
 <?php importTemplate('modules/hero'); ?>
 
