@@ -1,9 +1,9 @@
 
 .menu {
  background-color: $menu-background;
- padding: 32.5px 0;
- text-align: center;
+ padding: 15px 0 14px;
  color: $menu-color-white;
+
 }
 
 .menu-list {
@@ -13,15 +13,60 @@
 .menu-item {
  display: inline-block;
  vertical-align: top;
- margin-right: 30px;
 }
 
 .menu-link {
- text-decoration: none;
- color: $menu-color-white;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  color: $menu-color-white;
 }
 
-.menu-access {
- display: inline-block;
- margin-left: 60px;
+// menu-account
+.menu-account {
+  margin-left: 95px;
+}
+
+.menu-account-link {
+
+}
+
+.menu-account-item {
+ margin-right: 26px;
+}
+
+// menu-profile
+
+.menu-profile {
+  float: right;
+  margin-right: 149px;
+}
+
+.menu-profile-item {
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+.menu-profile-user {
+  svg {
+    stroke: $menu-color-white;
+    stroke-width: 2px;
+    fill: $menu-color-white;
+  }
+}
+
+.menu-profile-notif {
+  svg {
+    stroke: $menu-color-white;
+    stroke-width: 25px;
+    fill: transparent;
+  }
+}
+
+.menu-profile-star {
+  svg {
+    stroke: $menu-color-white;
+    stroke-width: 10px;
+    fill: transparent;
+  }
 }
