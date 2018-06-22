@@ -1,36 +1,98 @@
-// .property-info {}
+.property-info {
+  @include max-screen($breakpoint-mobile){
+    position: relative;
+  }
+}
 .property-info-wrapper {
-  position: relative;
+  position: unset;
 }
 .property-info-title {
   color: $color-black;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 12px
+  margin-bottom: 12px;
+  @include max-screen($breakpoint-mobile){
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
 .property-info-table {
   width: 100%;
   table-layout: fixed;
+  @include max-screen($breakpoint-mobile){
+    display: block;
+  }
+}
+.property-info-table-body {
+  @include max-screen($breakpoint-mobile){
+    display: block;
+  }
+}
+.property-info-table-row {
+  @include max-screen($breakpoint-mobile){
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include max-screen($breakpoint-mobile){
+    &:last-child {
+      .property-info-table-column {
+        border-bottom: 1px solid $color-silver-cb;
+      }
+    }
+  }
 }
 .property-info-table-column {
   border: 1px solid $color-silver-cb;
   padding: 6px 11px 5px;
   font-size: 18px;
   font-weight: bold;
+  @include max-screen($breakpoint-mobile){
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 1.8px 7px;
+    line-height: 1.5;
+  }
   a {
     text-decoration: underline;
     color: $color-matisse;
   }
-  span {
+  small {
     font-size: 12px;
     display: inline-block;
     width: 100%;
+  }
+  span {
+    @include max-screen($breakpoint-mobile){
+      display: block;
+      width: 100%;
+    }
   }
 }
 .property-info-table-column-title {
   width: 163px;
   background-color: $color-porcelain;
+  @include max-screen($breakpoint-mobile){
+    width: 32.7865%;
+    border-right: none;
+    border-bottom: none;
+  }
 }
 .property-info-table-column-content {
   width: 427px;
+  @include max-screen($breakpoint-mobile){
+    width: 67.2135%;
+    border-bottom: none;
+  }
+}
+.property-info-table-content-rowspan {
+  @include max-screen($breakpoint-mobile){
+    flex-direction: column;
+  }
+}
+.property-info-table-column-blank {
+  @include max-screen($breakpoint-mobile){
+    display: none;
+  }
 }
