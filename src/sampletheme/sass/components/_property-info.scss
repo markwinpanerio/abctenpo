@@ -4,7 +4,10 @@
   }
 }
 .property-info-wrapper {
-  position: unset;
+  position: relative;
+  @include max-screen($breakpoint-mobile){
+    position: unset;
+  }
 }
 .property-info-title {
   color: $color-black;
