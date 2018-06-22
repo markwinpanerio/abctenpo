@@ -41,7 +41,7 @@
 .modal-bg {
   width: 100%;
   height: 100%;
-  background-color: rgba(#000, 0.5);
+  background-color: $modal-overlay-bg;
   position:relative;
 }
 
@@ -52,34 +52,59 @@
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center; //vertical positioning
-  justify-content: center; //horizontal positioning
+  align-items: center;
+  justify-content: center;
   padding: 20px;
 }
 
 .modal-content {
-  padding: 50px;
+  padding: 60px 24px 30px;
+  height: 82vh;
   text-align: center;
-  background-color: #fff;
-  border: 2px solid #000;
+  background-color: $modal-content;
   transform: scale(0.9);
   opacity: 0;
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
 .open-button {
-  border: 1px solid black;
-  text-align: center;
-  cursor: pointer;
-  padding: 5px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ccc;
+
 }
 
 .close-button{
-  border:1px solid red;
-  cursor:pointer;
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+
+
+  &:before {
+    content: '';
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    height: 1px;
+    width: 20px;
+    background: #4f5050;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:after {
+    content: '';
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    height: 1px;
+    width: 20px;
+    background: #4f5050;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+
+.modal-image {
+  width: 100%;
 }
