@@ -1,14 +1,4 @@
 .virtual {
-  padding-top: 59px;
-}
-
-.virtual-title {
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 0.045em;
-}
-
-.virtual-top {
   border: 1px solid $virtual-border;
   margin-top: 31px;
   padding: 11px;
@@ -17,9 +7,13 @@
   align-items: center;
 }
 
+.virtual-iframe {
+  width: 100%;
+  border: 0;
+}
+
 .virtual-top-item {
-  width: calc((100%/2) - 22px);
-  margin: 11px;
+
 }
 
 .virtual-left img {

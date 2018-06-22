@@ -140,6 +140,7 @@ get_header(); ?>
         </ul>
         <a href="#" class="listing-button">もっと見る</a>
       </section>
+
       <div class="virtual">
         <h2 class="virtual-title">3Dバーチャル内覧可能物件</h2>
 
@@ -156,6 +157,16 @@ get_header(); ?>
         </div>
       </div>
 
+
+      <!-- start of virtual section -->
+      <?php importTemplate('modules/virtual', array(
+        'virtualModifier' => '',
+        'innerModifier' => '',
+        'iframeModifier' => 'virtual-iframe',
+        'heading' => '3Dバーチャル内覧とは？',
+        'copy' => '店舗の中を360°見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえるように床やキッチンの質感<br>まで忠実に再現。<br>まるでその物件に居るような体験ができます。'
+      )); ?>
+      <!-- end of virtual section -->
 
       <!-- start of listing section -->
       <section class="listing">
