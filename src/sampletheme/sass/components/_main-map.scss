@@ -60,8 +60,8 @@
     width: 10px;
     height: 10px;
     border: 2px solid $color-black;
-    border-left-color: transparent;
-    border-bottom-color: transparent;
+    border-left: 0;
+    border-bottom: 0;
     position: absolute;
     top: 50%;
     right: 11px;
