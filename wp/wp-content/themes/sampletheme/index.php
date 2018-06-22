@@ -417,6 +417,7 @@ get_header(); ?>
  </div>
 </div>
 
+<?php importTemplate('modules/good'); ?>
 <?php importTemplate('modules/modal'); ?>
 
 <!-- end street spot -->
