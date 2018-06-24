@@ -22,7 +22,7 @@ if (document.querySelector('#js-map-hook')) {
           "fullscreenControl": false,
           "keyboardShortcuts": true,
           "mapMaker": false,
-          "mapTypeControl": true,
+          "mapTypeControl": false,
           "mapTypeControlOptions": {
             "text": "Default (depends on viewport size etc.)",
             "style": 0
@@ -92,7 +92,20 @@ if (document.querySelector('#js-map-hook')) {
       
   
       function intialize() {
-  
+        
+        // //CHECK IF GOOGLE MAP IS LOADED
+        // google.maps.event.addListener(map, 'tilesloaded', function(evt) {
+        //   $('.gm-style-iw').parent().addClass('info-window');
+        // });
+
+        let index = 0;
+
+        //CHECK IF GOOGLE MAP IS LOADED
+        google.maps.event.addListener(map, 'tilesloaded', function(evt) {
+          $('.gm-style-iw').parent().addClass('info-window');
+          $mapInfo.addClass('is-active');
+        });
+
         markers.forEach((marker) => {
           //(LAT, LNG)
           let mapLatLng = new google.maps.LatLng(+marker.lat, +marker.lng);
@@ -112,6 +125,27 @@ if (document.querySelector('#js-map-hook')) {
   
           let i;
 
+          if (index === 0) {
+            mapLatLng = new google.maps.LatLng(+markers[index].lat, +markers[index].lng)
+
+            myMarker = new google.maps.Marker({
+              position: mapLatLng,
+              map: map,
+              icon: mapIcon,
+            });
+            
+            infowindow.setContent(getInfoWindowHTML(markers[0]));
+            infowindow.setPosition(event.latLng);
+            infowindow.open(map, myMarker);
+            map.panTo(new google.maps.LatLng(markers[index].lat,markers[index].lng));
+
+            $mapInfo.find('.main-map-img').css({
+              'background-image': `url(${markers[index].imgMain})`
+            })
+            $mapInfo.find('.main-map-title').html(markers[index].title);
+            $mapInfo.find('.main-map-desc').html(markers[index].desc);
+          }
+
           myMarker.addListener('click', function(event) {
             infowindow.setContent(getInfoWindowHTML(marker));
             infowindow.setPosition(event.latLng);
@@ -126,13 +160,16 @@ if (document.querySelector('#js-map-hook')) {
             $mapInfo.find('.main-map-title').html(marker.title);
             $mapInfo.find('.main-map-desc').html(marker.desc);
           });
+
+          index++;
         });
 
-        $('.gmnoprint').on('click', function() {
-          console.log($(this))
-        })
+        // $('.gmnoprint').on('click', function() {
+        //   console.log($(this))
+        // })
+        // console.log(index);
       }
-  
+      
       intialize();
   
       function getInfoWindowHTML(marker) {

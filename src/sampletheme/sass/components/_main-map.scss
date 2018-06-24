@@ -18,6 +18,12 @@
   top: 50%;
   right: 110px;
   transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  &.is-active {
+    opacity: 1;
+  }
 }
 
 .main-map-img {
