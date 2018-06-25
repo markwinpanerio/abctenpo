@@ -1,7 +1,18 @@
-.sidebar {}
+.sidebar {
+
+  @include max-screen($breakpoint-mobile) {
+    background: url('#{$path-image}/dot-bg.png') repeat left top;
+    margin: 0 -15px;
+    padding: 0 15px;
+  }
+}
 
 .sidebar-box {
- margin:0 0 50px 0;
+ padding-bottom: 50px;
+
+ @include max-screen($breakpoint-mobile) {
+   padding-bottom: 39px;
+ }
 }
 
 .sidebar-heading {
@@ -18,6 +29,15 @@
   height: 1px;
   content: '';
   background-color: $sidebar-heading-border-color;
+
+  @include max-screen($breakpoint-mobile) {
+    height: 2px;
+  }
+ }
+
+ @include max-screen($breakpoint-mobile) {
+   font-size: 18px;
+   padding-bottom: 12px;
  }
 }
 
@@ -27,6 +47,10 @@
 
 .sidebar-item {
  border-bottom: 1px solid $sidebar-item-border-color;
+
+ @include max-screen($breakpoint-mobile) {
+   border-color: $sidebar-sp-border-color;
+ }
 }
 
 .sidebar-link {
@@ -51,5 +75,57 @@
   width: 9px;
   border-top: 1px solid $sidebar-icon-arrow;
   border-right: 1px solid $sidebar-icon-arrow;
+
+  @include max-screen($breakpoint-mobile) {
+    height: 7px;
+    width: 7px;
+    right: 14px;
+  }
  }
+
+ @include max-screen($breakpoint-mobile) {
+   font-size: 12px;
+   padding: 14px 15px 11px 0;
+ }
+}
+
+// modifier
+
+.sidebar-sp {
+
+  @include max-screen($breakpoint-mobile) {
+
+    .sidebar-heading {
+      padding: 17px 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .sidebar-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      margin: 0 -6px;
+    }
+
+    .sidebar-item {
+      border: none;
+      flex-grow: 1;
+      display: inline-block;
+      width: calc((100%/2) - 12px);
+      margin: 0 6px 8px;
+    }
+
+    .sidebar-link {
+      background-color: $sidebar-link-bg-sp;
+      border: 1px solid $sidebar-sp-border-color;
+      padding: 8px 6px;
+
+      &:after {
+        right: 10px;
+      }
+    }
+  }
 }
