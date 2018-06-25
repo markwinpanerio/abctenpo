@@ -111,7 +111,7 @@
       <!-- start of message section -->
       <?php
         $notMemberMessage = array(
-        'messageItems' => array(
+          'messageItems' => array(
           'messageItem' => array(
             'copy' => '会員登録ですべての物件情報が <br>ご覧いただけます。',
             'big-link-text' => '会員登録(無料・１分)をお願いします',
