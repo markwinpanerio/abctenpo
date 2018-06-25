@@ -460,6 +460,8 @@ get_header(); ?>
  </div>
 </div>
 
+<?php importTemplate('modules/property-listing'); ?>
+
 <?php importTemplate('modules/good'); ?>
 <?php importTemplate('modules/modal'); ?>
 
