@@ -94,17 +94,25 @@ if (document.querySelector('#js-map-hook')) {
       function intialize() {
         
         // //CHECK IF GOOGLE MAP IS LOADED
-        // google.maps.event.addListener(map, 'tilesloaded', function(evt) {
-        //   $('.gm-style-iw').parent().addClass('info-window');
-        // });
-
-        let index = 0;
-
-        //CHECK IF GOOGLE MAP IS LOADED
         google.maps.event.addListener(map, 'tilesloaded', function(evt) {
           $('.gm-style-iw').parent().addClass('info-window');
-          $mapInfo.addClass('is-active');
         });
+
+        let index = 0;
+        $('.gm-style-iw').parent().addClass('info-window');
+        $mapInfo.addClass('is-active');
+        //CHECK IF GOOGLE MAP IS LOADED
+        // google.maps.event.addListener(map, 'tilesloaded', function(evt) {
+        //   $('.gm-style-iw').parent().addClass('info-window');
+        //   $mapInfo.addClass('is-active');
+
+        //   setTimeout(function() {
+        //     // console.log(markers);
+        //     // infowindow.setPosition(event.latLng);
+        //     // infowindow.setPosition(new google.maps.LatLng(markers[0].lat,markers[0].lng));
+        //     // map.panTo(new google.maps.LatLng(markers[0].lat,markers[0].lng));
+        //   }, 2000)
+        // });
 
         markers.forEach((marker) => {
           //(LAT, LNG)
@@ -126,6 +134,7 @@ if (document.querySelector('#js-map-hook')) {
           let i;
 
           if (index === 0) {
+            let markerPosition = new google.maps.LatLng((+markers[index].lat) + 0.04, +markers[index].lng);
             mapLatLng = new google.maps.LatLng(+markers[index].lat, +markers[index].lng);
 
             myMarker = new google.maps.Marker({
@@ -135,9 +144,9 @@ if (document.querySelector('#js-map-hook')) {
             });
             
             infowindow.setContent(getInfoWindowHTML(markers[0]));
-            infowindow.setPosition(event.latLng);
+            infowindow.setPosition(mapLatLng);
             infowindow.open(map, myMarker);
-            map.panTo(new google.maps.LatLng(markers[index].lat,markers[index].lng));
+            map.panTo(markerPosition);
 
             $mapInfo.find('.main-map-img').css({
               'background-image': `url(${markers[index].imgMain})`
@@ -170,7 +179,12 @@ if (document.querySelector('#js-map-hook')) {
         // console.log(index);
       }
       
+      
       intialize();
+      // google.maps.event.addListener(map, 'tilesloaded', function() {  
+      //   console.log($('.gm-style-iw'));
+      //   // intialize();
+      // })
   
       function getInfoWindowHTML(marker) {
         return `
