@@ -2,8 +2,8 @@ $virtual-border: #e0dddb;
 $virtual-border-2: #323232;
 .virtual {
   border: 1px solid $virtual-border;
-  margin-top: 31px;
   padding: 11px;
+  margin: 35px auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -11,14 +11,16 @@ $virtual-border-2: #323232;
   @include max-screen($breakpoint-mobile) {
     display: block;
     padding: 8px 8px 26px;
-    width: 91%;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 .virtual-second {
-  padding: 0;
-  border: 2px solid $virtual-border-2;
+  @include min-screen($breakpoint-mobile) {
+    padding: 0;
+    border: 2px solid $virtual-border-2;
+  }
 }
 
 .virtual-iframe {
@@ -29,10 +31,16 @@ $virtual-border-2: #323232;
   @include max-screen($breakpoint-small) {
     height: 174px;
   }
+
+  &:hover {
+    pointer-events: none;
+  }
 }
 
-.virtual-second-iframe {
-  height: 370px;
+.virtual-iframe-second {
+  @include min-screen($breakpoint-mobile) {
+    height: 370px;
+  }
 }
 
 .virtual-top-item {
@@ -43,11 +51,14 @@ $virtual-border-2: #323232;
   }
 }
 
-.virtual-second-top-item-first {
-  margin: 0 30px 0 0;
+.virtual-left-second {
+  @include min-screen($breakpoint-mobile) {
+    margin: 0 30px 0 0;
+    width: calc(100% / 2);
+  }
 }
 
-.virtual-left {
+.virtual-left-first {
   width: 53.5%;
 
   @include max-screen($breakpoint-mobile) {
@@ -100,10 +111,12 @@ $virtual-border-2: #323232;
   }
 }
 
-.virtual-second-left-copy {
-  font-size: 18px;
-  max-width: 421px;
-  bottom: 3vw;
+.virtual-left-copy-second {
+  @include min-screen($breakpoint-mobile) {
+    font-size: 18px;
+    max-width: 421px;
+    bottom: 3vw;
+  }
 
   @include max-screen($breakpoint-mobile) {
     width: 71%;
@@ -121,8 +134,10 @@ $virtual-border-2: #323232;
   }
 }
 
-.virtual-second-svg {
-  width: 29px;
+.virtual-svg-second {
+  @include min-screen($breakpoint-mobile) {
+    width: 29px;
+  }
 }
 
 .virtual-left-inner {
@@ -147,7 +162,7 @@ $virtual-border-2: #323232;
   }
 }
 
-.virtual-second-left-inner:before {
+.virtual-left-inner-second:before {
   width: 97px;
   height: 97px;
 
@@ -174,9 +189,11 @@ $virtual-border-2: #323232;
   }
 }
 
-.virtual-second-right-heading {
-  font-size: 24px;
-  letter-spacing: 0.001em;
+.virtual-right-heading-second {
+  @include min-screen($breakpoint-mobile) {
+    font-size: 24px;
+    letter-spacing: 0.001em;
+  }
 }
 
 .virtual-right-copy {
@@ -188,9 +205,11 @@ $virtual-border-2: #323232;
   }
 }
 
-.virtual-second-right-copy {
-  font-size: 15px;
-  line-height: 2;
+.virtual-right-copy-second {
+  @include min-screen($breakpoint-mobile) {
+    font-size: 15px;
+    line-height: 2;
+  }
 }
 
 .virtual-button {
@@ -204,17 +223,6 @@ $virtual-border-2: #323232;
   border: 2px solid $virtual-button-border;
   position: relative;
 
-  &:before {
-    content: '';
-    background: url(#{$path-image}/svg/pdf.svg) no-repeat center top;
-    background-size: cover;
-    width: 26px;
-    height: 33px;
-    margin: -3px auto 0;
-    position: absolute;
-    left: 0;
-    right: 167px;
-  }
   &:after {
     content: '';
     width: 12px;
@@ -225,5 +233,38 @@ $virtual-border-2: #323232;
     position: absolute;
     top: 26px;
     right: 26px;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 9px;
+      height: 9px;
+      top: 19px;
+      right: 9px;
+      border-width: 1px 1px 0 0;
+    }
   }
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 14px;
+    padding: 13px;
+    border-width: 1px;
+  }
+}
+
+.virtual-button-icon {
+  display: inline-block;
+  width: 26px;
+  margin: -3px auto 0;
+  position: absolute;
+  left: 0;
+  right: 167px;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 18px;
+    margin-top: -1px;
+    right: 155px;
+  }
+}
+
+.virtual-button-icon-second img {
+  width: 100%;
 }

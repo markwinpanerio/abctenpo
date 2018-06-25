@@ -1,0 +1,103 @@
+.info-window {
+  width: 349px !important;
+  height: 102px !important;
+
+  > div {
+    &:first-child {
+      div:nth-child(2) {
+        width: 349px !important;
+        height: 102px !important;
+        background-color: transparent !important;
+
+        @include max-screen($breakpoint-mobile) {
+          width: 275px !important;
+          height: 77px !important;
+        }
+      }
+
+      div:nth-child(4) {
+        width: 349px !important;
+        height: 102px !important;
+        top: 22px !important;
+        left: 38px !important;
+        border: 1px solid #e2e2e2;
+        border-bottom: 0;
+
+        @include max-screen($breakpoint-mobile) {
+          width: 275px !important;
+          height: 77px !important;
+          left: 26px !important;
+        }
+      }
+    }
+
+    div {
+
+      &:nth-child(3) {
+        left: 191px !important;
+        top: 99px !important;
+
+        @include max-screen($breakpoint-mobile) {
+          left: 157px !important;
+          top: 72px !important;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+
+  .gm-style-iw {
+    width: 349px !important;
+    height: 102px !important;
+    top: 23px !important;
+    left: 37px !important;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 275px !important;
+      height: 77px !important;
+      left: 25px !important;
+    }
+
+    div {
+      height: 100%;
+    }
+  }
+}
+
+.info-window-container {
+  width: 349px;
+  // background: $color-white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 275px;
+  }
+}
+
+.info-window-img {
+  width: 48%;
+  height: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.info-window-content {
+  width: 52%;
+  height: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.info-window-desc {
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  
+  @include line-clamp(1.2, 12, 3, #fff);
+}

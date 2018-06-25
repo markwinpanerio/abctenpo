@@ -33,7 +33,7 @@
         'sidebarList6' => array(
           'title' => '内覧会から探す',
           'link' => '#',
-          'modifier' => '',   
+          'modifier' => '',
         ),
       )
     )
@@ -43,7 +43,7 @@
   <?php importTemplate('modules/sidebar-link',$sidebarListTop);?>
  </section>
 
-  <section class="sidebar-box">
+  <section class="sidebar-box sidebar-sp">
   <h2 class="sidebar-heading">条件から探す</h2>
 
 <?php
