@@ -24,4 +24,9 @@
   float: right;
   width: 276px;
   height: 100%;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+    float: none;
+  }
 }
