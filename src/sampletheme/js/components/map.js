@@ -171,7 +171,15 @@ if (document.querySelector('#js-map-hook')) {
             infowindow.setPosition(event.latLng);
             infowindow.open(map, this);
             $('.gm-style-iw').parent().addClass('info-window');
-            map.panTo(new google.maps.LatLng(+marker.lat, (+marker.lng) + 0.04));
+            let markerPositionInfo;
+
+            if ($(window).width() > 768) {
+              markerPositionInfo = new google.maps.LatLng(+marker.lat, (+marker.lng) + 0.04);
+            } else {
+              markerPositionInfo = new google.maps.LatLng(+marker.lat, +marker.lng)
+            }
+            
+            map.panTo(markerPositionInfo);
 
             
             $mapInfo.find('.main-map-img-container').css({
