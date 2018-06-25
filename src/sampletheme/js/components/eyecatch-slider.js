@@ -12,6 +12,8 @@ export default function eyecatchSlider(params) {
     const rowItem = params.sliderNavRowItem;
     const totalItemsInsideSliderBox = slideItemPerRow * rowItem;
     let img;
+    let $sliderCount = $('#js-current-slide');
+    const $sliderTotal = $('#js-total-slide');
 
     //initialize carousel for main slider
     $sliderCatch.slick({
@@ -61,6 +63,10 @@ export default function eyecatchSlider(params) {
         }
     })
 
+    //insert total slider
+    $sliderTotal.html($slideNavItem.length);
+    $sliderCount.html(parseInt($sliderCatch.find('.slick-active').attr('data-slick-index')) + 1);
+
     //check if slider catch is change
     $sliderCatch.on("afterChange", function() {
         //get the slick index of the current main slide
@@ -69,6 +75,9 @@ export default function eyecatchSlider(params) {
         //make current index a number since getting value in data attribute will echo a string
         const currentIndexNumber = parseInt(currentIndex);
         const currentIndexAddedByOne = currentIndexNumber + 1;
+
+        //SLIDER COUNT UDPATED
+        $sliderCount.html(currentIndexNumber + 1);
 
         $slideNavItem.removeClass('is-active');
         $slideNavItem.eq(currentIndexNumber).addClass('is-active');
