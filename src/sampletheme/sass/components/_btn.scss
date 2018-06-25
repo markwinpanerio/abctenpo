@@ -9,6 +9,9 @@
   text-align: center;
   padding: 0 15px;
   cursor: pointer;
+  @include max-screen($breakpoint-mobile){
+    font-size: 12px;
+  }
 }
 .btn-arrow {
   overflow: hidden;
@@ -56,8 +59,23 @@
     }
   }
 }
+.btn-exhibition {
+  padding-left: 12px;
+  @include max-screen($breakpoint-mobile){
+    font-size: 12px;
+    letter-spacing: .01em;
+    text-align: left;
+    padding: 12px 0 13px 15px;
+    min-height: auto;
+  }
+}
 .btn-pdf {
-  padding: 11px 0 7px;
+  padding: 9px 0 6px;
+  min-height: auto;
+  padding-right: 28px;
+  @include max-screen($breakpoint-mobile){
+    padding: 12px 10px 9px 6px;
+  }
 }
 .btn-pdf:before {
   content: "";
@@ -68,6 +86,20 @@
   vertical-align: middle;
   margin-right: 15px;
   margin-top: 4px;
-  top: -4px;
+  top: -2px;
   position: relative;
+  @include max-screen($breakpoint-mobile){
+    width: 11px;
+    height: 14px;
+    margin-right: 6px;
+    margin-top: 0px;
+    top: -3px;
+  }
+}
+.btn-arrow-exhibition {
+  right: 28px;
+  @include max-screen($breakpoint-mobile){
+    right: 6px;
+    width: 4px;
+  }
 }
