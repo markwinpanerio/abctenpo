@@ -101,18 +101,19 @@ if (document.querySelector('#js-map-hook')) {
         let index = 0;
         $('.gm-style-iw').parent().addClass('info-window');
         $mapInfo.addClass('is-active');
-        //CHECK IF GOOGLE MAP IS LOADED
-        // google.maps.event.addListener(map, 'tilesloaded', function(evt) {
-        //   $('.gm-style-iw').parent().addClass('info-window');
-        //   $mapInfo.addClass('is-active');
 
-        //   setTimeout(function() {
-        //     // console.log(markers);
-        //     // infowindow.setPosition(event.latLng);
-        //     // infowindow.setPosition(new google.maps.LatLng(markers[0].lat,markers[0].lng));
-        //     // map.panTo(new google.maps.LatLng(markers[0].lat,markers[0].lng));
-        //   }, 2000)
-        // });
+
+
+        //CHECK CURRENT RATIO
+        let ratio;
+
+        if ($(window).width() > 768) {
+          ratio = 'is-for-pc'
+        } else {
+          ratio = 'is-for-sp'
+        }
+
+        console.log(ratio);
 
         markers.forEach((marker) => {
           //(LAT, LNG)
@@ -132,10 +133,16 @@ if (document.querySelector('#js-map-hook')) {
           bounds.extend(myMarker.getPosition());
   
           let i;
+          let markerPosition; 
 
           if (index === 0) {
-            let markerPosition = new google.maps.LatLng((+markers[index].lat) + 0.04, +markers[index].lng);
             mapLatLng = new google.maps.LatLng(+markers[index].lat, +markers[index].lng);
+
+            if (ratio === 'is-for-pc') {
+              markerPosition = mapLatLng;
+            } else if (ratio === 'is-for-sp') {
+              markerPosition = new google.maps.LatLng((+markers[index].lat) + 0.04, +markers[index].lng);
+            }
 
             myMarker = new google.maps.Marker({
               position: mapLatLng,
