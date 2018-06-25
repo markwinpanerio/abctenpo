@@ -141,33 +141,6 @@ get_header(); ?>
         <a href="#" class="listing-button">もっと見る</a>
       </section>
 
-
-      <!-- start of virtual section -->
-      <?php importTemplate('modules/virtual', array(
-        'virtualModifier' => '',
-        'virtualTopItemFirstModifier' => '',
-        'virtualTopItemSecondModifier' => '',
-        'virtualLeftCopyModifier' => '',
-        'innerModifier' => '',
-        'iframeModifier' => '',
-        'iframeUrl' => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
-        'heading' => '3Dバーチャル内覧とは？',
-        'rightHeadingModifier' => '',
-        'leftCopy' => 'ドラッグやスワイプで360°ご覧いただけます',
-        'rightCopy' => '店舗の中を360°見渡せる、3Dバーチャル<br class="u-pc-hidden">内覧です。<br>圧倒的な臨場感を味わえるように床やキッチンの質感<br class="u-sp-hidden">まで忠実に再現。<br class="u-sp-hidden">まるでその物件に居るような体験ができます。',
-        'rightCopyModifier' => '',
-        'virtualButtonText' => '',
-        'virtualButtonLink' => '',
-        'virtualButtonTarget' => '',
-        'svgIcons' => array(
-          'svgIcon' => array(
-            'svg-icon' => 'svg/mouse.svg',
-            'svg-modifier' => ''
-          )
-        )
-      )); ?>
-      <!-- end of virtual section -->
-
       <!-- start of listing section -->
       <section class="listing">
         <?php importTemplate('modules/listing-list', array(
@@ -204,6 +177,21 @@ get_header(); ?>
       </section>
       <!-- end of listing section -->
 
+      <!-- start of virtual section -->
+      <?php importTemplate('modules/virtual', array(
+        'modifier'        => 'first',
+        'iframeUrl'       => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
+        'heading'         => '3Dバーチャル内覧とは？',
+        'leftCopy'        => 'ドラッグやスワイプで360°ご覧いただけます',
+        'rightCopy'       => '店舗の中を360℃見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえる、床やキッチンの質感<br class="u-sp-hidden">まで忠実に再現。<br>まるでその物件に居るような体験ができます。 ',
+        'svgIcon'         => 'svg/mouse.svg',
+        'buttonText'      => '',
+        'buttonLink'      => 'javascript',
+        'buttonTarget'    => '_blank',
+        'svgButtonIcon'   => 'svg/pdf.svg'
+      )); ?>
+      <!-- end of virtual section -->
+
     </div>
     <div class="l-container-sidebar">
       <?php importPart('sidebar'); ?>
@@ -215,27 +203,16 @@ get_header(); ?>
 <!-- start of virtual second section -->
 <div class="l-container">
   <?php importTemplate('modules/virtual', array(
-    'virtualModifier' => 'virtual-second',
-    'virtualTopItemFirstModifier' => 'virtual-second-top-item-first',
-    'virtualTopItemSecondModifier' => '',
-    'virtualLeftCopyModifier' => 'virtual-second-left-copy',
-    'innerModifier' => 'virtual-second-left-inner',
-    'iframeModifier' => 'virtual-second-iframe',
-    'iframeUrl' => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
-    'heading' => '店内3Dバーチャル内覧開催中',
-    'rightHeadingModifier' => 'virtual-second-right-heading',
-    'leftCopy' => 'ドラッグやスワイプで360°ご覧いただけます',
-    'rightCopy' => '店舗の中を360℃見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえる、床やキッチンの質感まで忠実に再現。<br>まるでその物件に居るような体験ができます。 ',
-    'rightCopyModifier' => 'virtual-second-right-copy',
-    'virtualButtonText' => '平面図を見る',
-    'virtualButtonLink' => 'javascript',
-    'virtualButtonTarget' => '_blank',
-    'svgIcons' => array(
-      'svgIcon' => array(
-        'svg-icon' => 'svg/mouse.svg',
-        'svg-modifier' => 'virtual-second-svg'
-      )
-    )
+    'modifier'        => 'second',
+    'iframeUrl'       => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
+    'heading'         => '店内3Dバーチャル内覧開催中',
+    'leftCopy'        => 'ドラッグやスワイプで360°ご覧いただけます',
+    'rightCopy'       => '店舗の中を360℃見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえる、床やキッチンの質感まで忠実に再現。<br class="u-sp-hidden">まるでその物件に居るような体験ができます。 ',
+    'svgIcon'         => 'svg/mouse.svg',
+    'buttonText'      => '平面図を見る',
+    'buttonLink'      => 'javascript',
+    'buttonTarget'    => '_blank',
+    'svgButtonIcon'   => 'svg/pdf.svg'
   )); ?>
 </div>
 <!-- end of virtual second section -->
