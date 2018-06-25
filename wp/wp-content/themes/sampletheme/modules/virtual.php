@@ -17,7 +17,7 @@
   }
 
   echo
-  '<div class="virtual'.$array[0].'">
+  '<section class="virtual'.$array[0].'">
     <div class="virtual-left virtual-top-item'.$array[1].'">
       <div class="virtual-left-inner'.$array[2].'">
         <iframe src="'.$iframeUrl.'" class="virtual-iframe'.$array[3].'" allowfullscreen></iframe>
@@ -35,5 +35,5 @@
        endif;
       echo
       '</div>
-    </div>';
+    </section>';
 ?>

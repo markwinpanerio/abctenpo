@@ -1,0 +1,85 @@
+$information-color-maroon: #c40202;
+$information-caption-bg: #444;
+$information-caption-color: #fff;
+
+.information {
+  padding: 20px 0;
+}
+
+.information-article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.information-image {
+  display: inline-block;
+  vertical-align: top;
+
+  img {
+    width: 100%;
+  }
+}
+
+.information-left {
+  width: calc(100% / 2);
+  margin-right: 30px;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+}
+
+.information-right {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3px
+}
+
+.information-interview {
+  margin-bottom: 16px;
+}
+
+.information-row {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  margin-right: 9px;
+}
+
+.information-date {
+  letter-spacing: 0.04em;
+}
+
+.information-caption {
+  padding: 10px 18px 8px 26px;
+  background: $information-caption-bg;
+  color: $information-caption-color;
+  letter-spacing: 0.06em;
+}
+
+.information-red {
+  color: $information-color-maroon;
+}
+
+.information-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+  letter-spacing: 0.065em;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 14px;
+  }
+}
+
+.information-copy {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1.699;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 13px;
+  }
+}
