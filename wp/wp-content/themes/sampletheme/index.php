@@ -145,11 +145,26 @@ get_header(); ?>
       <!-- start of virtual section -->
       <?php importTemplate('modules/virtual', array(
         'virtualModifier' => '',
+        'virtualTopItemFirstModifier' => '',
+        'virtualTopItemSecondModifier' => '',
+        'virtualLeftCopyModifier' => '',
         'innerModifier' => '',
-        'iframeModifier' => 'virtual-iframe',
+        'iframeModifier' => '',
         'iframeUrl' => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
         'heading' => '3Dバーチャル内覧とは？',
-        'copy' => '店舗の中を360°見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえるように床やキッチンの質感<br class="u-sp-hidden">まで忠実に再現。<br class="u-sp-hidden">まるでその物件に居るような体験ができます。'
+        'rightHeadingModifier' => '',
+        'leftCopy' => 'ドラッグやスワイプで360°ご覧いただけます',
+        'rightCopy' => '店舗の中を360°見渡せる、3Dバーチャル<br class="u-pc-hidden">内覧です。<br>圧倒的な臨場感を味わえるように床やキッチンの質感<br class="u-sp-hidden">まで忠実に再現。<br class="u-sp-hidden">まるでその物件に居るような体験ができます。',
+        'rightCopyModifier' => '',
+        'virtualButtonText' => '',
+        'virtualButtonLink' => '',
+        'virtualButtonTarget' => '',
+        'svgIcons' => array(
+          'svgIcon' => array(
+            'svg-icon' => 'svg/mouse.svg',
+            'svg-modifier' => ''
+          )
+        )
       )); ?>
       <!-- end of virtual section -->
 
@@ -157,31 +172,31 @@ get_header(); ?>
       <section class="listing">
         <?php importTemplate('modules/listing-list', array(
           'listingItems' => array(
-            'listingItem1' => array(
-              'link' => 'javascript:;',
-              'name' => '横浜',
-              'favorite' => 'お気に入り',
-              'image'   => '',
-              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
-              'price'   => '282,400円',
+            array(
+              'link'      => 'javascript:;',
+              'name'      => '横浜',
+              'favorite'  => 'お気に入り',
+              'image'     => '',
+              'copy'      => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'     => '282,400円',
               'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
             ),
-            'listingItem2' => array(
-              'link' => 'javascript:;',
-              'name' => '横浜',
-              'favorite' => 'お気に入り',
-              'image'   => 'listing-img.jpg',
-              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
-              'price'   => '282,400円',
+            array(
+              'link'      => 'javascript:;',
+              'name'      => '横浜',
+              'favorite'  => 'お気に入り',
+              'image'     => 'listing-img.jpg',
+              'copy'      => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'     => '282,400円',
               'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
             ),
-            'listingItem3' => array(
-              'link' => 'javascript:;',
+            array(
+              'link'      => 'javascript:;',
               'name' => '横浜',
-              'favorite' => 'お気に入り',
-              'image'   => 'listing-img.jpg',
-              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
-              'price'   => '282,400円',
+              'favorite'  => 'お気に入り',
+              'image'     => 'listing-img.jpg',
+              'copy'      => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'     => '282,400円',
               'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
             )
           )
@@ -196,6 +211,34 @@ get_header(); ?>
   </div>
 
 </main>
+
+<!-- start of virtual second section -->
+<div class="l-container">
+  <?php importTemplate('modules/virtual', array(
+    'virtualModifier' => 'virtual-second',
+    'virtualTopItemFirstModifier' => 'virtual-second-top-item-first',
+    'virtualTopItemSecondModifier' => '',
+    'virtualLeftCopyModifier' => 'virtual-second-left-copy',
+    'innerModifier' => 'virtual-second-left-inner',
+    'iframeModifier' => 'virtual-second-iframe',
+    'iframeUrl' => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
+    'heading' => '店内3Dバーチャル内覧開催中',
+    'rightHeadingModifier' => 'virtual-second-right-heading',
+    'leftCopy' => 'ドラッグやスワイプで360°ご覧いただけます',
+    'rightCopy' => '店舗の中を360℃見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえる、床やキッチンの質感まで忠実に再現。<br>まるでその物件に居るような体験ができます。 ',
+    'rightCopyModifier' => 'virtual-second-right-copy',
+    'virtualButtonText' => '平面図を見る',
+    'virtualButtonLink' => 'javascript',
+    'virtualButtonTarget' => '_blank',
+    'svgIcons' => array(
+      'svgIcon' => array(
+        'svg-icon' => 'svg/mouse.svg',
+        'svg-modifier' => 'virtual-second-svg'
+      )
+    )
+  )); ?>
+</div>
+<!-- end of virtual second section -->
 
 <!-- start of become member section -->
 <?php importTemplate('modules/become-member', array(
@@ -322,7 +365,15 @@ get_header(); ?>
     ?>
 
   <?php importTemplate('modules/gourmet',$gourmetList);?>
-  <a class="button button-gray button-caret" href="#">もっと見る</a>
+
+<!-- start button module -->
+  <?php importTemplate('modules/button', array(
+        'buttonModifier' => 'button-gray button-caret',
+        'buttonText' => 'もっと見る',
+        'buttonLink' => 'javascript:;'
+    )); ?>
+  <!-- end button module -->
+
  </div>
 </div>
 
@@ -397,11 +448,19 @@ get_header(); ?>
    )
     ?>
 
+
   <?php importTemplate('modules/gourmet',$streetSpot);?>
-  <a class="button button-gray button-caret" href="#">もっと見る</a>
+  <!-- start button module -->
+    <?php importTemplate('modules/button', array(
+          'buttonModifier' => 'button-gray button-caret',
+          'buttonText' => 'もっと見る',
+          'buttonLink' => 'javascript:;'
+      )); ?>
+    <!-- end button module -->
  </div>
 </div>
 
+<?php importTemplate('modules/good'); ?>
 <?php importTemplate('modules/modal'); ?>
 
 <!-- end street spot -->
