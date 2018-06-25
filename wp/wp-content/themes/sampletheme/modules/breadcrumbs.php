@@ -1,4 +1,4 @@
-<div class="breadcrumbs<?php echo $breadModifier; ?>">
+<div class="breadcrumbs<?php echo $modifier != "" ? ' '.$modifier : ''; ?>">
   <div class="l-container breadcrumbs-container">
     <ul>
       <?php foreach($breadItems as $breadItem):

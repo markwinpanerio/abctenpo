@@ -237,7 +237,7 @@ get_header(); ?>
 
 <!-- start of breadcrumbs section -->
 <?php importTemplate('modules/breadcrumbs', array(
-  'breadModifier' => '',
+  'modifier' => '',
   'breadItems' => array(
     'breadItem1' => array(
       'link' => 'javascript:;',
