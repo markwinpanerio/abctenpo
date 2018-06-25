@@ -5,8 +5,32 @@
   padding: 27px 0;
   margin: 0 19px;
 
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:before {
+    content: '';
+    background-color: $button-hover-gray;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+
   @include max-screen($breakpoint-mobile) {
   margin: 0;
+  padding: 12px 0;
   }
 }
 
@@ -16,9 +40,24 @@
   font-size: 16px;
   text-align: center;
   font-weight: bold;
+
+  &:hover {
+    color: $button-hover-color-white;
+  }
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 13px;
+  }
 }
 
 .button-caret {
+
+  &:hover {
+    &:after {
+      border-color: $button-hover-border-white;
+    }
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -31,5 +70,11 @@
     border-top-width: 1px;
     border-right-width: 1px;
     transform: translateY(-50%) rotate(45deg);
+
+    @include max-screen($breakpoint-mobile) {
+    height: 8px;
+    width: 8px;
+    right: 10px;
+    }
   }
 }

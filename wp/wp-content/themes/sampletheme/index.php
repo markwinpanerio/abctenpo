@@ -140,105 +140,57 @@ get_header(); ?>
         </ul>
         <a href="#" class="listing-button">もっと見る</a>
       </section>
-      <div class="virtual">
-        <h2 class="virtual-title">3Dバーチャル内覧可能物件</h2>
-
-        <div class="virtual-top">
-          <div class="virtual-left virtual-top-item">
-            <div class="virtual-left-inner">
-              <img src="<?php echo resolve_asset_uri('images/virtual-left-img.jpg' ); ?>" alt="">
-            </div>
-          </div>
-          <div class="virtual-right virtual-top-item">
-            <h3 class="virtual-right-heading">3Dバーチャル内覧とは？</h3>
-            <p class="virtual-right-copy">店舗の中を360°見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえるように床やキッチンの質感<br>まで忠実に再現。<br>まるでその物件に居るような体験ができます。 </p>
-          </div>
-        </div>
-      </div>
-      <section class="listing">
-        <ul class="listing-list">
-          <li class="listing-item">
-            <a href="#" class="listing-link">
-              <article>
-                <span class="listing-name">横浜</span>
-                <span class="listing-favorite">お気に入り</span>
-                <img src="<?php echo resolve_asset_uri('images/listing-img.jpg'); ?>" alt="" class="listing-image">
-                <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
-                <p class="listing-details">
-                  JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施
-                </p>
-              </article>
-            </a>
-          </li>
-          <li class="listing-item">
-            <a href="#" class="listing-link">
-              <article>
-                <span class="listing-name">横浜</span>
-                <span class="listing-favorite">お気に入り</span>
-                <img src="<?php echo resolve_asset_uri('images/listing-img.jpg'); ?>" alt="" class="listing-image">
-                <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
-                <p class="listing-details">
-                  JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施
-                </p>
-              </article>
-            </a>
-          </li>
-          <li class="listing-item">
-            <a href="#" class="listing-link">
-              <article>
-                <span class="listing-name">横浜</span>
-                <span class="listing-favorite">お気に入り</span>
-                <img src="<?php echo resolve_asset_uri('images/listing-img.jpg'); ?>" alt="" class="listing-image">
-                <p class="listing-copy">1階路面、視認性よく看板範囲広め<br>木目調落ち着いた内装、和食業… <span class="listing-price">282,400円</span></p>
-                <p class="listing-details">
-
-                </p>
-              </article>
-            </a>
-          </li>
-        </ul>
-        <a href="#" class="listing-button">もっと見る</a>
-      </section>
-
-
-
-
 
       <!-- start of listing section -->
       <section class="listing">
         <?php importTemplate('modules/listing-list', array(
           'listingItems' => array(
-            'listingItem1' => array(
-              'link' => 'javascript:;',
-              'name' => '横浜',
-              'favorite' => 'お気に入り',
-              'image'   => '',
-              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
-              'price'   => '282,400円',
+            array(
+              'link'      => 'javascript:;',
+              'name'      => '横浜',
+              'favorite'  => 'お気に入り',
+              'image'     => '',
+              'copy'      => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'     => '282,400円',
               'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
             ),
-            'listingItem2' => array(
-              'link' => 'javascript:;',
-              'name' => '横浜',
-              'favorite' => 'お気に入り',
-              'image'   => 'listing-img.jpg',
-              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
-              'price'   => '282,400円',
+            array(
+              'link'      => 'javascript:;',
+              'name'      => '横浜',
+              'favorite'  => 'お気に入り',
+              'image'     => 'listing-img.jpg',
+              'copy'      => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'     => '282,400円',
               'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
             ),
-            'listingItem3' => array(
-              'link' => 'javascript:;',
+            array(
+              'link'      => 'javascript:;',
               'name' => '横浜',
-              'favorite' => 'お気に入り',
-              'image'   => 'listing-img.jpg',
-              'copy'   => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
-              'price'   => '282,400円',
+              'favorite'  => 'お気に入り',
+              'image'     => 'listing-img.jpg',
+              'copy'      => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業1階路面、視認性よく看板範囲広め木目調落ち着いた内装、和食業',
+              'price'     => '282,400円',
               'details'   => 'JR中央・総武線 荻窪 2分 <br>1階 14坪 46.28㎡ <br>6月6日(水) 15：00-16：00 予約制内覧会実施'
             )
           )
         )); ?>
       </section>
       <!-- end of listing section -->
+
+      <!-- start of virtual section -->
+      <?php importTemplate('modules/virtual', array(
+        'modifier'        => 'first',
+        'iframeUrl'       => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
+        'heading'         => '3Dバーチャル内覧とは？',
+        'leftCopy'        => 'ドラッグやスワイプで360°ご覧いただけます',
+        'rightCopy'       => '店舗の中を360℃見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえる、床やキッチンの質感<br class="u-sp-hidden">まで忠実に再現。<br>まるでその物件に居るような体験ができます。 ',
+        'svgIcon'         => 'svg/mouse.svg',
+        'buttonText'      => '',
+        'buttonLink'      => 'javascript',
+        'buttonTarget'    => '_blank',
+        'svgButtonIcon'   => 'svg/pdf.svg'
+      )); ?>
+      <!-- end of virtual section -->
 
     </div>
     <div class="l-container-sidebar">
@@ -247,6 +199,41 @@ get_header(); ?>
   </div>
 
 </main>
+
+<!-- start of virtual second section -->
+<div class="l-container">
+  <?php importTemplate('modules/virtual', array(
+    'modifier'        => 'second',
+    'iframeUrl'       => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
+    'heading'         => '店内3Dバーチャル内覧開催中',
+    'leftCopy'        => 'ドラッグやスワイプで360°ご覧いただけます',
+    'rightCopy'       => '店舗の中を360℃見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえる、床やキッチンの質感まで忠実に再現。<br class="u-sp-hidden">まるでその物件に居るような体験ができます。 ',
+    'svgIcon'         => 'svg/mouse.svg',
+    'buttonText'      => '平面図を見る',
+    'buttonLink'      => 'javascript',
+    'buttonTarget'    => '_blank',
+    'svgButtonIcon'   => 'svg/pdf.svg'
+  )); ?>
+</div>
+<!-- end of virtual second section -->
+
+<!-- start of become member section -->
+<?php importTemplate('modules/become-member', array(
+    'becomeMemberImage' => 'bnr-member-btn.jpg',
+    'becomeMemberButtonLink' => 'javascript:;',
+    'becomeMemberImageAlt' => '会員登録 MEMBER REGISTRATION',
+    'becomeMembers' => array(
+      'becomeMember' => array(
+        'image' => 'bnr-member-1.jpg',
+        'alt' => '会員になると絶対に得する５つの理由,未公開物件を会員限定メルマガで配信,条件に合った物件入荷時は直接ご連絡,会員限定の先行内覧会を毎日開催中,店舗オープンを無料でマスコミに配信,開業後も様々な無料経営サポート,簡単30秒で登録完了'
+      ),
+      'becomeMember2' => array(
+        'image' => 'bnr-member-2.jpg',
+        'alt' => 'ご覧いただいている物件の情報は一部です,会員登録(無料)するだけで、すべての情報をご覧いただけます。会員限定のメールマガジンでは新着物件や内覧会情報を配信中です。'
+      )
+    )
+  )); ?>
+<!-- end of become member section -->
 
 <!-- start of breadcrumbs section -->
 <?php importTemplate('modules/breadcrumbs', array(
@@ -280,6 +267,8 @@ get_header(); ?>
   )); ?>
 <!-- end of message section -->
 
+<?php importTemplate('modules/property'); ?>
+
 <?php importTemplate('modules/menu'); ?>
 <?php importTemplate('modules/hero'); ?>
 
@@ -295,9 +284,11 @@ get_header(); ?>
        'gourmetItem1' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img1.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
-         'linkTransition' => '#',
-         'title' => 'Estadio（エスタディオ）～spanish dining～',
+
+         'iconModifier' => 'icon-white',
+         'linkTransition' => 'javascript:;',
+         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
+
          'subtitle' => 'ワインと和ビストロ',
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
@@ -315,9 +306,11 @@ get_header(); ?>
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img2.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
-         'linkTransition' => '#',
-         'title' => 'Estadio（エスタディオ）～spanish dining～',
+
+         'iconModifier' => 'icon-white',
+         'linkTransition' => 'javascript:;',
+         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
+
          'subtitle' => 'ワインと和ビストロ',
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
@@ -335,9 +328,11 @@ get_header(); ?>
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img3.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
-         'linkTransition' => '#',
-         'title' => 'Estadio（エスタディオ）～spanish dining～',
+
+         'iconModifier' => 'icon-white',
+         'linkTransition' => 'javascript:;',
+         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
+
          'subtitle' => 'ワインと和ビストロ',
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
@@ -355,9 +350,11 @@ get_header(); ?>
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img4.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-restaurant.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
-         'linkTransition' => '#',
-         'title' => 'Estadio（エスタディオ）～spanish dining～',
+
+         'iconModifier' => 'icon-white',
+         'linkTransition' => 'javascript:;',
+         'title' => 'Estadio（エスタディオ）～spanish <br class="u-pc-hidden">dining～',
+
          'subtitle' => 'ワインと和ビストロ',
          'copy' => 'ＪＲ総武線飯田橋駅西口 徒歩1分 <br> 横浜市神奈川区鶴屋町2-15 CRANE YOKOHA <br>MAビル 1F',
          'linkText' => 'MAPを見る',
@@ -377,7 +374,15 @@ get_header(); ?>
     ?>
 
   <?php importTemplate('modules/gourmet',$gourmetList);?>
-  <a class="button button-gray button-caret" href="#">もっと見る</a>
+
+<!-- start button module -->
+  <?php importTemplate('modules/button', array(
+        'buttonModifier' => 'button-gray button-caret',
+        'buttonText' => 'もっと見る',
+        'buttonLink' => 'javascript:;'
+    )); ?>
+  <!-- end button module -->
+
  </div>
 </div>
 
@@ -397,8 +402,10 @@ get_header(); ?>
        'gourmetItem1' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot1.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
-         'linkTransition' => '#',
+
+         'iconModifier' => 'icon-white',
+         'linkTransition' => 'javascript:;',
+
          'title' => '横浜ワールドポーターズ',
          'subtitle' => '',
          'copy' => '',
@@ -409,8 +416,10 @@ get_header(); ?>
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot2.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
-         'linkTransition' => '#',
+
+         'iconModifier' => 'icon-white',
+         'linkTransition' => 'javascript:;',
+
          'title' => '横浜中華街',
          'subtitle' => '',
          'copy' => '',
@@ -421,8 +430,10 @@ get_header(); ?>
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot3.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
-         'linkTransition' => '#',
+
+         'iconModifier' => 'icon-white',
+         'linkTransition' => 'javascript:;',
+
          'title' => 'パシフィコ横浜 (横浜国際平和会議場)',
          'subtitle' => '',
          'copy' => '',
@@ -433,8 +444,10 @@ get_header(); ?>
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/street-spot4.jpg'),
          'badgeUrl' => resolve_asset_uri('images/svg/icon-spot.svg'),
-         'iconUrl' => resolve_asset_uri('images/svg/icon-transition.svg'),
-         'linkTransition' => '#',
+
+         'iconModifier' => 'icon-white',
+         'linkTransition' => 'javascript:;',
+
          'title' => '横浜赤レンガ倉庫',
          'subtitle' => '',
          'copy' => '',
@@ -446,10 +459,20 @@ get_header(); ?>
    )
     ?>
 
+
   <?php importTemplate('modules/gourmet',$streetSpot);?>
-  <a class="button button-gray button-caret" href="#">もっと見る</a>
+  <!-- start button module -->
+    <?php importTemplate('modules/button', array(
+          'buttonModifier' => 'button-gray button-caret',
+          'buttonText' => 'もっと見る',
+          'buttonLink' => 'javascript:;'
+      )); ?>
+    <!-- end button module -->
  </div>
 </div>
+
+<?php importTemplate('modules/good'); ?>
+<?php importTemplate('modules/modal'); ?>
 
 <!-- end street spot -->
 
@@ -498,7 +521,9 @@ get_header(); ?>
 </div>
 <?php importTemplate('modules/exhibition'); ?>
 <?php importTemplate('modules/property-info'); ?>
+
 <?php importTemplate('modules/pagination'); ?>
+
 
 <?php importPart('footer'); ?>
 <?php

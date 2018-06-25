@@ -1,4 +1,7 @@
 // l-footer-places
 .l-footer-places {
-  padding: 56px 0 78px;
+  padding: 56px 0 74px;
+  @include max-screen($breakpoint-mobile) {
+    padding: 36px 0 30px;
+  }
 }

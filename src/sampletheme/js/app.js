@@ -2,6 +2,8 @@ import mapHover from './components/map-hover';
 import customSelect from './components/custom-select';
 import eyecatchSlider from './components/eyecatch-slider';
 import './components/map';
+import './components/modal';
+
 
 mapHover();
 customSelect();

@@ -1,0 +1,60 @@
+.good {
+
+}
+
+.good-container {
+
+}
+
+.good-image {
+  width: 591px;
+  height: 362px;
+  display: inline-block;
+  vertical-align: top;
+
+  img {
+    width: 100%;
+  }
+}
+
+.good-right {
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 69px;
+  margin-right: 3px
+}
+
+.good-interview {
+  margin-bottom: 16px;
+}
+
+.good-row {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  margin-right: 11px;
+}
+
+.good-caption {
+  background: $good-caption-bg;
+  color: $good-caption-color;
+  padding: 9px 23px;
+}
+
+.good-red {
+  color: $good-color-maroon
+}
+
+.good-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 17px;
+  letter-spacing: 0.065em;
+}
+
+.good-copy {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+}

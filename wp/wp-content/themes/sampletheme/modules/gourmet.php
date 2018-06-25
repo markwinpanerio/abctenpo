@@ -65,7 +65,7 @@
     data-map-icon="<?php echo $mapIcon; ?>"
     data-map-icon="<?php echo $mapIconActiveState; ?>">
     <div class="gourmet-image">
-      <a class="gourmet-link" href="#">
+      <a class="js-open-button" data-target="#js-modal" href="javascript:;">
 
         <?php if (isset($gourmet['badgeUrl'])):?>
           <span class="gourmet-image-icon"><img src="<?php echo $gourmet['badgeUrl']?>" alt=""></span>

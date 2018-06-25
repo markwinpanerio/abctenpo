@@ -19,13 +19,16 @@ $path-image: '../images';
 
 $breakpoint-tablet: 1279px;
 $breakpoint-mobile: 759px;
+$breakpoint-small: 325px;
 $site-size: 1181px + 60;
 
 //sidebar
 $sidebar-color: #444;
 $sidebar-heading-border-color: #444;
 $sidebar-item-border-color: #e0dddb;
+$sidebar-sp-border-color: #444;
 $sidebar-link-hover-color: #fafafa;
+$sidebar-link-bg-sp: #fff;
 $sidebar-icon-arrow: #7b7b7b;
 
 //property detail
@@ -36,6 +39,7 @@ $property-legend-bg: #000;
 $property-item-bg: #f5f5f5;
 $property-label-border: #fff;
 $property-link-border: #535353;
+$property-white-bg: #fff;
 
 //menu
 $menu-color: #4e4e4e;
@@ -58,19 +62,32 @@ $gourmet-button: #eb6100;
 $button-gray: #f5f5f5;
 $button-text-color: #444;
 $button-caret-border: #636363;
+$button-hover-gray: #c2c2c2;
+$button-hover-color-white: #fff;
+$button-hover-border-white: #fff;
 
 // heading-section
 $heading-section: #444;
 
+// modal
+
+$modal-overlay-bg: rgba(#000, 0.5);
+$modal-content: #fff;
+
 //virtual
 $base-font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 $base-font-color: #444444;
-$virtual-border: #e0dddb;
 $listing-price-color: #eb6100;
 $listing-font-color: #888888;
 $listing-button-bg: #c2c2c2;
 $listing-name-bg: #444444;
 $zindex1: 1;
+
+// good
+
+$good-color-maroon: #c40202;
+$good-caption-bg: #444;
+$good-caption-color: #fff;
 
 //Footer Places
 $color-wild-sand: #f5f5f5;

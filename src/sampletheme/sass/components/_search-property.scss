@@ -8,8 +8,15 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 16px;
+  @include max-screen($breakpoint-mobile){
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
 }
 .search-property-form {
   padding: 32px;
   background-color: $color-wild-sand;
+  @include max-screen($breakpoint-mobile){
+    padding: 30px;
+  }
 }

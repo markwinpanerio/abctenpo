@@ -4,7 +4,7 @@
       <h2 class="search-property-title">物件を検索する</h2>
       <div class="search-property-form">
         <form class="form u-clear" method="post" action="/">
-          <div class="form-wrap form-left">
+          <div class="form-wrap form-left u-clear">
             <h3 class="form-group-title">賃料検索</h3>
             <div class="form-group form-select-wrap">
               <select class="form-input form-select js-form-select" name="search-rent-from">
@@ -30,7 +30,7 @@
               </select>
             </div>
           </div>
-          <div class="form-wrap form-right">
+          <div class="form-wrap form-right u-clear">
             <h3 class="form-group-title">総額検索</h3>
             <div class="form-group form-select-wrap">
               <select class="form-input form-select js-form-select" name="total-price-from">
