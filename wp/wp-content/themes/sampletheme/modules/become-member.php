@@ -1,4 +1,13 @@
-<div class="become-member<?php echo $modifier != '' ? ' '.$modifier : ''; ?>">
+<?php
+  $module = 'become-member';
+  $array = array();
+
+  if($modifier != '') {
+    $array[0] = ' ' . $module .'-'. $modifier;
+  }
+?>
+
+<div class="become-member<?php echo $array[0]; ?>">
   <?php
     foreach ($becomeMembers as $becomeMember): {
     echo

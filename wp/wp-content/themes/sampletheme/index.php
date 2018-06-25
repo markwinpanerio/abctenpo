@@ -438,7 +438,18 @@ get_header(); ?>
  </div>
 </div>
 
-<?php importTemplate('modules/good'); ?>
+<!-- start of information -->
+<?php importTemplate('modules/information', array(
+  'modifier'     => '',
+  'image'        => 'information.jpg',
+  'caption'      => 'インタビュー',
+  'time'         => '2018.03.30',
+  'status'       => 'NEW',
+  'heading'      => '飲食店の物件、居抜きとスケルトン費用がお得な物件はど<br>っち？',
+  'copy'         => 'アキバ”の愛称で親しまれる秋葉原は、日本有数の電気街です。しかし、近年ではマン<br class="u-sp-hidden">ガ・アニメ・ゲームといったオタク文化や、国民的アイドルを輩出した劇場を持つアイ<br class="u-sp-hidden">ドル文化の聖地として、さまざまな観点から世界的な注目を集めています。こちらでは<br class="u-sp-hidden">、そんな秋葉原の歴...'
+)); ?>
+<!-- end of information -->
+
 <?php importTemplate('modules/modal'); ?>
 
 <!-- end street spot -->
