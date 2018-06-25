@@ -7,14 +7,16 @@
 .search-property-title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
   @include max-screen($breakpoint-mobile){
     margin-bottom: 10px;
     font-size: 18px;
+    letter-spacing: normal;
   }
 }
 .search-property-form {
-  padding: 32px;
+  padding: 31px 31px 33px;
   background-color: $color-wild-sand;
   @include max-screen($breakpoint-mobile){
     padding: 30px;

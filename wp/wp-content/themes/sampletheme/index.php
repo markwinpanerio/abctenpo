@@ -18,42 +18,42 @@ get_header(); ?>
         <div class="map-button">
           <ul class="map-button-list">
             <li class="map-button-item">
-              <a href="#js-map-part-1" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-1" class="map-button-link js-map-part-link">
                 <span>横浜エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-2" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-2" class="map-button-link js-map-part-link">
                 <span>川崎エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-3" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-3" class="map-button-link js-map-part-link">
                 <span>湘南・鎌倉エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-4" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-4" class="map-button-link js-map-part-link">
                 <span>横須賀エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-5" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-5" class="map-button-link js-map-part-link">
                 <span>相模原エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-6" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-6" class="map-button-link js-map-part-link">
                 <span>厚木・大和エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-7" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-7" class="map-button-link js-map-part-link">
                 <span>伊勢原・平塚エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-8" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-8" class="map-button-link js-map-part-link">
                 <span>湯河原・西湘エリア</span>
               </a>
             </li>
@@ -141,33 +141,6 @@ get_header(); ?>
         <a href="#" class="listing-button">もっと見る</a>
       </section>
 
-
-      <!-- start of virtual section -->
-      <?php importTemplate('modules/virtual', array(
-        'virtualModifier' => '',
-        'virtualTopItemFirstModifier' => '',
-        'virtualTopItemSecondModifier' => '',
-        'virtualLeftCopyModifier' => '',
-        'innerModifier' => '',
-        'iframeModifier' => '',
-        'iframeUrl' => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
-        'heading' => '3Dバーチャル内覧とは？',
-        'rightHeadingModifier' => '',
-        'leftCopy' => 'ドラッグやスワイプで360°ご覧いただけます',
-        'rightCopy' => '店舗の中を360°見渡せる、3Dバーチャル<br class="u-pc-hidden">内覧です。<br>圧倒的な臨場感を味わえるように床やキッチンの質感<br class="u-sp-hidden">まで忠実に再現。<br class="u-sp-hidden">まるでその物件に居るような体験ができます。',
-        'rightCopyModifier' => '',
-        'virtualButtonText' => '',
-        'virtualButtonLink' => '',
-        'virtualButtonTarget' => '',
-        'svgIcons' => array(
-          'svgIcon' => array(
-            'svg-icon' => 'svg/mouse.svg',
-            'svg-modifier' => ''
-          )
-        )
-      )); ?>
-      <!-- end of virtual section -->
-
       <!-- start of listing section -->
       <section class="listing">
         <?php importTemplate('modules/listing-list', array(
@@ -204,6 +177,21 @@ get_header(); ?>
       </section>
       <!-- end of listing section -->
 
+      <!-- start of virtual section -->
+      <?php importTemplate('modules/virtual', array(
+        'modifier'        => 'first',
+        'iframeUrl'       => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
+        'heading'         => '3Dバーチャル内覧とは？',
+        'leftCopy'        => 'ドラッグやスワイプで360°ご覧いただけます',
+        'rightCopy'       => '店舗の中を360℃見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえる、床やキッチンの質感<br class="u-sp-hidden">まで忠実に再現。<br>まるでその物件に居るような体験ができます。 ',
+        'svgIcon'         => 'svg/mouse.svg',
+        'buttonText'      => '',
+        'buttonLink'      => 'javascript',
+        'buttonTarget'    => '_blank',
+        'svgButtonIcon'   => 'svg/pdf.svg'
+      )); ?>
+      <!-- end of virtual section -->
+
     </div>
     <div class="l-container-sidebar">
       <?php importPart('sidebar'); ?>
@@ -215,42 +203,32 @@ get_header(); ?>
 <!-- start of virtual second section -->
 <div class="l-container">
   <?php importTemplate('modules/virtual', array(
-    'virtualModifier' => 'virtual-second',
-    'virtualTopItemFirstModifier' => 'virtual-second-top-item-first',
-    'virtualTopItemSecondModifier' => '',
-    'virtualLeftCopyModifier' => 'virtual-second-left-copy',
-    'innerModifier' => 'virtual-second-left-inner',
-    'iframeModifier' => 'virtual-second-iframe',
-    'iframeUrl' => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
-    'heading' => '店内3Dバーチャル内覧開催中',
-    'rightHeadingModifier' => 'virtual-second-right-heading',
-    'leftCopy' => 'ドラッグやスワイプで360°ご覧いただけます',
-    'rightCopy' => '店舗の中を360℃見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえる、床やキッチンの質感まで忠実に再現。<br>まるでその物件に居るような体験ができます。 ',
-    'rightCopyModifier' => 'virtual-second-right-copy',
-    'virtualButtonText' => '平面図を見る',
-    'virtualButtonLink' => 'javascript',
-    'virtualButtonTarget' => '_blank',
-    'svgIcons' => array(
-      'svgIcon' => array(
-        'svg-icon' => 'svg/mouse.svg',
-        'svg-modifier' => 'virtual-second-svg'
-      )
-    )
+    'modifier'        => 'second',
+    'iframeUrl'       => 'https://www.google.com/maps/embed?pb=!4v1529635463336!6m8!1m7!1sCAoSLEFGMVFpcE01ZDh2b1pHTm9YbWNucVR4NkxORnJ2aGgxNFI4dlBRU2VWTDhf!2m2!1d10.31923621547137!2d123.9030895481028!3f314.19658539695394!4f0.28764085743584644!5f0.7820865974627469',
+    'heading'         => '店内3Dバーチャル内覧開催中',
+    'leftCopy'        => 'ドラッグやスワイプで360°ご覧いただけます',
+    'rightCopy'       => '店舗の中を360℃見渡せる、3Dバーチャル内覧です。<br>圧倒的な臨場感を味わえる、床やキッチンの質感まで忠実に再現。<br class="u-sp-hidden">まるでその物件に居るような体験ができます。 ',
+    'svgIcon'         => 'svg/mouse.svg',
+    'buttonText'      => '平面図を見る',
+    'buttonLink'      => 'javascript',
+    'buttonTarget'    => '_blank',
+    'svgButtonIcon'   => 'svg/pdf.svg'
   )); ?>
 </div>
 <!-- end of virtual second section -->
 
 <!-- start of become member section -->
 <?php importTemplate('modules/become-member', array(
-    'becomeMemberImage' => 'bnr-member-btn.jpg',
+    'modifier' => '',
+    'becomeMemberButtonImage' => 'bnr-member-btn.jpg',
     'becomeMemberButtonLink' => 'javascript:;',
     'becomeMemberImageAlt' => '会員登録 MEMBER REGISTRATION',
     'becomeMembers' => array(
-      'becomeMember' => array(
+      array(
         'image' => 'bnr-member-1.jpg',
         'alt' => '会員になると絶対に得する５つの理由,未公開物件を会員限定メルマガで配信,条件に合った物件入荷時は直接ご連絡,会員限定の先行内覧会を毎日開催中,店舗オープンを無料でマスコミに配信,開業後も様々な無料経営サポート,簡単30秒で登録完了'
       ),
-      'becomeMember2' => array(
+      array(
         'image' => 'bnr-member-2.jpg',
         'alt' => 'ご覧いただいている物件の情報は一部です,会員登録(無料)するだけで、すべての情報をご覧いただけます。会員限定のメールマガジンでは新着物件や内覧会情報を配信中です。'
       )
@@ -260,17 +238,17 @@ get_header(); ?>
 
 <!-- start of breadcrumbs section -->
 <?php importTemplate('modules/breadcrumbs', array(
-  'breadModifier' => '',
-  'breadItems' => array(
-    'breadItem1' => array(
-      'link' => 'javascript:;',
+  'modifier'          => '',
+  'breadItems'        => array(
+    'breadItem1'      => array(
+      'link'          => 'javascript:;',
       'link-modifier' => '',
       'text' => '居抜き物件・居抜き店舗の居抜きABC店舗'
     ),
-    'breadItem2' => array(
-      'link' => '',
+    'breadItem2'      => array(
+      'link'          => '',
       'link-modifier' => 'is-active',
-      'text' => '検索条件に合致する物件一覧'
+      'text'          => '検索条件に合致する物件一覧'
       )
     )
   )); ?>
@@ -317,6 +295,14 @@ get_header(); ?>
          'linkText' => 'MAPを見る',
          'link' => '#',
          'modifier' => '',
+         'data-lat'=> '35.667100513545336',
+         'data-lng'=> '139.81617718935013',
+         'data-img-main' => resolve_asset_uri('images/gourmet-img2.jpg'),
+         'data-title' => 'Estadio（エスタディオ）～spanish dining～',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'data-map-icon' => resolve_asset_uri('images/map-pin/pin_restaurant.svg'),
+         'data-map-icon-active-state' => resolve_asset_uri('images/map-pin/pin_restaurant-big.svg'),
+         'js-hook' => 'js-map-item'
        ),
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img2.jpg'),
@@ -331,6 +317,14 @@ get_header(); ?>
          'linkText' => 'MAPを見る',
          'link' => '#',
          'modifier' => '',
+         'data-lat'=> '35.6659377',
+         'data-lng'=> '139.81599329999995',
+         'data-img-main' => resolve_asset_uri('images/gourmet-img1.jpg'),
+         'data-title' => 'Estadio（エスタディオ）～spanish dining～',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'data-map-icon' => resolve_asset_uri('images/map-pin/pin_restaurant.svg'),
+         'data-map-icon-active-state' => resolve_asset_uri('images/map-pin/pin_restaurant-big.svg'),
+         'js-hook' => 'js-map-item'
        ),
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img3.jpg'),
@@ -345,6 +339,14 @@ get_header(); ?>
          'linkText' => 'MAPを見る',
          'link' => '#',
          'modifier' => '',
+         'data-lat'=> '35.6808776',
+         'data-lng'=> '139.81124920000002',
+         'data-img-main' => resolve_asset_uri('images/gourmet-img4.jpg'),
+         'data-title' => 'Estadio（エスタディオ',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、',
+         'data-map-icon' => resolve_asset_uri('images/map-pin/pin_restaurant.svg'),
+         'data-map-icon-active-state' => resolve_asset_uri('images/map-pin/pin_restaurant-big.svg'),
+         'js-hook' => 'js-map-item'
        ),
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img4.jpg'),
@@ -359,6 +361,14 @@ get_header(); ?>
          'linkText' => 'MAPを見る',
          'link' => '#',
          'modifier' => '',
+         'data-lat'=> '35.7106248',
+         'data-lng'=> '139.7084831',
+         'data-img-main' => resolve_asset_uri('images/gourmet-img1.jpg'),
+         'data-title' => 'Estadio（エスタディオ）～spanish dining～ Estadio（エスタディオ）～spanish dining～',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'data-map-icon' => resolve_asset_uri('images/map-pin/pin_restaurant.svg'),
+         'data-map-icon-active-state' => resolve_asset_uri('images/map-pin/pin_restaurant-big.svg'),
+         'js-hook' => 'js-map-item'
        ),
      )
    )
@@ -378,6 +388,8 @@ get_header(); ?>
 </div>
 
 <!-- end gourmet -->
+
+<?php importTemplate('modules/main-map'); ?>
 
 <!-- start street spot -->
 
@@ -460,9 +472,22 @@ get_header(); ?>
  </div>
 </div>
 
+
 <?php importTemplate('modules/property-listing'); ?>
 
-<?php importTemplate('modules/good'); ?>
+<!-- start of information -->
+<?php importTemplate('modules/information', array(
+  'modifier'     => '',
+  'image'        => 'information.jpg',
+  'caption'      => 'インタビュー',
+  'time'         => '2018.03.30',
+  'status'       => 'NEW',
+  'heading'      => '飲食店の物件、居抜きとスケルトン費用がお得な物件はど<br>っち？',
+  'copy'         => 'アキバ”の愛称で親しまれる秋葉原は、日本有数の電気街です。しかし、近年ではマン<br class="u-sp-hidden">ガ・アニメ・ゲームといったオタク文化や、国民的アイドルを輩出した劇場を持つアイ<br class="u-sp-hidden">ドル文化の聖地として、さまざまな観点から世界的な注目を集めています。こちらでは<br class="u-sp-hidden">、そんな秋葉原の歴...'
+)); ?>
+<!-- end of information -->
+
+
 <?php importTemplate('modules/modal'); ?>
 
 <!-- end street spot -->

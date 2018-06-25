@@ -29,6 +29,7 @@
 @import "components/map-box";
 @import "components/map-parts";
 @import "components/map";
+@import "components/main-map";
 @import "components/place-link";
 @import "components/sidebar";
 @import "components/virtual";
@@ -48,10 +49,13 @@
 @import "components/message";
 @import "components/modal";
 @import "components/pagination";
-@import "components/good";
+
 @import "components/property-listing";
+@import "components/information";
+
 
 @import "components/pagination";
+@import "components/info-window";
 
 @import "components/breadcrumbs";
 @import "components/become-member";
