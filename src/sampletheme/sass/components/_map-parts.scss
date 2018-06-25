@@ -30,45 +30,246 @@
   &:nth-child(1) {
     bottom: 30px;
     left: 91px;
+
+    @include max-screen($breakpoint-mobile) {
+      bottom: 5.2vw;
+      left: 13.4vw;
+    }
+
+    @include max-screen($breakpoint-medium) {
+      bottom: 5vw;
+      left: 12vw;
+    }
+
+    @include max-screen($breakpoint-smaller) {
+      bottom: 4.7vw;
+      left: 10.6vw;
+    }
+
+    svg {
+      @include max-screen($breakpoint-mobile) {
+        width: 32vw;
+        height: auto;
+        // opacity: 1;
+      }
+    }
   }
 
   &:nth-child(2) {
     top: 107px;
     left: 264px;
+
+    @include max-screen($breakpoint-mobile) {
+      left: 32vw;
+      top: 13vw;
+    }
+
+    @include max-screen($breakpoint-medium) {
+      left: 29vw;
+      top: 11.4vw;
+    }
+
+    svg {
+      @include max-screen($breakpoint-mobile) {
+        width: 28vw;
+        height: auto;
+      }
+    }
   }
 
   &:nth-child(3) {
     top: 189px;
     left: 248px;
+
+    @include max-screen($breakpoint-mobile) {
+      // left: 30vw;
+      // top: 12vw;
+
+      left: 30.9vw;
+      top: 23vw;
+    }
+
+    @include max-screen($breakpoint-medium) {
+      left: 29.3vw;
+      top: 21.1vw;
+    }
+
+    @include max-screen($breakpoint-smaller) {
+      left: 27.7vw;
+      top: 20.8vw;
+    }
+
+    svg {
+      @include max-screen($breakpoint-mobile) {
+        width: 20.7vw;
+        height: auto;
+        // opacity: 1;
+      }
+    }
   }
 
   &:nth-child(4) {
     top: 216px;
     left: 409px;
+
+    @include max-screen($breakpoint-mobile) {
+      left: auto;
+      right: 26.2vw;
+      top: 25.7vw;  
+    }
+
+    @include max-screen($breakpoint-medium) {
+      right: 24.6vw;
+      top: 24.3vw;
+    }
+
+    @include max-screen($breakpoint-smaller) {
+      right: 24.4vw;
+      top: 8.5vw;
+    }
+
+    svg {
+
+      @include max-screen($breakpoint-mobile) {
+        // opacity: 1;
+        width: 21.9vw;
+        height: auto;
+      }
+
+      @include max-screen($breakpoint-medium) {
+        // opacity: 1;
+      }
+    }
   }
 
   &:nth-child(5) {
     bottom: 20px;
     right: 138px;
+
+    @include max-screen($breakpoint-mobile) {
+      right: 16.6vw;
+      bottom: 3vw;
+    }
+
+    @include max-screen($breakpoint-medium) {
+      right: 16.8vw;
+      bottom: 3.3vw;
+    }
+
+    @include max-screen($breakpoint-smaller) {
+      right: 16.4vw;
+    }
+
+    svg {
+      @include max-screen($breakpoint-mobile) {
+        height: auto;
+        width: 12.6vw;
+        // opacity: 1;
+      }
+    }
   }
 
   &:nth-child(6) {
     top: 74px;
     right: 140px;
+
+    @include max-screen($breakpoint-mobile) {
+      right: 18.4vw;
+      top: 10.2vw;
+    }
+
+    @include max-screen($breakpoint-medium) {
+      right: 17.4vw;
+      top: 9vw;
+    }
+
+    @include max-screen($breakpoint-smaller) {
+      right: 16.8vw;
+      top: 8vw;
+    }
+
+    svg {
+      @include max-screen($breakpoint-mobile) {
+        height: auto;
+        width: 21.3vw;
+        // opacity: 1;
+      }
+    }
   }
 
   &:nth-child(7) {
     top: 30px;
     right: 103px;
+
+    @include max-screen($breakpoint-mobile) {
+      top: 5.5vw;
+      right: 14.5vw;
+    }
+
+    @include max-screen($breakpoint-medium) {
+      top: 3.7vw;
+      right: 12.9vw;
+    }
+
+    @include max-screen($breakpoint-smaller) {
+      top: 3.1vw;
+    }
+
+    svg {
+      @include max-screen($breakpoint-mobile) {
+        width: 26.7vw;
+        height: auto;
+        // opacity: 1;
+      }
+    }
   }
 
   &:nth-child(8) {
     top: 7px;
     left: 197px;
+
+    @include max-screen($breakpoint-mobile) {
+      left: 24.2vw;
+      top: 2vw;
+    }
+
+    @include max-screen($breakpoint-medium) {
+      left: 22.7vw;
+      top: 0.4vw;
+    }
+
+    @include max-screen($breakpoint-smaller) {
+      left: 22.2vw;
+    }
+
+    svg {
+
+      @include max-screen($breakpoint-mobile) {
+        width: 32.3vw;
+        height: auto;
+        // opacity: 1;
+      }
+
+      @include max-screen($breakpoint-medium) {
+        width: 31.1vw;
+      }
+
+      // @include max-screen($breakpoint-smaller) {
+      //   width: 26.7vw;
+      // }
+    }
   }
 
   &:nth-child(9) {
     top: 147px;
     left: 92px;
+
+    svg {
+      @include max-screen($breakpoint-mobile) {
+        width: 32.3vw;
+        height: auto;
+        opacity: 1;
+      }
+    }
   }
 }

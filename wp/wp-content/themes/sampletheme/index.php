@@ -90,9 +90,6 @@ get_header(); ?>
             <div class="map-parts-img js-map-parts" id="js-map-part-8">
               <?php importTemplate('./svg/map-parts/8'); ?>
             </div>
-            <div class="map-parts-img js-map-parts" id="js-map-part-9">
-              <?php importTemplate('./svg/map-parts/9'); ?>
-            </div>
           </div>
         </div>
       </div>

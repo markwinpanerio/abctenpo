@@ -3,6 +3,12 @@
   height: 494px;
   margin-top: 15px;
   position: relative;
+
+  @include max-screen($breakpoint-mobile) {
+    padding-top: 60.65%;
+    height: auto;
+    position: relative;
+  }
 }
 
 .map-box-image {
@@ -13,6 +19,12 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+
+  @include max-screen($breakpoint-mobile) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .map-box-base {
@@ -21,6 +33,12 @@
   left: -6px;
   bottom: 6px;
   z-index: 1;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 69.2vw;
+    bottom: 4px;
+    left: -3px;
+  }
 }
 
 .map-box-base.map-box-base-back {
@@ -30,6 +48,12 @@
   right: -10px;
   left: auto;
   z-index: auto;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 92vw;
+    bottom: -13px;
+    right: 1px;
+  }
 }
 
 .map-box-base.map-box-base-lower {
@@ -39,4 +63,9 @@
   right: 0;
   z-index: 1;
   left: auto;
+
+  @include max-screen($breakpoint-mobile) {
+    width: 14.9vw;
+    bottom: -9px;
+  }
 }

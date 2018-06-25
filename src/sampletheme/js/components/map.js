@@ -56,8 +56,6 @@ if (document.querySelector('#js-map-hook')) {
         }
       });
   
-      console.log(markers);
-  
       //COMPUTING TOTAL LATITUDE
       let totalLat = markers.reduce(function(sum, marker) {
         return sum + +marker.lat;
@@ -115,8 +113,6 @@ if (document.querySelector('#js-map-hook')) {
           ratio = 'is-for-sp'
         }
 
-        console.log(ratio);
-
         markers.forEach((marker) => {
           //(LAT, LNG)
           let mapLatLng = new google.maps.LatLng(+marker.lat, +marker.lng);
@@ -141,6 +137,10 @@ if (document.querySelector('#js-map-hook')) {
 
           if (index === 0) {
             mapLatLng = new google.maps.LatLng(+markers[index].lat, +markers[index].lng);
+
+            // $(window).on('resize', function() {
+            //   markerPosition
+            // })
 
             if (ratio === 'is-for-pc') {
               markerPosition = new google.maps.LatLng(+markers[index].lat, (+markers[index].lng) + 0.04);

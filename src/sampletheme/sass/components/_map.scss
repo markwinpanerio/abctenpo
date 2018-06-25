@@ -6,4 +6,26 @@
               radial-gradient(#d1cccf 15%, transparent 20%) 3px 4px;
   background-size: 6px 6px;
   background-color: white;
+
+  @include max-screen($breakpoint-mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    padding: 13px;
+  }
+}
+
+.map-box {
+  @include max-screen($breakpoint-mobile) {
+    order: 1;
+    width: 100%;
+  }
+}
+
+.map-button {
+  @include max-screen($breakpoint-mobile) {
+    order: 2;
+    width: 100%;
+    margin-top: 17px;
+  }
 }
