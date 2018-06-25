@@ -126,7 +126,7 @@ if (document.querySelector('#js-map-hook')) {
           let i;
 
           if (index === 0) {
-            mapLatLng = new google.maps.LatLng(+markers[index].lat, +markers[index].lng)
+            mapLatLng = new google.maps.LatLng(+markers[index].lat, +markers[index].lng);
 
             myMarker = new google.maps.Marker({
               position: mapLatLng,

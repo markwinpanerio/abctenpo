@@ -5,7 +5,7 @@ export default function mapHover() {
 
   $mapPart.hover(function() {
     const $this = $(this);
-    let targetID = $this.attr('href');
+    let targetID = $this.data('target');
 
     $(targetID).toggleClass('is-active');
   })

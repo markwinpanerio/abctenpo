@@ -18,42 +18,42 @@ get_header(); ?>
         <div class="map-button">
           <ul class="map-button-list">
             <li class="map-button-item">
-              <a href="#js-map-part-1" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-1" class="map-button-link js-map-part-link">
                 <span>横浜エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-2" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-2" class="map-button-link js-map-part-link">
                 <span>川崎エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-3" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-3" class="map-button-link js-map-part-link">
                 <span>湘南・鎌倉エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-4" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-4" class="map-button-link js-map-part-link">
                 <span>横須賀エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-5" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-5" class="map-button-link js-map-part-link">
                 <span>相模原エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-6" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-6" class="map-button-link js-map-part-link">
                 <span>厚木・大和エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-7" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-7" class="map-button-link js-map-part-link">
                 <span>伊勢原・平塚エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-8" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-8" class="map-button-link js-map-part-link">
                 <span>湯河原・西湘エリア</span>
               </a>
             </li>

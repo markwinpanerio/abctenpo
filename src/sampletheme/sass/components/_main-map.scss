@@ -2,10 +2,27 @@
   height: 607px;
   width: 100%;
   position: relative;
+
+  @include max-screen($breakpoint-mobile) {
+    height: auto;
+  }
 }
 
 .main-map-container {
   height: 100%;
+
+  @include max-screen($breakpoint-mobile) {
+    height: 200px;
+  }
+
+  iframe {
+    // @include max-screen($breakpoint-mobile) {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    // }
+  }
 }
 
 .main-map-info {
@@ -23,6 +40,14 @@
 
   &.is-active {
     opacity: 1;
+  }
+
+  @include max-screen($breakpoint-mobile) {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    right: 0;
+    height: auto;
   }
 }
 
