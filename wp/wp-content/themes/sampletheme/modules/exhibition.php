@@ -12,10 +12,10 @@
           <div class="exhibition-links">
             <ul class="exhibition-links-inner">
               <li class="exhibition-link-item">
-                <a class="btn btn-pdf btn-white" href="#">募集図面を見る <span class="btn-arrow"></span></a>
+                <a class="btn btn-pdf btn-white btn-exhibition" href="#">募集図面を見る <span class="btn-arrow btn-arrow-exhibition"></span></a>
               </li>
               <li class="exhibition-link-item">
-                <a class="btn btn-white" href="#">内覧会に参加する <span class="btn-arrow"></span></a>
+                <a class="btn btn-white btn-exhibition" href="#">内覧会に参加する <span class="btn-arrow btn-arrow-exhibition"></span></a>
               </li>
             </ul>
           </div>

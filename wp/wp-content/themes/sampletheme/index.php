@@ -18,42 +18,42 @@ get_header(); ?>
         <div class="map-button">
           <ul class="map-button-list">
             <li class="map-button-item">
-              <a href="#js-map-part-1" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-1" class="map-button-link js-map-part-link">
                 <span>横浜エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-2" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-2" class="map-button-link js-map-part-link">
                 <span>川崎エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-3" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-3" class="map-button-link js-map-part-link">
                 <span>湘南・鎌倉エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-4" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-4" class="map-button-link js-map-part-link">
                 <span>横須賀エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-5" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-5" class="map-button-link js-map-part-link">
                 <span>相模原エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-6" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-6" class="map-button-link js-map-part-link">
                 <span>厚木・大和エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-7" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-7" class="map-button-link js-map-part-link">
                 <span>伊勢原・平塚エリア</span>
               </a>
             </li>
             <li class="map-button-item">
-              <a href="#js-map-part-8" class="map-button-link js-map-part-link">
+              <a href="#" data-target="#js-map-part-8" class="map-button-link js-map-part-link">
                 <span>湯河原・西湘エリア</span>
               </a>
             </li>
@@ -295,6 +295,14 @@ get_header(); ?>
          'linkText' => 'MAPを見る',
          'link' => '#',
          'modifier' => '',
+         'data-lat'=> '35.667100513545336',
+         'data-lng'=> '139.81617718935013',
+         'data-img-main' => resolve_asset_uri('images/gourmet-img2.jpg'),
+         'data-title' => 'Estadio（エスタディオ）～spanish dining～',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'data-map-icon' => resolve_asset_uri('images/map-pin/pin_restaurant.svg'),
+         'data-map-icon-active-state' => resolve_asset_uri('images/map-pin/pin_restaurant-big.svg'),
+         'js-hook' => 'js-map-item'
        ),
        'gourmetItem2' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img2.jpg'),
@@ -309,6 +317,14 @@ get_header(); ?>
          'linkText' => 'MAPを見る',
          'link' => '#',
          'modifier' => '',
+         'data-lat'=> '35.6659377',
+         'data-lng'=> '139.81599329999995',
+         'data-img-main' => resolve_asset_uri('images/gourmet-img1.jpg'),
+         'data-title' => 'Estadio（エスタディオ）～spanish dining～',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'data-map-icon' => resolve_asset_uri('images/map-pin/pin_restaurant.svg'),
+         'data-map-icon-active-state' => resolve_asset_uri('images/map-pin/pin_restaurant-big.svg'),
+         'js-hook' => 'js-map-item'
        ),
        'gourmetItem3' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img3.jpg'),
@@ -323,6 +339,14 @@ get_header(); ?>
          'linkText' => 'MAPを見る',
          'link' => '#',
          'modifier' => '',
+         'data-lat'=> '35.6808776',
+         'data-lng'=> '139.81124920000002',
+         'data-img-main' => resolve_asset_uri('images/gourmet-img4.jpg'),
+         'data-title' => 'Estadio（エスタディオ',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、',
+         'data-map-icon' => resolve_asset_uri('images/map-pin/pin_restaurant.svg'),
+         'data-map-icon-active-state' => resolve_asset_uri('images/map-pin/pin_restaurant-big.svg'),
+         'js-hook' => 'js-map-item'
        ),
        'gourmetItem4' => array(
          'imgUrl' => resolve_asset_uri('images/gourmet-img4.jpg'),
@@ -337,6 +361,14 @@ get_header(); ?>
          'linkText' => 'MAPを見る',
          'link' => '#',
          'modifier' => '',
+         'data-lat'=> '35.7106248',
+         'data-lng'=> '139.7084831',
+         'data-img-main' => resolve_asset_uri('images/gourmet-img1.jpg'),
+         'data-title' => 'Estadio（エスタディオ）～spanish dining～ Estadio（エスタディオ）～spanish dining～',
+         'data-desc' => '1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ1階路面、視認性よく看板範囲広め木目調落ち着いた内装、ここにテキストが入ります。こ',
+         'data-map-icon' => resolve_asset_uri('images/map-pin/pin_restaurant.svg'),
+         'data-map-icon-active-state' => resolve_asset_uri('images/map-pin/pin_restaurant-big.svg'),
+         'js-hook' => 'js-map-item'
        ),
      )
    )
@@ -356,6 +388,8 @@ get_header(); ?>
 </div>
 
 <!-- end gourmet -->
+
+<?php importTemplate('modules/main-map'); ?>
 
 <!-- start street spot -->
 

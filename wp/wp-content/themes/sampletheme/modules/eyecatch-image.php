@@ -4,8 +4,6 @@
       <img src="<?php echo ITEM_URL?>assets/images/no-eyecatch-image.png" alt="">
     </div>
   <?php else: ?>
-    <?php foreach ($images as $image): ?>
-    <?php endforeach; ?>
 
     <div class="eyecatch-image-container">
       <div class="eyecatch-image-main">
@@ -42,5 +40,6 @@
         </div>
       </div>
     </div>
+    <p class="eyecatch-image-count"><span id="js-current-slide">2</span>/<span id="js-total-slide">18</span>枚</p>
   <?php endif; ?>
 </div>

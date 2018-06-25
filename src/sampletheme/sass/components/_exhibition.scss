@@ -1,19 +1,38 @@
-//.reservation {}
+.exhibition {
+  @include max-screen($breakpoint-mobile){
+    background-color: $color-wild-sand;
+  }
+}
 .exhibition-wrapper {
   background-color: $color-wild-sand;
-  padding: 25px 82px 25px 78px;
+  padding: 21px 82px 25px 78px;
   overflow: hidden;
+  @include max-screen($breakpoint-mobile){
+    padding: 37px 0 40px 0;
+  }
 }
 .exhibition-title {
   font-size: 20px;
   color: $color-black;
   border-bottom: 2px solid $color-alto-d1;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
+  @include max-screen($breakpoint-mobile){
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 11px;
+    border-bottom: 0px;
+  }
 }
 .exhibition-reserve {
   width: 647px;
   float: left;
   padding-right: 53px;
+  @include max-screen($breakpoint-mobile){
+    width: 100%;
+    float: none;
+    padding-right: 0;
+    margin-bottom: 26px;
+  }
 }
 .exhibition-date-wrapper {
   overflow: hidden;
@@ -23,6 +42,10 @@
   width: 222px;
   background-color: $color-white;
   padding-bottom: 12px;
+  @include max-screen($breakpoint-mobile){
+    width: 150px;
+    padding-bottom: 7px;
+  }
 }
 .exhibition-date-title {
   border-top: 1px solid $color-silver-cb;
@@ -32,15 +55,36 @@
   color: #fff;
   font-weight: bold;
   text-align: center;
-  padding-top: 2px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  @include max-screen($breakpoint-mobile){
+    font-size: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+  }
 }
 .exhibition-date-main {
   font-size: 40px;
   font-weight: bold;
   display: block;
   text-align: center;
+  padding: 12px 0 0px;
+  line-height: 1.1;
+  @include max-screen($breakpoint-mobile){
+    font-size: 25px;
+    padding: 10px 0 0px;
+  }
   span {
     font-size: 20px;
+    position: relative;
+    margin-left: -6px;
+    @include max-screen($breakpoint-mobile){
+      font-size: 13px;
+      margin-left: 0px;
+      left: -3px;
+    }
   }
 }
 .exhibition-date-time {
@@ -48,24 +92,39 @@
   font-weight: 500;
   text-align: center;
   display: block;
+  @include max-screen($breakpoint-mobile){
+    font-size: 14px;
+    padding-top: 3px;
+  }
 }
 .exhibition-links {
   padding-left: 18px;
   float: left;
   width: calc(100% - 222px);
+  @include max-screen($breakpoint-mobile){
+    width: calc(100% - 150px);
+    padding-left: 14px;
+  }
 }
 .exhibition-links-inner {
   list-style: none;
 }
 .exhibition-link-item {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   &:last-child {
     margin-bottom: 0;
+  }
+  @include max-screen($breakpoint-mobile){
+    margin-bottom: 10px;
   }
 }
 .exhibition-image {
   width: 372px;
   float: left;
+  @include max-screen($breakpoint-mobile){
+    width: 100%;
+    float: none;
+  }
 }
 .exhibition-image-item {
   img {

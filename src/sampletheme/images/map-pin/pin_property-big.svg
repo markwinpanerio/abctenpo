@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42px" height="50px" viewBox="0 0 403.6 481.6">
+  <title>pin_property</title>
+  <circle cx="201.8" cy="201.8" r="201.8" fill="#444"/>
+  <polygon points="202.7 481.6 98.5 288.2 201.8 164.2 305.8 287.6 202.7 481.6" fill="#444"/>
+  <ellipse cx="201.8" cy="201.8" rx="170.1" ry="170.5" transform="translate(-0.57 0.57) rotate(-0.16)" fill="#fff"/>
+  <g>
+    <polygon points="201.3 116.8 122.5 195.7 122.5 294.4 280.1 294.4 280.1 195.7 201.3 116.8" fill="#444"/>
+    <g>
+      <rect x="65.63" y="137.6" width="166.5" height="16.8" transform="translate(-59.63 148.04) rotate(-45)" fill="#444"/>
+      <rect x="246.32" y="62.73" width="16.8" height="166.5" transform="translate(-28.62 222.87) rotate(-45)" fill="#444"/>
+    </g>
+  </g>
+</svg>
