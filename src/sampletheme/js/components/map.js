@@ -70,7 +70,9 @@ if (document.querySelector('#js-map-hook')) {
   
       let lngAverage = totalLng / markers.filter((item) => item.lng).length; //GETTING THE AVERAGE OF TOTAL LONGITUDE
       let latAverage = totalLat / markers.filter((item) => item.lat).length; //GETTING THE AVERAGE OF TOTAL LATITUDE
-  
+      
+      // console.log(latAverage);
+      
       let mapOptions = {
         center: new google.maps.LatLng(latAverage, lngAverage)
       };
@@ -131,6 +133,8 @@ if (document.querySelector('#js-map-hook')) {
   
           // marker.pin = myMarker;
           bounds.extend(myMarker.getPosition());
+
+          // console.log(myMarker.getPosition());
   
           let i;
           let markerPosition; 
@@ -139,7 +143,7 @@ if (document.querySelector('#js-map-hook')) {
             mapLatLng = new google.maps.LatLng(+markers[index].lat, +markers[index].lng);
 
             if (ratio === 'is-for-pc') {
-              markerPosition = mapLatLng;
+              markerPosition = new google.maps.LatLng(+markers[index].lat, (+markers[index].lng) + 0.04);
             } else if (ratio === 'is-for-sp') {
               markerPosition = new google.maps.LatLng((+markers[index].lat) + 0.04, +markers[index].lng);
             }
@@ -155,26 +159,29 @@ if (document.querySelector('#js-map-hook')) {
             infowindow.open(map, myMarker);
             map.panTo(markerPosition);
 
-            $mapInfo.find('.main-map-img').css({
+            $mapInfo.find('.main-map-img-container').css({
               'background-image': `url(${markers[index].imgMain})`
             })
             $mapInfo.find('.main-map-title').html(markers[index].title);
             $mapInfo.find('.main-map-desc').html(markers[index].desc);
           }
 
-          myMarker.addListener('click', function(event) {
+          myMarker.addListener('click', function(event) { 
             infowindow.setContent(getInfoWindowHTML(marker));
             infowindow.setPosition(event.latLng);
             infowindow.open(map, this);
             $('.gm-style-iw').parent().addClass('info-window');
-            map.panTo(new google.maps.LatLng(marker.lat,marker.lng));
+            map.panTo(new google.maps.LatLng(+marker.lat, (+marker.lng) + 0.04));
 
             
-            $mapInfo.find('.main-map-img').css({
+            $mapInfo.find('.main-map-img-container').css({
               'background-image': `url(${marker.imgMain})`
             })
             $mapInfo.find('.main-map-title').html(marker.title);
             $mapInfo.find('.main-map-desc').html(marker.desc);
+
+
+            // console.log(marker.lat, marker.lng);
           });
 
           index++;

@@ -28,7 +28,6 @@
 .main-map-info {
   width: 400px;
   height: calc(100% - 86px);
-  padding: 30px;
   background: $color-white;
   border: 1px solid #e2e2e2;
   position: absolute;
@@ -43,6 +42,7 @@
   }
 
   @include max-screen($breakpoint-mobile) {
+    width: 100%;
     position: relative;
     top: 0;
     transform: translateY(0);
@@ -53,18 +53,42 @@
 
 .main-map-img {
   width: 100%;
+  padding: 30px 30px 0;
+
+  @include max-screen($breakpoint-mobile) {
+    padding: 0;
+  }
+}
+
+.main-map-img-container {
   height: 188px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @include max-screen($breakpoint-mobile) {
+    height: 177px;
+  }
+}
+
+.main-map-content {
+  padding: 27px 30px 30px;
+
+  @include max-screen($breakpoint-mobile) {
+    padding: 25px 18px 18px;
+  }
 }
 
 .main-map-title {
   font-size: 20px;
   line-height: 1.2;
-  margin-top: 27px;
 
   @include line-clamp(1.2, 20, 2, #fff);
+
+  @include max-screen($breakpoint-mobile) {
+    @include line-clamp(1.2, 14, 2, #fff);
+    font-size: 14px;
+  }
 }
 
 .main-map-desc {
@@ -73,6 +97,12 @@
   margin-top: 20px;
 
   @include line-clamp(1.5, 14, 5, #fff);
+
+  @include max-screen($breakpoint-mobile) {
+    @include line-clamp(1.5, 13, 5, #fff);
+    font-size: 13px;
+    margin-top: 12px;
+  }
 }
 
 .main-map-button {
@@ -84,6 +114,12 @@
   color: $color-black;
   text-align: center;
   position: relative;
+
+  @include max-screen($breakpoint-mobile) {
+    font-size: 13px;
+    margin-top: 0;
+    padding: 10px;
+  }
 
   &:before {
     content: "";
@@ -97,5 +133,15 @@
     top: 50%;
     right: 11px;
     transform: translateY(-50%) rotate(45deg);
+
+    @include max-screen($breakpoint-mobile) {
+      width: 8px;
+      height: 8px;
+      border: 1px solid $color-black;
+      border-left: 0;
+      border-bottom: 0;
+      right: 9px;
+      transform: translateY(-58%) rotate(45deg);
+    }
   }
 }
