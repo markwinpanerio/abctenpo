@@ -1,25 +1,27 @@
 <div class="property-listing l-container">
 
-  <h2 class="heading-section">横浜エリアの居抜き物件一覧</h2>
+  <h2 class="property-listing-title heading-section">横浜エリアの居抜き物件一覧</h2>
   <section class="property-listing-section">
     <article class="property-listing-article">
-      <h3 class="property-listing-heading">餃子や焼肉、グルメばかりの地図「幡ヶ谷」は住みやすさから渋<br>谷区で人気！</h3>
+      <h3 class="property-listing-heading">餃子や焼肉、グルメばかりの地図「幡ヶ谷」は住みやすさから渋<br class="u-sp-hidden">谷区で人気！</h3>
       <div class="property-listing-info u-clear">
         <div class="property-listing-image">
-          <img src="<?php echo resolve_asset_uri('images/property-listing-img.jpg'); ?>" alt="">
+          <div class="property-listing-image-wrap">
+            <img class="property-listing-image-inner" src="<?php echo resolve_asset_uri('images/property-listing-img.jpg'); ?>" alt="">
+          </div>
           <div class="property-listing-image-badge">
-
+            <span class="property-listing-image-icon"><?php importTemplate('./svg/star-noactive'); ?></span>
           </div>
         </div>
         <div class="property-listing-detail">
           <table class="property-listing-detail-table">
             <tr class="property-listing-detail-row">
               <td class="property-listing-detail-column">アクセス</td>
-              <td class="property-listing-detail-column">都営大江戸線 渋谷駅 徒歩2分 東京メトロ丸の内線 青山駅 徒歩2分</td>
+              <td class="property-listing-detail-column"><span class="u-sp-hidden">都営大江戸線 渋谷駅 徒歩2分 東京メトロ丸の内線 青山駅 徒歩2分</span> <span class="u-pc-hidden">青山駅 徒歩2分</span></td>
             </tr>
             <tr class="property-listing-detail-row">
               <td class="property-listing-detail-column">業態</td>
-              <td class="property-listing-detail-column property-listing-column-blue">居酒屋,和食,ダイニングバー</td>
+              <td class="property-listing-detail-column property-listing-column-blue"><span class="u-sp-hidden">居酒屋,和食,ダイニングバー</span> <span class="u-pc-hidden">居酒屋</span></td>
             </tr>
           </table>
 
@@ -33,20 +35,28 @@
       </div>
       <div class="property-listing-figures">
         <table class="property-listing-figures-table">
-          <tr class="property-listing-figures-row">
-            <td class="property-listing-figures-column">階層</td>
-            <td class="property-listing-figures-column">賃料</td>
-            <td class="property-listing-figures-column">総額</td>
-            <td class="property-listing-figures-column">面積</td>
-            <td class="property-listing-figures-column">詳細</td>
-          </tr>
-          <tr class="property-listing-figures-row">
-            <td class="property-listing-figures-column">1階</td>
-            <td class="property-listing-figures-column"><span class="property-listing-figures-amount">45.6</span>万円</td>
-            <td class="property-listing-figures-column">542.2万円</td>
-            <td class="property-listing-figures-column">17.81坪58.87㎡</td>
-            <td class="property-listing-figures-column property-listing-column-blue">詳細をみる</td>
-          </tr>
+          <tbody class="property-listing-figures-tbody">
+            <tr class="property-listing-figures-row">
+              <td class="property-listing-figures-column">階層</td>
+              <td class="property-listing-figures-column">1階</td>
+            </tr>
+            <tr class="property-listing-figures-row">
+              <td class="property-listing-figures-column">賃料</td>
+              <td class="property-listing-figures-column"><span class="property-listing-figures-amount">45.6</span>万円</td>
+            </tr>
+            <tr class="property-listing-figures-row">
+              <td class="property-listing-figures-column">総額</td>
+              <td class="property-listing-figures-column">542.2万円</td>
+            </tr>
+            <tr class="property-listing-figures-row">
+              <td class="property-listing-figures-column">面積</td>
+              <td class="property-listing-figures-column">17.81坪58.87㎡</td>
+            </tr>
+            <tr class="property-listing-figures-row u-sp-hidden">
+              <td class="property-listing-figures-column">詳細</td>
+              <td class="property-listing-figures-column property-listing-column-blue">詳細をみる</td>
+            </tr>
+          </tbody>
         </table>
       </div>
 
