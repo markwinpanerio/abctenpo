@@ -1,6 +1,7 @@
 <div class="property-listing l-container">
 
   <h2 class="property-listing-title heading-section">横浜エリアの居抜き物件一覧</h2>
+  <span class="property-listing-page-info">全123件(1-12件)</span>
   <section class="property-listing-section">
     <article class="property-listing-article">
       <h3 class="property-listing-heading">餃子や焼肉、グルメばかりの地図「幡ヶ谷」は住みやすさから渋<br class="u-sp-hidden">谷区で人気！</h3>
