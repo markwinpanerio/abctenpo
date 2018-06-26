@@ -473,7 +473,50 @@ get_header(); ?>
 </div>
 
 
-<?php importTemplate('modules/property-listing'); ?>
+<?php importTemplate('modules/property-listing', array(
+  'items' => array(
+    array(
+      'heading' => '餃子や焼肉、グルメばかりの地図「幡ヶ谷」は住みやすさから渋<br class="u-sp-hidden">谷区で人気！',
+      'image' => 'property-listing-img.jpg',
+      'details' => array(
+        array(
+          'columns' => array(
+            array(
+              'column' => 'アクセス',
+              'column-modifier' => ''
+            ),
+            array(
+              'column' => '<span class="u-sp-hidden">都営大江戸線 渋谷駅 徒歩2分 東京メトロ丸の内線 青山駅 徒歩2分</span> <span class="u-pc-hidden">青山駅 徒歩2分</span>',
+              'column-modifier' => ''
+            )
+          )
+        ),
+        array(
+          'columns' => array(
+            array(
+              'column' => '業態',
+              'column-modifier' => ''
+            ),
+            array(
+              'column' => '<span class="u-sp-hidden">居酒屋,和食,ダイニングバー</span> <span class="u-pc-hidden">居酒屋</span>',
+              'column-modifier' => 'column-blue'
+            )
+          )
+        )
+      ),
+      'tags' => array(
+        array('tag' => '居抜き'),
+        array('tag' => '造作無償'),
+        array('tag' => '内覧会'),
+        array('tag' => '3Dバーチャル内覧')
+      )
+    )
+  )
+)); ?>
+
+
+
+
 
 <!-- start of information -->
 <?php importTemplate('modules/information', array(
