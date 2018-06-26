@@ -1,5 +1,6 @@
 .property-listing {
   padding: 0;
+  position: relative;
 
   @include max-screen($breakpoint-mobile) {
     padding: 0 15px;
@@ -11,6 +12,17 @@
 
   @include max-screen($breakpoint-mobile) {
     padding-left: 0;
+  }
+}
+
+.property-listing-page-info {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @include max-screen($breakpoint-mobile) {
+    display: none;;
   }
 }
 
