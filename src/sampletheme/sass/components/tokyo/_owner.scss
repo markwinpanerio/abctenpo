@@ -1,0 +1,88 @@
+.owner {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.owner-inner {
+  background-color: $color-medium-gray;
+  padding: 40px 41px;
+  min-height: 410px;
+}
+
+.owner-top {
+  display: flex;
+  margin: 0 -20px 35px;
+}
+
+.owner-image {
+  width: 130px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.owner-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.owner-top-box {
+  padding: 0 20px;
+}
+
+.owner-links {
+  margin-top: 10px;
+}
+
+.owner-links-icon {
+  position: relative;
+  background-color: $color-teal;
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid $base-background-color;
+    border-right: 2px solid $base-background-color;
+    -webkit-transform: rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    left: 49%;
+    top: 50%;
+  }
+}
+
+.owner-links-text {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.owner-details-list {
+  list-style-type: none;
+}
+
+.owner-details-list-item {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.owner-details-label {
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 86px;
+}
+
+.owner-details-text {
+  font-size: 14px;
+}
+
+.owner-status {
+  margin-left: auto;
+}

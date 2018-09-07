@@ -14,6 +14,8 @@ define( 'HOME_URL', home_url() . '/' );
 // テーマディレクトリまでのパス
 define( 'ITEM_URL', get_stylesheet_directory_uri() . '/' );
 
+define( 'IMAGE_URI', ITEM_URL . 'assets/images/');
+
 // ノーイメージパス
 define( 'NOIMAGE', ITEM_URL . 'assets/images/noimage.png' );
 

@@ -1,0 +1,22 @@
+.button {
+
+}
+
+.button-icontext {
+  color: $color-teal;
+  border: 1px solid $color-teal;
+  padding: 6px 12px;
+  border-radius: 3px;
+}
+
+.button-icon {
+  svg {
+    fill: $color-teal;
+    width: 22px;
+    height: 16px;
+  }
+}
+
+.button-text {
+  font-size: 14px;
+}

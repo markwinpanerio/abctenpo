@@ -1,0 +1,10 @@
+//.module {}
+
+.module-wrap {
+  display: flex;
+  margin: 0 -20px;
+
+  @include max-screen($breakpoint-mobile) {
+    display: block;
+  }
+}

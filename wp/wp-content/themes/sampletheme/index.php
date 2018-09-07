@@ -195,6 +195,76 @@ get_header(); ?>
     </div>
   </div>
 
+  <!-- new modules -->
+  <div class="l-container">
+    <div class="tokyo">
+      <div class="module">
+         <div class="module-wrap">
+           <?php
+            $owner_array = array(
+                            array(
+                              'image'         => 'tokyo/owner/owner-img1.png',
+                              'name'          => 'シェフXさん',
+                              'links'         => array('一話をみる'),
+                              'status_button' => array(
+                                                    'status_icon' => './svg/tokyo/step1-icon',
+                                                    'status_text' => '物件探し中'
+                                                 ),
+                              'details_list'  => array(
+                                                  array(
+                                                    'label' => '開業予定',
+                                                    'text'  => 'できるだけ早く'
+                                                  ),
+                                                  array(
+                                                    'label' => '業態',
+                                                    'text'  => 'フレンチとイタリアンベースに和を用いた全て自
+                                                                家製創作料理のモダンお任せコースの店'
+                                                  ),
+                                                  array(
+                                                    'label' => 'エリア',
+                                                    'text'  => '西麻布'
+                                                  ),
+                                                  array(
+                                                    'label' => 'コメント',
+                                                    'text'  => '目標は、「お客様の好みのワインを見つけるお手伝いが出来るお店を作りたい‼」です。'
+                                                  )
+                                                 )
+                            ),
+                            array(
+                              'image'         => 'tokyo/owner/owner-img2.png',
+                              'name'          => '宮崎 龍太さん',
+                              'links'         => array('一話をみる', '最新話をみる'),
+                              'status_button' => array(
+                                                    'status_icon' => './svg/tokyo/step5-icon',
+                                                    'status_text' => '運用中'
+                                                 ),
+                              'details_list'  => array(
+                                                  array(
+                                                    'label' => '開業予定',
+                                                    'text'  => '良い物件に出会えればすぐに'
+                                                  ),
+                                                  array(
+                                                    'label' => '業態',
+                                                    'text'  => 'スペインバル'
+                                                  ),
+                                                  array(
+                                                    'label' => 'エリア',
+                                                    'text'  => '蒲田駅－川崎－横浜'
+                                                  ),
+                                                  array(
+                                                    'label' => 'コメント',
+                                                    'text'  => '「自分のつくりたいものをつくりたい！」と思い独立を決意し、2017年8月から本格的に物件探しを'
+                                                  )
+                                                 )
+                            )
+                           );
+            importTemplate('modules/owner', array('owner_array' => $owner_array)); ?>
+         </div>
+       </div>
+    </div>
+  </div>
+  <!-- end new modules -->
+
 </main>
 
 <!-- start of virtual second section -->
@@ -252,17 +322,7 @@ get_header(); ?>
 <!-- end of breadcrumbs section -->
 
 <!-- start of message section -->
-<?php importTemplate('modules/message', array(
-  'messageItems' => array(
-    'messageItem' => array(
-      'copy' => '会員登録ですべての3D内覧が<br>ご覧いただけます。',
-      'small-link-text' => 'ログインはこちら',
-      'small-link' => 'javascript:;',
-      'big-link-text' => '会員登録(無料・１分)をお願いします',
-      'big-link' => 'javascript:;'
-      )
-    )
-  )); ?>
+
 <!-- end of message section -->
 
 <?php importTemplate('modules/property'); ?>
@@ -579,6 +639,8 @@ get_header(); ?>
 <?php importTemplate('modules/property-info'); ?>
 
 <?php importTemplate('modules/pagination'); ?>
+
+
 
 
 <?php importPart('footer'); ?>
