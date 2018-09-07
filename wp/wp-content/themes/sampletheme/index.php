@@ -261,6 +261,8 @@ get_header(); ?>
             importTemplate('modules/owner', array('owner_array' => $owner_array)); ?>
          </div>
        </div>
+
+       <?php importTemplate('modules/tokyo/more-button', array('link' => '#', 'text' => '開業者をもっとみる')); ?>
     </div>
   </div>
   <!-- end new modules -->

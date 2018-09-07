@@ -1,5 +1,9 @@
-.button {
+.tokyo .button {
+  margin: 0;
 
+  &:before {
+    display: none;
+  }
 }
 
 .button-icontext {
@@ -19,4 +23,61 @@
 
 .button-text {
   font-size: 14px;
+}
+
+
+.button-more-link {
+  background-color: $color-teal;
+  border: 1px solid $color-teal;
+  color: $color-white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 15px 0;
+  display: block;
+  text-align: center;
+  position: relative;
+  transition: background-color $duration $easing;
+
+  &:hover {
+    background-color: $base-background-color;
+    border: 1px solid $color-teal;
+    color: $color-teal;
+
+    &:before {
+      background-color: $color-teal;
+    }
+
+    &:after {
+      border-top: 2px solid $base-background-color;
+      border-right: 2px solid $base-background-color;
+    }
+
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: $base-background-color;
+    left: 98%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: background-color $duration $easing;
+  }
+
+  &:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    left: 97.9%;
+    top: 50%;
+    position: absolute;
+    border-top: 2px solid $color-teal;
+    border-right: 2px solid $color-teal;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: border-top duration $easing, border-right $duration $easing;
+  }
 }
