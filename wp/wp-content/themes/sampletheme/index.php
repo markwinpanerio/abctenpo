@@ -263,6 +263,7 @@ get_header(); ?>
        </div>
 
        <?php importTemplate('modules/tokyo/more-button', array('link' => '#', 'text' => '開業者をもっとみる')); ?>
+       <?php importTemplate('modules/tokyo/section-description', array('description' => '人周辺施設、商店街や通勤・通学など人の流れ同エリア内で飲食需要を見出すための他の飲食店、 オフィス街や住宅街といったエリア固有の特性など、「街の情報」をご紹介いたします。')); ?>
     </div>
   </div>
   <!-- end new modules -->
