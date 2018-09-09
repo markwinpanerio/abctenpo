@@ -579,7 +579,12 @@ get_header(); ?>
 <?php importTemplate('modules/property-info'); ?>
 
 <?php importTemplate('modules/pagination'); ?>
+<div class="tokyo">
+  <div class="tokyo contents-top__header">
+    <p>こんにちは</p>
 
+  </div>
+</div>
 
 <?php importPart('footer'); ?>
 <?php
