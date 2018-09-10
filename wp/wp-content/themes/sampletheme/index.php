@@ -271,31 +271,34 @@ get_header(); ?>
           <?php
            $preview_array = array(
                              array(
-                               'image'   => 'tokyo/preview-img1.jpg',
-                               'content' => '居抜き開業を成功させたオーナーに、成功の秘訣や開店までの裏話などを伺います。',
-                               'links'   => array(
-                                              'text'          => '開業者インタビュー',
-                                              'icon_modifier' => 'links-icon-preview',
-                                              'text_modifier' => 'links-text-preview'
-                                            )
+                               'image'        => 'tokyo/preview-img1.jpg',
+                               'content'      => '居抜き開業を成功させたオーナーに、成功の秘訣や開店までの裏話などを伺います。',
+                               'preview_link' => '#',
+                               'links'        => array(
+                                                'text'          => '開業者インタビュー',
+                                                'icon_modifier' => 'links-icon-preview',
+                                                'text_modifier' => 'links-text-preview'
+                                              )
                              ),
                              array (
-                               'image'   => 'tokyo/preview-img1.jpg',
-                               'content' => '居抜き開業を成功させたオーナーに、成功の秘訣や開店までの裏話などを伺います。',
-                               'links'   => array(
-                                              'text'          => '開業者インタビュー',
-                                              'icon_modifier' => 'links-icon-preview',
-                                              'text_modifier' => 'links-text-preview'
-                                            )
+                               'image'        => 'tokyo/preview-img1.jpg',
+                               'content'      => '居抜き開業を成功させたオーナーに、成功の秘訣や開店までの裏話などを伺います。',
+                               'preview_link' => '#',
+                               'links'        => array(
+                                                'text'          => '開業者インタビュー',
+                                                'icon_modifier' => 'links-icon-preview',
+                                                'text_modifier' => 'links-text-preview'
+                                              )
                              ),
                              array (
-                               'image'   => 'tokyo/preview-img1.jpg',
-                               'content' => '居抜き開業を成功させたオーナーに、成功の秘訣や開店までの裏話などを伺います。',
-                               'links'   => array(
-                                              'text'          => '開業者インタビュー',
-                                              'icon_modifier' => 'links-icon-preview',
-                                              'text_modifier' => 'links-text-preview'
-                                            )
+                               'image'        => 'tokyo/preview-img1.jpg',
+                               'content'      => '居抜き開業を成功させたオーナーに、成功の秘訣や開店までの裏話などを伺います。',
+                               'preview_link' => '#',
+                               'links'        => array(
+                                                'text'          => '開業者インタビュー',
+                                                'icon_modifier' => 'links-icon-preview',
+                                                'text_modifier' => 'links-text-preview'
+                                              )
                              )
                             );
 
@@ -303,6 +306,20 @@ get_header(); ?>
         </div>
       </div>
       <!-- page-preview -->
+      <?php
+        $article_array = array(
+                          array(
+                            'image'   => 'tokyo/article-img.jpg',
+                            'content' => '有楽町（千代田区）で居抜きで飲食店を開業するための街情報',
+                            'link'    => '#'
+                          ),
+                          array(
+                            'image'   => 'tokyo/article-img.jpg',
+                            'content' => '有楽町（千代田区）で居抜きで飲食店を開業するための街情報',
+                            'link'    => '#'
+                          )
+                         );
+        importTemplate('modules/tokyo/article-preview', array( 'article_array' => $article_array ) ); ?>
 
     </div>
   </div>

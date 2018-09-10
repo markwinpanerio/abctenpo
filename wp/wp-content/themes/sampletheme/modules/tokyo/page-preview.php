@@ -2,7 +2,7 @@
    if( $preview_array ):
     foreach( $preview_array as $preview_item ): ?>
     <div class="page-preview-group">
-      <a href="#" class="page-preview-link">
+      <a href="<?php echo $preview_item['preview_link']; ?>" class="page-preview-link">
         <div class="page-preview-image page-preview-box"><img src="<?php echo IMAGE_URI.$preview_item['image']; ?>" alt=""></div>
         <div class="page-preview-contents page-preview-box">
           <?php
