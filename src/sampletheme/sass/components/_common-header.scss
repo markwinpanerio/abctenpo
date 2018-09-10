@@ -1,0 +1,79 @@
+.tokyo {
+  .common-header {
+    display: inline-block;
+    height: 60px;
+    width: 100%;
+  }
+  .logo {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+
+    &-right, &-left {
+      display: inline-block;
+      height: 100%;
+      width: auto;
+      vertical-align: top;
+    }
+
+    &-top, &-bottom {
+      display: block;
+      width: auto;
+      height: 50%;
+      color: black;
+    }
+  }
+
+  .header-button {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    vertical-align: top;
+
+    &-mark, &-text {
+      display: inline-block;
+      height: 30px;
+      width: auto;
+      color: black;
+    }
+
+    &-text {
+      line-height: 4.5;
+    }
+  }
+
+  .svg-color-search {
+    fill: $button-search;
+  }
+
+  .svg-color-information {
+    fill: $button-information;
+  }
+
+  .svg-color-login {
+    fill: $button-login;
+    stroke: white;
+    stroke-width: 150px;
+  }
+
+  .text-white {
+    color: white;
+  }
+
+  .login-button {
+    background-color: $button-login;
+    vertical-align: bottom;
+    float: right;
+    width: 200px;
+    height: 100%;
+    margin-right: 100px;
+    text-align: center;
+  }
+
+
+  
+
+
+
+
+}
