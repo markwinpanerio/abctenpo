@@ -35,34 +35,6 @@
   margin-top: 10px;
 }
 
-.owner-links-icon {
-  position: relative;
-  background-color: $color-teal;
-  width: 16px;
-  height: 15px;
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 50%;
-
-  &:before {
-    position: absolute;
-    content: '';
-    width: 6px;
-    height: 6px;
-    border-top: 2px solid $base-background-color;
-    border-right: 2px solid $base-background-color;
-    -webkit-transform: rotate(45deg);
-    transform: translate(-50%, -50%) rotate(45deg);
-    left: 49%;
-    top: 50%;
-  }
-}
-
-.owner-links-text {
-  font-size: 12px;
-  font-weight: bold;
-}
-
 .owner-details-list {
   list-style-type: none;
 }

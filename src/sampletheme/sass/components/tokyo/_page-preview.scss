@@ -1,0 +1,61 @@
+//.tokyo .page-preview {}
+
+.tokyo .page-preview-image {
+  width: 190px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: $preview-overlay;
+    width: 84%;
+    height: 100%;
+    opacity: 0;
+    transition: background-color $duration $easing, opacity $duration $easing;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.tokyo .page-preview-inner {
+  display: flex;
+  margin: 0 -30px 30px;
+  flex-wrap: wrap;
+}
+
+.page-preview-group {
+  padding: 15px 30px;
+  width: calc( 100% / 2 );
+}
+
+.tokyo .page-preview-link {
+  display: flex;
+  margin: 0 -12px;
+  color: $color-medium-black;
+  text-decoration: none;
+  align-items: center;
+
+  &:hover {
+    .links-text {
+      color: $color-teal;
+    }
+
+    .page-preview-image {
+      &:before {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.tokyo .page-preview-box {
+  padding: 0 12px;
+}
+
+.tokyo .page-preview-copy {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.5;
+}

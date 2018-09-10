@@ -264,6 +264,46 @@ get_header(); ?>
 
        <?php importTemplate('modules/tokyo/more-button', array('link' => '#', 'text' => '開業者をもっとみる')); ?>
        <?php importTemplate('modules/tokyo/section-description', array('description' => '人周辺施設、商店街や通勤・通学など人の流れ同エリア内で飲食需要を見出すための他の飲食店、 オフィス街や住宅街といったエリア固有の特性など、「街の情報」をご紹介いたします。')); ?>
+
+       <!-- page-preview -->
+       <div class="page-preview">
+        <div class="page-preview-inner">
+          <?php
+           $preview_array = array(
+                             array(
+                               'image'   => 'tokyo/preview-img1.jpg',
+                               'content' => '居抜き開業を成功させたオーナーに、成功の秘訣や開店までの裏話などを伺います。',
+                               'links'   => array(
+                                              'text'          => '開業者インタビュー',
+                                              'icon_modifier' => 'links-icon-preview',
+                                              'text_modifier' => 'links-text-preview'
+                                            )
+                             ),
+                             array (
+                               'image'   => 'tokyo/preview-img1.jpg',
+                               'content' => '居抜き開業を成功させたオーナーに、成功の秘訣や開店までの裏話などを伺います。',
+                               'links'   => array(
+                                              'text'          => '開業者インタビュー',
+                                              'icon_modifier' => 'links-icon-preview',
+                                              'text_modifier' => 'links-text-preview'
+                                            )
+                             ),
+                             array (
+                               'image'   => 'tokyo/preview-img1.jpg',
+                               'content' => '居抜き開業を成功させたオーナーに、成功の秘訣や開店までの裏話などを伺います。',
+                               'links'   => array(
+                                              'text'          => '開業者インタビュー',
+                                              'icon_modifier' => 'links-icon-preview',
+                                              'text_modifier' => 'links-text-preview'
+                                            )
+                             )
+                            );
+
+           importTemplate('modules/tokyo/page-preview', array( 'preview_array' => $preview_array ) ); ?>
+        </div>
+      </div>
+      <!-- page-preview -->
+
     </div>
   </div>
   <!-- end new modules -->
