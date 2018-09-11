@@ -258,7 +258,7 @@ get_header(); ?>
                                                  )
                             )
                            );
-            importTemplate('modules/owner', array('owner_array' => $owner_array)); ?>
+            importTemplate('modules/tokyo/owner', array('owner_array' => $owner_array)); ?>
          </div>
        </div>
 
@@ -319,8 +319,25 @@ get_header(); ?>
                             'link'    => '#'
                           )
                          );
-        importTemplate('modules/tokyo/article-preview', array( 'article_array' => $article_array ) ); ?>
+        importTemplate('modules/tokyo/article-preview', array( 'article_array' => $article_array ) );
 
+        $breadcrumbs_array = array(
+                              array(
+                                'text'     => 'トップページ',
+                                'link'     => '#'
+                              ),
+                              array(
+                                'text'     => '飲食店開業ドキュメンタリー',
+                                'link'     => '#'
+                              ),
+                              array(
+                                'text'     => '飲食店開業ドキュメンタリー',
+                                'link'     => '#',
+                                'modifier' => 'is-current'
+                              )
+                             );
+
+        importTemplate('modules/tokyo/breadcrumbs', array( 'breadcrumbs_array' => $breadcrumbs_array ) ); ?>
     </div>
   </div>
   <!-- end new modules -->

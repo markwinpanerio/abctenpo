@@ -1,0 +1,39 @@
+.tokyo .breadcrumbs {
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+}
+
+.tokyo .breadcrumbs-link {
+  padding-right: 8px;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+
+  &.is-current {
+    color: $color-black;
+    text-decoration: none;
+  }
+}
+
+.tokyo .breadcrumbs-list-item {
+  display: inline-block;
+  position: relative;
+  padding-right: 10px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    border-top: 1px solid $color-breadcrumbs-separator;
+    border-right: 1px solid $color-breadcrumbs-separator;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+}
