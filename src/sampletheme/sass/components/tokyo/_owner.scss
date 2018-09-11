@@ -1,6 +1,7 @@
 .tokyo .owner {
   padding: 0 20px;
   margin-bottom: 20px;
+  width: calc( 100% / 2 );
 }
 
 .tokyo .owner-inner {
@@ -16,10 +17,15 @@
 
 .tokyo .owner-image {
   width: 130px;
+  flex-basis: 25.8%;
 
   img {
     width: 100%;
   }
+}
+
+.tokyo .owner-namebutton {
+  flex-basis: 50%;
 }
 
 .tokyo .owner-name {
@@ -33,6 +39,19 @@
 
 .tokyo .owner-links {
   margin-top: 10px;
+}
+
+.tokyo .owner-links-list {
+  list-style-type: none;
+}
+
+.tokyo .owner-links-list-item {
+  display: inline-block;
+}
+
+.tokyo .owner-links-list-link {
+  color: $color-medium-black;
+  text-decoration: none;
 }
 
 .tokyo .owner-details-list {
@@ -57,4 +76,5 @@
 
 .tokyo .owner-status {
   margin-left: auto;
+  //flex-basis: 24.2%;
 }

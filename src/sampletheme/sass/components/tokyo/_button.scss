@@ -6,27 +6,7 @@
   }
 }
 
-.tokyo .button-icontext {
-  color: $color-teal;
-  border: 1px solid $color-teal;
-  padding: 6px 12px;
-  border-radius: 3px;
-}
-
-.tokyo .button-icon {
-  svg {
-    fill: $color-teal;
-    width: 22px;
-    height: 16px;
-  }
-}
-
-.tokyo .button-text {
-  font-size: 14px;
-}
-
-
-.tokyo .button-more-link {
+.tokyo .button-link {
   background-color: $color-teal;
   border: 1px solid $color-teal;
   color: $color-white;
@@ -38,6 +18,7 @@
   text-align: center;
   position: relative;
   transition: background-color $duration $easing;
+  width: 100%;
 
   &:hover {
     background-color: $base-background-color;

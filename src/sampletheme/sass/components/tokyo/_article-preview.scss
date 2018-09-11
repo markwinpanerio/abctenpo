@@ -8,6 +8,7 @@
 
 .tokyo .article-preview-box {
   padding: 0 12px;
+  flex-basis: 100%;
 }
 
 .tokyo .article-preview-group-link {
@@ -30,6 +31,7 @@
 .tokyo .article-preview-group-image {
   width: 160px;
   position: relative;
+  flex-basis: 14.3%;
 
   &:before {
     content: '';

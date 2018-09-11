@@ -1,5 +1,5 @@
 <div class="breadcrumbs">
-  <ul class="breadcrumbs-list">
+  <ol class="breadcrumbs-list">
     <?php
       if( $breadcrumbs_array ):
         foreach( $breadcrumbs_array as $breadcrumbs_item ): ?>
@@ -14,5 +14,5 @@
         endforeach;
       endif;
     ?>
-  </ul>
+  </ol>
 </div>

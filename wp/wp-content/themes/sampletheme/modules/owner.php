@@ -8,7 +8,7 @@
                 <span class="owner-name"><?php echo $owner_item['name']; ?></span>
                 <div class="owner-links">
                   <?php foreach( $owner_item['links'] as $link ) {
-                          importTemplate( 'modules/tokyo/links-icon', array('link' => $link) );
+                          importTemplate( 'modules/tokyo/links-icon', array('text' => $link) );
                         } ?>
                 </div>
               </div>

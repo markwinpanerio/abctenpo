@@ -1,8 +1,14 @@
 //.tokyo .page-preview {}
 
+.tokyo .page-preview-box {
+  padding: 0 12px;
+  flex-basis: 100%;
+}
+
 .tokyo .page-preview-image {
   width: 200px;
   position: relative;
+  flex-basis: 34.3%;
 
   &:before {
     content: '';
@@ -48,10 +54,6 @@
       }
     }
   }
-}
-
-.tokyo .page-preview-box {
-  padding: 0 12px;
 }
 
 .tokyo .page-preview-copy {

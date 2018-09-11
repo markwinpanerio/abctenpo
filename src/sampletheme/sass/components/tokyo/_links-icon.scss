@@ -2,7 +2,7 @@
   position: relative;
   background-color: $color-teal;
   width: 16px;
-  height: 15px;
+  height: 16px;
   display: inline-block;
   vertical-align: middle;
   border-radius: 50%;
@@ -14,9 +14,8 @@
     height: 6px;
     border-top: 2px solid $base-background-color;
     border-right: 2px solid $base-background-color;
-    -webkit-transform: rotate(45deg);
     transform: translate(-50%, -50%) rotate(45deg);
-    left: 49%;
+    left: 45%;
     top: 50%;
   }
 }
@@ -25,7 +24,7 @@
   vertical-align: text-bottom;
 
   &:before {
-    left: 44%;
-    top: 48%;
+    left: 45%;
+    top: 50%;
   }
 }

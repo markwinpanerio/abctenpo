@@ -23,10 +23,16 @@ get_header(); ?>
                             array(
                               'image'         => 'tokyo/owner/owner-img1.png',
                               'name'          => 'シェフXさん',
-                              'links'         => array('一話をみる'),
+                              'links'         => array(
+                                                  array(
+                                                    'text' => '一話をみる',
+                                                    'link' => '#',
+                                                  ),
+                                                 ),
                               'status_button' => array(
                                                     'status_icon' => './svg/tokyo/step1-icon',
-                                                    'status_text' => '物件探し中'
+                                                    'status_text' => '物件探し中',
+                                                    'status_link' => '#'
                                                  ),
                               'details_list'  => array(
                                                   array(
@@ -51,10 +57,20 @@ get_header(); ?>
                             array(
                               'image'         => 'tokyo/owner/owner-img2.png',
                               'name'          => '宮崎 龍太さん',
-                              'links'         => array('一話をみる', '最新話をみる'),
+                              'links'         => array(
+                                                  array(
+                                                    'text' => '一話をみる',
+                                                    'link' => '#'
+                                                  ),
+                                                  array(
+                                                    'text' => '最新話をみる',
+                                                    'link' => '#'
+                                                  ),
+                                                 ),
                               'status_button' => array(
                                                     'status_icon' => './svg/tokyo/step5-icon',
-                                                    'status_text' => '運用中'
+                                                    'status_text' => '運用中',
+                                                    'status_link' => '#'
                                                  ),
                               'details_list'  => array(
                                                   array(
@@ -80,7 +96,7 @@ get_header(); ?>
          </div>
        </div>
 
-       <?php importTemplate('modules/tokyo/more-button', array('link' => '#', 'text' => '開業者をもっとみる')); ?>
+       <?php importTemplate('modules/tokyo/button', array('link' => '#', 'text' => '開業者をもっとみる')); ?>
        <?php importTemplate('modules/tokyo/section-description', array('description' => '人周辺施設、商店街や通勤・通学など人の流れ同エリア内で飲食需要を見出すための他の飲食店、 オフィス街や住宅街といったエリア固有の特性など、「街の情報」をご紹介いたします。')); ?>
 
        <!-- page-preview -->
@@ -161,7 +177,7 @@ get_header(); ?>
   <!-- end new modules -->
   </div>
 
-  
+
 
 </main>
 <?php
