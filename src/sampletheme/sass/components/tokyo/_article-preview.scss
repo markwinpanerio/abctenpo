@@ -1,16 +1,16 @@
-.article-preview {
+.tokyo .article-preview {
 
 }
 
-.article-preview-group {
+.tokyo .article-preview-group {
   padding: 15px 0;
 }
 
-.article-preview-box {
+.tokyo .article-preview-box {
   padding: 0 12px;
 }
 
-.article-preview-group-link {
+.tokyo .article-preview-group-link {
   display: flex;
   margin: 0 -12px;
 
@@ -27,7 +27,7 @@
   }
 }
 
-.article-preview-group-image {
+.tokyo .article-preview-group-image {
   width: 160px;
   position: relative;
 
@@ -46,7 +46,7 @@
   }
 }
 
-.article-preview-group-copy {
+.tokyo .article-preview-group-copy {
   font-size: 16px;
   font-weight: bold;
   color: $heading-black;
