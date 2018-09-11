@@ -1,32 +1,44 @@
 .tokyo {
   .common-header {
-    display: inline-block;
-    height: 60px;
-    width: 100%;
+    display: flex;
+    height: 122px;
+    // justify-content: center;
+    align-items: center;
+    
   }
   .logo {
     display: inline-block;
-    height: 100%;
-    vertical-align: top;
+    height: 70px;
+    width: 320.57px;
 
-    &-right, &-left {
-      display: inline-block;
-      height: 100%;
-      width: auto;
-      vertical-align: top;
-    }
+    // &-right, &-left {
+    //   display: inline-block;
+    //   height: 100%;
+    //   width: auto;
+    //   vertical-align: top;
+    // }
 
-    &-top, &-bottom {
-      display: block;
-      width: auto;
-      height: 50%;
-      color: black;
-    }
+    // &-left {
+    //   height: 62px;
+    //   width: 60px;
+    // }
+
+    // &-top, &-bottom {
+    //   line-height: 1;
+    //   display: block;
+    //   font-size: 22px;
+    //   width: auto;
+    //   color: black;
+    // }
+
+    // &-bottom {
+    //   width: 244px;
+    //   height: 40px;
+    // }
   }
 
   .header-button {
     display: inline-block;
-    height: 100%;
     width: auto;
     vertical-align: top;
 
@@ -35,10 +47,6 @@
       height: 30px;
       width: auto;
       color: black;
-    }
-
-    &-text {
-      line-height: 4.5;
     }
   }
 
@@ -66,8 +74,16 @@
     float: right;
     width: 200px;
     height: 100%;
-    margin-right: 100px;
+    margin-left: auto;
     text-align: center;
+
+    &-content {
+      height: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
   }
 
 
