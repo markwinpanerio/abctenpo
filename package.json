@@ -15,7 +15,7 @@
     "npm-run-all": "^3.1.0"
   },
   "scripts": {
-    "start": "npm run build && npm run serve",
+    "start": "npm run build && npm run svgsprite && npm run serve",
     "test": "frp build",
     "wpstyle": "frp exe frp-plugins/wp-theme-style.js",
     "build": "docker-compose build && frp build",
