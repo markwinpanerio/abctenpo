@@ -1,0 +1,9 @@
+{
+  "dest": "wp/wp-content/themes/sampletheme/assets/svg",
+  "mode": {
+    "symbol": {
+      "dest": ".",
+      "sprite": "sprite.svg"
+    }
+  }
+}

@@ -15,7 +15,7 @@
     "npm-run-all": "^3.1.0"
   },
   "scripts": {
-    "start": "npm run build && npm run serve",
+    "start": "npm run build && npm run svgsprite && npm run serve",
     "test": "frp build",
     "wpstyle": "frp exe frp-plugins/wp-theme-style.js",
     "build": "docker-compose build && frp build",
@@ -24,7 +24,8 @@
     "server:docker": "docker-compose up",
     "production": "frp build -p",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -w -s -r 0",
-    "sqldump": "sh scripts/mysqldump.sh"
+    "sqldump": "sh scripts/mysqldump.sh",
+    "svgsprite": "svg-sprite -C svgsprite.json --shape-transform-svgo svgo.json src/sampletheme/svg/*.svg"
   },
   "private": true
 }
