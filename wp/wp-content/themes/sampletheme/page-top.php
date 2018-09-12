@@ -11,6 +11,7 @@
 
 get_header(); ?>
 
+<?php importTemplate('./layout/header'); ?>
 <?php
 get_sidebar();
 get_footer();
